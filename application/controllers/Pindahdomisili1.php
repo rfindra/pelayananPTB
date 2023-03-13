@@ -29,7 +29,7 @@ class Pindahdomisili1 extends CI_Controller {
         $this->load->view('admin/edit_pindahdomisili1',$data);
     } 
 
-      function simpanedit($id){
+      function uploadweb($id){
       $this->form_validation->set_rules('rtrww', 'RT / RW', 'required');
       $this->form_validation->set_rules('prov', 'Provinsi', 'required');
       $this->form_validation->set_rules('kabb', 'Kabupaten', 'required');
@@ -88,7 +88,7 @@ class Pindahdomisili1 extends CI_Controller {
         $this->load->view('admin/tambah_pindah1',$data);
     }
 
-      function simpanedittambah($id){
+      function uploadwebtambah($id){
       $this->form_validation->set_rules('rtrww', 'RT / RW', 'required');
       $this->form_validation->set_rules('prov', 'Provinsi', 'required');
       $this->form_validation->set_rules('kabb', 'Kabupaten', 'required');
@@ -127,7 +127,7 @@ class Pindahdomisili1 extends CI_Controller {
         $this->load->view('web/daftar_pindahkeluar1',$data);
     }
     
-    function simpaneditdaftar($id){
+    function uploadwebdaftar($id){
       $this->form_validation->set_rules('rtrww', 'RT / RW', 'required');
       $this->form_validation->set_rules('prov', 'Provinsi', 'required');
       $this->form_validation->set_rules('kabb', 'Kabupaten', 'required');

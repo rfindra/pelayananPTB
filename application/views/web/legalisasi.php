@@ -62,11 +62,11 @@
                     -->
                     <li class="nav-item">
                         <a class="nav-link page-scroll"
-                            href="<?php echo base_url()?>index.php/Aktakelahiran/indexweb">Kepaniteraan</a>
+                            href="<?php echo base_url()?>index.php/Kepaniteraan/indexweb">Kepaniteraan</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link page-scroll"
-                            href="<?php echo base_url()?>index.php/Aktakematian/indexweb">Kesekretariatan</a>
+                            href="<?php echo base_url()?>index.php/Kesekretariatan/indexweb">Kesekretariatan</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="https://meet.jit.si/digitalmelayani"
@@ -158,21 +158,25 @@
                         </div>
                     </div>
 
-                    <!-- Form 2 -->
-                    <div id="form2" style="display:none;">
-                        <?php
+<!-- Form 2 -->
+<div id="form2" style="display:none;">
+    <?php
     $no=1;
-    if(isset($data_kelahiran)){
-        foreach($data_kelahiran as $row){
+    if(isset($data_legalisasi)){
+        foreach($data_legalisasi as $row){
             ?>
-                        <?php }
+    <?php }
         }
   ?>
-                        <form action="<?php print site_url();?>/Aktakelahiran/cariweb" method="POST">
+                       <!--<form action="<?php print site_url();?>/Legalisasibas/cariweb" method="POST">-->
+
+                        <form action="<?php echo base_url()?>index.php/Legalisasibas/cariweb" method="POST">
+
+
                             Cari NIK Anda:
                             <input type="search" name="cari">
                         </form><br>
-                        <table id="find-monitor" align="center" class="table table-bordered table-striped borderless">
+                        <!--<table id="find-monitor" align="center" class="table table-bordered table-striped borderless">
                             <thead class="bg-primary">
                                 <tr>
                                     <th class="text-center small">NIK</th>
@@ -181,33 +185,29 @@
                                     <th class="text-center small">Nama Lengkap</th>
                                     <th class="text-center small">Tanggal Daftar</th>
                                     <th class="text-center small">Tanggal Pengambilan</th>
-                                    <!--<th class="text-center small">Status</th>
-                                    <th class="text-center small">Aksi</th>-->
-                                </tr>
+                                    <th class="text-center small">Status</th>
+                                    <th class="text-center small">Aksi</th>
                             </thead>
                             <tbody>
-                                <?php foreach($monitoring_kelahiran as $row) : ?>
+                                <?php if(!empty($search_result)) { ?>
+                                <?php foreach($search_result as $row) : ?>
                                 <tr>
                                     <td class="text-center"><?php print $row->nik; ?></td>
                                     <td class="text-center"><?php print $row->nm_kpl_keluarga; ?></td>
                                     <td class="text-center"><?php print $row->nama_ibu; ?></td>
                                     <td class="text-center"><?php print $row->nm_lengkap; ?></td>
-                                    <td class="text-center">
-                                        <?php echo date("d M Y H:i:s",strtotime($row->tgl_daftar)); ?></td>
+                                    <td class="text-center"><?php echo date("d M Y H:i:s",strtotime($row->tgl_daftar)); ?></td>
                                     <td class="text-center"><?php print $row->tgl_ambil; ?></td>
                                     <td class="text-center"><?php print $row->status; ?></td>
-                                    <!-- <td class="text-center">
-                                        <div class="btn-group">
-                                            <a href="<?php echo base_url()?>index.php/cetak/view_kelahiran/<?php print $row->nik; ?>/<?php print $row->id_berkas; ?>"
-                                                type="button" class="btn btn-primary"><b>Lihat</b></a>
-                                            <a href="<?php echo base_url()?>index.php/cetak/cetak_kelahiran/<?php print $row->nik; ?>/<?php print $row->id_berkas; ?>"
-                                                type="button" target="_blank" class="btn btn-success"><b>Cetak</b></a>
-                                        </div>
-                                    </td> -->
                                 </tr>
                                 <?php endforeach; ?>
+                                <?php } else { ?>
+                                <tr>
+                                    <td colspan="7" class="text-center">Maaf data yang anda cari tidak ada atau keywordnya salah</td>
+                                </tr>
+                                <?php } ?>
                             </tbody>
-                        </table> <br>
+                        </table>--> <br>
                     </div>
 
                     <!-- end of card -->

@@ -1,9 +1,9 @@
 <?php
-class Aktakematian extends CI_Controller{
+class Kesekretariatan extends CI_Controller{
     function __construct(){
         parent::__construct();
         
-        $this->load->model('aktakematian_model');
+        $this->load->model('kesekretariatan_model');
        // $this->load->library('upload');
         $this->load->helper(array('form', 'url','html'));
         
@@ -14,16 +14,16 @@ class Aktakematian extends CI_Controller{
     function index(){
 			$data=array(
             'title'=>'Data Kematian',
-            'data_kematian' =>$this->aktakematian_model->getAllDataKematian(),
+            'data_kematian' =>$this->kesekretariatan_model->getAllDataKesekretariatan(),
 			
         );
-        $this->load->view('admin/aktakematian',$data);
+        $this->load->view('admin/kesekretariatan',$data);
     }
 
     function editkematian($id){
             $data=array(
             'title'=>'Edit Kematian',
-            'data_kematian'=>$this->aktakematian_model->getDataKematianEdit($id),
+            'data_kematian'=>$this->kesekretariatan_model->getDataKesekretariatanEdit($id),
         );
         $this->load->view('admin/edit_kematian',$data);
     } 
@@ -31,7 +31,7 @@ class Aktakematian extends CI_Controller{
     function updatekematian($id){
             $data=array(
             'title'=>'Edit Kematian',
-            'data_kematian'=>$this->aktakematian_model->getDataKematianEdit($id),
+            'data_kematian'=>$this->kesekretariatan_model->getDataKesekretariatanEdit($id),
         );
         $this->load->view('admin/update_kematian',$data);
     } 
@@ -46,7 +46,7 @@ class Aktakematian extends CI_Controller{
       $this->form_validation->set_rules('tmptk', 'Tempat Kematian', 'required');
 
       if ($this->form_validation->run() == FALSE) {
-        $this->load->view('admin/aktakematian');
+        $this->load->view('admin/kesekretariatan');
       } else {
 
         $data=array(
@@ -67,12 +67,12 @@ class Aktakematian extends CI_Controller{
             'statuss'=>$this->input->post("statuss"),
         );
         $nik_kematian=$this->input->post("nikk");
-        $this->aktakematian_model->insertData('akta_kematian',$data);
+        $this->kesekretariatan_model->insertData('akta_kematian',$data);
         $sql="insert berkas_kematian(nik_kematian) values (?)";
         $this->db->query($sql,array($nik_kematian));
 
         $this->session->set_flashdata('notif','Pendaftaran Berhasil');
-        redirect("Aktakematian");
+        redirect("Kesekretariatan");
         }
     }
 
@@ -86,7 +86,7 @@ class Aktakematian extends CI_Controller{
       $this->form_validation->set_rules('tmptk', 'Tempat Kematian', 'required');
 
       if ($this->form_validation->run() == FALSE) {
-        $this->load->view('admin/aktakematian');
+        $this->load->view('admin/kesekretariatan');
       } else {
 
         $data=array(
@@ -106,29 +106,29 @@ class Aktakematian extends CI_Controller{
             'tgl_ambil'=>$this->input->post("tgll"),
             'statuss'=>$this->input->post("statuss"),
         );
-        $this->aktakematian_model->updateDatab('akta_kematian',$data, $id);
+        $this->kesekretariatan_model->updateDatab('akta_kematian',$data, $id);
         $this->session->set_flashdata('notif','Edit Berhasil');
-        redirect("Aktakematian");
+        redirect("Kesekretariatan");
       }
     }
 
     function hapus(){
         $id['nik_kematian'] = $this->uri->segment(3);
-        $this->aktakematian_model->deleteData('akta_kematian',$id);
+        $this->kesekretariatan_model->deleteData('akta_kematian',$id);
 
         $this->session->set_flashdata('notif','Hapus Data Berhasil');
-        redirect("Aktakematian");
+        redirect("Kesekretariatan");
     }
 
     function cari() {
-       $data['data_kematian']=$this->aktakematian_model->caridata();
+       $data['data_kematian']=$this->kesekretariatan_model->caridata();
        if($data['data_kematian']==null) {
           print 'Maaf data yang anda cari tidak ada atau keywordnya salah';
           print br(2);
-          print anchor('Aktakematian','kembali');
+          print anchor('Kesekretariatan','kembali');
           }
           else {
-             $this->load->view('admin/aktakematian',$data); 
+             $this->load->view('admin/kesekretariatan',$data); 
 
           }
     }
@@ -136,7 +136,7 @@ class Aktakematian extends CI_Controller{
     function indexdaftar(){
             $data=array(
             'title'=>'Data Kematian',
-            'data_kematian' =>$this->aktakematian_model->getAllDataKematian(),
+            'data_kematian' =>$this->kesekretariatan_model->getAllDataKesekretariatan(),
             
         );
         $this->load->view('web/daftar_kematian',$data);
@@ -145,7 +145,7 @@ class Aktakematian extends CI_Controller{
     function indexdaftar1(){
             $data=array(
             'title'=>'Data Kematian',
-            'data_kematian' =>$this->aktakematian_model->getAllDataKematian(),
+            'data_kematian' =>$this->kesekretariatan_model->getAllDataKesekretariatan(),
             
         );
         $this->load->view('admin/daftar_kematian',$data);
@@ -181,7 +181,7 @@ class Aktakematian extends CI_Controller{
             'statuss'=>$this->input->post("sts"),
         );
         $nik_kematian=$this->input->post("nikk");
-        $this->aktakematian_model->insertData('akta_kematian',$data);
+        $this->kesekretariatan_model->insertData('akta_kematian',$data);
         $sql="insert berkas_kematian(nik_kematian) values (?)";
         $this->db->query($sql,array($nik_kematian));
         redirect("Upload_Kematian");
@@ -218,7 +218,7 @@ class Aktakematian extends CI_Controller{
             'statuss'=>$this->input->post("sts"),
         );
         $nik_kematian=$this->input->post("nikk");
-        $this->aktakematian_model->insertData('akta_kematian',$data);
+        $this->kesekretariatan_model->insertData('akta_kematian',$data);
         $sql="insert berkas_kematian(nik_kematian) values (?)";
         $this->db->query($sql,array($nik_kematian));
         redirect("Upload_Kematian/index1");
@@ -226,11 +226,11 @@ class Aktakematian extends CI_Controller{
     }
 
     function cariweb() {
-       $data['monitoring_kematian']=$this->aktakematian_model->caridata();
+       $data['monitoring_kematian']=$this->kesekretariatan_model->caridata();
        if($data['monitoring_kematian']==null) {
           print 'Maaf data yang anda cari tidak ada atau keywordnya salah';
           print br(2);
-          print anchor('Aktakematian/indexmonitoring','kembali');
+          print anchor('Kesekretariatan/indexmonitoring','kembali');
           }
           else {
              $this->load->view('web/carimonitoring_kematian',$data); 
@@ -249,11 +249,11 @@ class Aktakematian extends CI_Controller{
     {
         $this->load->helper('url');
         $this->load->library('session');
-        $this->load->view('/web/kematian');
+        $this->load->view('/web/kesekretariatan');
     }
 
     function indexmonitoring() {
-        $data['monitoring_kematian'] = $this->aktakematian_model->getAllDataKematian();
+        $data['monitoring_kematian'] = $this->kesekretariatan_model->getAllDataKesekretariatan();
         $this->load->view('web/monitoring_kematian',$data);
   
     }

@@ -79,7 +79,7 @@ li a:hover:not(.active) {
                   <?php }
                                              }
                                                 ?>
-          <?php echo form_open_multipart('Upload_Kematian/simpanedit/'.$id)?>
+          <?php echo form_open_multipart('Upload_Kematian/uploadweb/'.$id)?>
                             <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">

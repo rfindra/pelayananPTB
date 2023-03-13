@@ -67,7 +67,7 @@ class Pindahdomisili extends CI_Controller{
         }
     }
     
-    function simpanedit($id){
+    function uploadweb($id){
       $this->form_validation->set_rules('nik', 'NIK', 'required|numeric');
       $this->form_validation->set_rules('nmkpl', 'Nama Kepala Keluarga', 'required');
       $this->form_validation->set_rules('nm', 'Nama Lengkap', 'required');

@@ -19,7 +19,7 @@
     <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
     <!-- Webpage Title -->
-    <title>Pelayanan Digital Pengadilan Tinggi Bandung</title>
+    <title>Kesekretariatan Pengadilan Tinggi Bandung</title>
 
     <!-- Styles -->
     <link
@@ -88,63 +88,90 @@
     </nav> <!-- end of navbar -->
     <!-- end of navigation -->
 
-    <!-- Projects -->
-    <div id="projects" class="cards-1" style="text-align: center;">
+    <!-- Services -->
+    <div id="services" class="basic-2 bg-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="h2-heading">PELAYANAN DIGITAL <br> PENGADILAN TINGGI BANDUNG </h2>
-                    <!--<p class="p-heading">Pengadilan Tinggi Bandung</p>--><br>
+                    <h2 class="h2-heading">PELAYANAN KESEKRETARIATAN <br> PENGADILAN TINGGI BANDUNG</h2>
+                    <!--  <p class="p-heading">Odio ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Tortor
+                        dignissim convallis aenean et. Eget magna fermentum iaculis eu non</p>
+                   -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
+            <br>
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-6">
+                    <ul class="list-unstyled first">
+                        <li class="media">
+                            <!--<i class="fas fa-rocket"></i>-->
+                            <div class="media-body">
+                                <h5> <strong>Informasi Kepegawaian</strong> </a></h5>
+                                <p>the quick brown fox jumped over the lazy dog </p>
+                                <a class="btn-solid-reg mb-5" href="index.html">Gunakan Layanan</a>
 
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-image">
-                            <a href="<?php echo base_url()?>index.php/Kepaniteraan/indexweb">
-                                <img class="img-fluid" src="assets/web/images/qrKepaniteraan.png" alt="alternative">
-                            </a>
-                        </div>
-                        <div class="card-body">
-                            <strong>Kepaniteraan </strong> - Pelayanan Kepaniteraan Pengadilan Tinggi Bandung
-                        </div>
-                    </div>
-                    <!-- end of card -->
+                            </div>
+                        </li>
+                        <li class="media">
+                           <!-- <i class="fas fa-bullhorn"></i>-->
+                            <div class="media-body">
+                                <h5> <strong>Audiensi Kepada Pimpinan</strong> </a></h5>
+                                <p>the quick brown fox jumped over the lazy dog </p>
+                                <a class="btn-solid-reg mb-5" href="index.html">Gunakan Layanan</a>
 
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-image">
-                            <a href="<?php echo base_url()?>index.php/Kesekretariatan/indexweb">
-                                <img class="img-fluid" src="assets/web/images/qrKesekretariatan.png" alt="alternative">
-                            </a>
-                        </div>
-                        <div class="card-body">
-                            <strong>Kesekretariatan </strong> - Pelayanan Kesekretariatan Pengadilan Tinggi Bandung
-                        </div>
-                    </div>
-                    <!-- end of card -->
+                            </div>
+                        </li>
+                        <li class="media">
+                            <!--<i class="fas fa-font"></i>-->
+                            <div class="media-body">
+                                <h5> <strong>Izin Riset / Penelitian</strong> </a></h5>
+                                <p>the quick brown fox jumped over the lazy dog </p>
+                                <a class="btn-solid-reg mb-5" href="index.html">Gunakan Layanan</a>
 
-                    <!-- Card 
-                    <div class="card">
-                        <div class="card-image">
-                            <a href="http://e-peduli.pt-bandung.go.id/#09" target="_blank">
-                                <img class="img-fluid" src="images/qrpeduli.png" alt="alternative">
-                            </a>
-                        </div>
-                        <div class="card-body">
-                            <strong>e-Peduli</strong> - Pelayanan Perlindungan Hukum dan Pengaduan Pengadilan Tinggi
-                            Bandung
-                        </div>
-                    </div>
-                    end of card -->
+                            </div>
+                        </li>
+                    </ul>
                 </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <ul class="list-unstyled second">
+                        <li class="media">
+                           <!-- <i class="fas fa-keyboard"></i>-->
+                            <div class="media-body">
+                                <h5> <strong>Praktik Kerja Industi (Prakerin)
+                                    </strong> </a></h5>
+                                <p>the quick brown fox jumped over the lazy dog </p>
+                                <a class="btn-solid-reg mb-5" href="index.html">Gunakan Layanan</a>
+
+                            </div>
+                        </li>
+                        <li class="media">
+                            <!--<i class="fas fa-photo-video"></i>-->
+                            <div class="media-body">
+                                <h5> <strong>Informasi Lainnya </strong> </a>
+                                </h5>
+                                <p>Hubungi Petugas Pelayanan Terpadu Satu Pintu (PTSP)</p>
+                                <a class="btn-solid-reg mb-5" href="https://meet.jit.si/digitalmelayani" target="_blank">Gunakan Layanan</a>
+
+                            </div>
+                        </li>
+                        <li class="media">
+                            <!--<i class="fas fa-users"></i>-->
+                            <div class="media-body">
+                                <h5> <strong>on Progress . . . . </strong> </a>
+                                </h5>
+                                <p>the quick brown fox jumped over the lazy dog </p>
+                                <a class="btn-solid-reg mb-5" href="index.html">Gunakan Layanan</a>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div> <!-- end of col -->
+                <a style="float: right;" class="btn-solid-reg mb-5" href="index.php">Kembali</a>
+
             </div> <!-- end of row -->
         </div> <!-- end of container -->
-    </div> <!-- end of cards-1 -->
-    <!-- end of projects -->
-
+    </div> <!-- end of basic-2 -->
+    <!-- end of services -->
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->

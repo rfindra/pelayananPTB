@@ -102,7 +102,7 @@ class Berkas extends CI_Controller{
         $this->load->view('admin/edit_berkas',$data);
     } 
 
-    function simpanedit($id){
+    function uploadweb($id){
 
         $config['upload_path'] = 'uploads/';
         $config['allowed_types'] = 'gif|jpg|png|jpeg';

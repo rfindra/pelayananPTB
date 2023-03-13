@@ -1,36 +1,37 @@
 <?php
-class Upload_Kematian extends CI_Controller{
+
+class UploadLegalisasi extends CI_Controller{
     function __construct(){
         parent::__construct();
         
-        $this->load->model('berkas1_model');
-
+        $this->load->model('berkas_model');
         $this->load->helper(array('form', 'url'));
-        
         $this->load->library('upload');
     }
 
     function index(){
             $data=array(
-            'title'=>'Data Berkas1',
-            'data_berkas1' =>$this->berkas1_model->getAllDataBerkas1(),
+            'title'=>'data berkas',
+            'data_berkas' =>$this->berkas_model->getAlldataberkas(),
             
         );
-        $this->load->view('web/upload_kematian',$data);
+        $this->load->view('web/uploadlegalisasi',$data);
     }
-
     function index1(){
             $data=array(
-            'title'=>'Data Berkas1',
-            'data_berkas1' =>$this->berkas1_model->getAllDataBerkas1(),
+            'title'=>'data berkas',
+            'data_berkas' =>$this->berkas_model->getAlldataberkas(),
             
         );
-        $this->load->view('admin/upload_kematian',$data);
+        $this->load->view('admin/uploadlegalisasi',$data);
     }
 
-     function uploadweb($id){
+function uploadweb($id){
+        //check if "gambar" index exist in $_FILES array
+        if (isset($_FILES['gambar'])) {
 
-        $config['upload_path'] = 'uploads/';
+
+        $config['upload_path'] = './uploads/';
         $config['allowed_types'] = 'gif|jpg|png|jpeg';
         $config['max_size']   = '10000';
         $config['max_width']  = '20000';
@@ -50,11 +51,10 @@ class Upload_Kematian extends CI_Controller{
             if (!$this->upload->do_upload())
             {
                 // fail
-               $gambar="";
-               $gbkk="";
-               $gban="";
-               $gbrt="";
-               $gbrw="";
+               $gbrktp="";
+               $gbrkta="";
+               $gbrbas="";
+               // $gbrkuasa="";
                echo $this->upload->display_errors();
               
             }
@@ -63,80 +63,100 @@ class Upload_Kematian extends CI_Controller{
                $images[$i] = $fileName;
             }
         }
-       
-        $gambar=$images[0];
-        $gbkk=$images[1];
-        $gban=$images[2];
-        $gbrt=$images[3];
-        $gbrw=$images[4];
+        print_r($images);
+        $gbrktp=$images[0];
+        $gbrkta=$images[1];
+        $gbrbas=$images[2];
+        
+        // modify this block
+                if (isset($images[3])) {
+                    $gbrkuasa=$images[3];
+                  } else {
+                    $gbrkuasa="";
+                  }
           
         $data=array(
-            //'id_berkass'=>$this->session->userdata('ID'),
-            //'nik_kematian'=>$this->input->post('nikk'),
-            'ftcop_akta_kelahiran'=>$gambar,
-            'ftcop_akta_perkawinan'=>$gbkk,
-            'ktpp'=>$gban,
-            'srt_ket_rt'=>$gbrt,
-            'srt_ket_rw'=>$gbrw,
+            //'id_berkas'=>$this->session->userdata('ID'),
+            //'nik'=>$this->input->post('nik'),
+            'ktp'=>$gbrktp,
+            'kta'=>$gbrkta,
+            'bas'=>$gbrbas,
+            'kuasa'=>$gbrkuasa,
         );
         
-        $this->berkas1_model->updateDatab('berkas_kematian',$data,$id);
-        redirect("Aktakematian/indexweb");
-    }
-
-    function uploadweb1($id){
-
-        $config['upload_path'] = 'uploads/';
-        $config['allowed_types'] = 'gif|jpg|png|jpeg';
-        $config['max_size']   = '10000';
-        $config['max_width']  = '20000';
-        $config['max_height']  = '20000';
-        $config['remove_spaces']  = FALSE;
-      
-        $upload_error=array();
-        $this->upload->initialize($config);
-        for($i=0; $i<count($_FILES['gambar']['name']); $i++)
-        {
-            $_FILES['userfile']['name']= $_FILES['gambar']['name'][$i];
-            $_FILES['userfile']['type']= $_FILES['gambar']['type'][$i];
-            $_FILES['userfile']['tmp_name']= $_FILES['gambar']['tmp_name'][$i];
-            $_FILES['userfile']['error']= $_FILES['gambar']['error'][$i];
-            $_FILES['userfile']['size']= $_FILES['gambar']['size'][$i];
-            
-            if (!$this->upload->do_upload())
-            {
-                // fail
-               $gambar="";
-               $gbkk="";
-               $gban="";
-               $gbrt="";
-               $gbrw="";
-               echo $this->upload->display_errors();
-              
-            }
-            else {
-              echo $fileName = $_FILES['gambar']['name'][$i];
-               $images[$i] = $fileName;
-            }
-        }
-       
-        $gambar=$images[0];
-        $gbkk=$images[1];
-        $gban=$images[2];
-        $gbrt=$images[3];
-        $gbrw=$images[4];
-          
-        $data=array(
-            //'id_berkass'=>$this->session->userdata('ID'),
-            //'nik_kematian'=>$this->input->post('nikk'),
-            'ftcop_akta_kelahiran'=>$gambar,
-            'ftcop_akta_perkawinan'=>$gbkk,
-            'ktpp'=>$gban,
-            'srt_ket_rt'=>$gbrt,
-            'srt_ket_rw'=>$gbrw,
-        );
+        $this->berkas_model->updateDatab('berkas',$data,$id);
+        //if ($this->db->error()['message']) {
+            //echo $this->db->error()['message'];
+        //}
         
-        $this->berkas1_model->updateDatab('berkas_kematian',$data,$id);
-        redirect("Aktakematian");
+        redirect(base_url("Legalisasibas/indexweb"));
+
     }
 }
+
+    function uploadadmin($id){
+               //check if "gambar" index exist in $_FILES array
+                if (isset($_FILES['gambar'])) {
+
+
+        $config['upload_path'] = './uploads/';
+        $config['allowed_types'] = 'gif|jpg|png|jpeg';
+        $config['max_size']   = '10000';
+        $config['max_width']  = '20000';
+        $config['max_height']  = '20000';
+        $config['remove_spaces']  = FALSE;
+      
+        $upload_error=array();
+        $this->upload->initialize($config);
+        for($i=0; $i<count($_FILES['gambar']['name']); $i++)
+        {
+            $_FILES['userfile']['name']= $_FILES['gambar']['name'][$i];
+            $_FILES['userfile']['type']= $_FILES['gambar']['type'][$i];
+            $_FILES['userfile']['tmp_name']= $_FILES['gambar']['tmp_name'][$i];
+            $_FILES['userfile']['error']= $_FILES['gambar']['error'][$i];
+            $_FILES['userfile']['size']= $_FILES['gambar']['size'][$i];
+            
+            if (!$this->upload->do_upload())
+            {
+                // fail
+               $gbrktp="";
+               $gbrkta="";
+               $gbrbas="";
+               //$gbrkuasa="";
+               echo $this->upload->display_errors();
+              
+            }
+            else {
+              echo $fileName = $_FILES['gambar']['name'][$i];
+               $images[$i] = $fileName;
+            }
+        }
+       
+        print_r($images);
+        $gbrktp=$images[0];
+        $gbrkta=$images[1];
+        $gbrbas=$images[2];
+        
+        // modify this block
+        if (isset($images[3])) {
+            $gbrkuasa=$images[3];
+          } else {
+            $gbrkuasa="";
+          }
+  
+        $data=array(
+            //'id_berkas'=>$this->session->userdata('ID'),
+            //'nik'=>$this->input->post('nik'),
+            'ktp'=>$gbrktp,
+            'kta'=>$gbrkta,
+            'bas'=>$gbrbas,
+            'kuasa'=>$gbrkuasa,
+        );
+        
+        $this->berkas_model->updateDatab('berkas',$data,$id);      
+        redirect("Legalisasibas");
+
+    }
+}
+}
+?>

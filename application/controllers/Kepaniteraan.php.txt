@@ -1,9 +1,9 @@
 <?php
-class Aktakelahiran extends CI_Controller{
+class Kepaniteraan extends CI_Controller{
     function __construct(){
         parent::__construct();
                 
-        $this->load->model('aktakelahiran_model');
+        $this->load->model('kepaniteraan_model');
        // $this->load->library('upload');
         $this->load->helper(array('form', 'url', 'html'));
         
@@ -14,16 +14,16 @@ class Aktakelahiran extends CI_Controller{
     function index(){
 			$data=array(
             'title'=>'Data Kelahiran',
-            'data_kelahiran' =>$this->aktakelahiran_model->getAllDataKelahiran(),
+            'data_kelahiran' =>$this->kepaniteraan_model->getAllDataKepaniteraan(),
 			
         );
-        $this->load->view('admin/aktakelahiran',$data);
+        $this->load->view('admin/kepaniteraan',$data);
     }
 
     function editkelahiran($id){
             $data=array(
             'title'=>'Edit Kelahiran',
-            'data_kelahiran'=>$this->aktakelahiran_model->getDataKelahiranEdit($id),
+            'data_kelahiran'=>$this->kepaniteraan_model->getDataKepaniteraanEdit($id),
         );
         $this->load->view('admin/edit_kelahiran',$data);
     }
@@ -31,7 +31,7 @@ class Aktakelahiran extends CI_Controller{
     function updatekelahiran($id){
             $data=array(
             'title'=>'Edit Kelahiran',
-            'data_kelahiran'=>$this->aktakelahiran_model->getDataKelahiranEdit($id),
+            'data_kelahiran'=>$this->kepaniteraan_model->getDataKepaniteraanEdit($id),
         );
         $this->load->view('admin/update_kelahiran',$data);
     } 
@@ -44,7 +44,7 @@ class Aktakelahiran extends CI_Controller{
       $this->form_validation->set_rules('kab', 'Kabupaten', 'required');
 
       if ($this->form_validation->run() == FALSE) {
-        $this->load->view('admin/aktakelahiran');
+        $this->load->view('admin/kepaniteraan');
       } else {
 
         $data=array(
@@ -61,12 +61,12 @@ class Aktakelahiran extends CI_Controller{
         );
 
         $nik=$this->input->post("nik");
-        $this->aktakelahiran_model->insertData('akta_kelahiran',$data);
+        $this->kepaniteraan_model->insertData('akta_kelahiran',$data);
         $sql="insert berkas(nik) values (?)";
         $this->db->query($sql,array($nik));
 
         $this->session->set_flashdata('notif','Pendaftaran Berhasil');
-        redirect("Aktakelahiran");
+        redirect("Kepaniteraan");
         }
     }
 
@@ -78,7 +78,7 @@ class Aktakelahiran extends CI_Controller{
       $this->form_validation->set_rules('kab', 'Kabupaten', 'required');
 
       if ($this->form_validation->run() == FALSE) {
-        $this->load->view('admin/aktakelahiran');
+        $this->load->view('admin/kepaniteraan');
       } else {
 
         $data=array(
@@ -94,29 +94,29 @@ class Aktakelahiran extends CI_Controller{
             'status'=>$this->input->post("status"),
         );
         
-        $this->aktakelahiran_model->updateDatab('akta_kelahiran',$data, $id);
+        $this->kepaniteraan_model->updateDatab('akta_kelahiran',$data, $id);
         $this->session->set_flashdata('notif','Edit Berhasil');
-        redirect("Aktakelahiran");
+        redirect("Kepaniteraan");
       }
     }
 
     function hapus(){
         $id['nik'] = $this->uri->segment(3);
-        $this->aktakelahiran_model->deleteData('akta_kelahiran',$id);
+        $this->kepaniteraan_model->deleteData('akta_kelahiran',$id);
 
         $this->session->set_flashdata('notif','Hapus Data Berhasil');
-        redirect("Aktakelahiran");
+        redirect("Kepaniteraan");
     }
 
     function cari() {
-       $data['data_kelahiran']=$this->aktakelahiran_model->caridata();
+       $data['data_kelahiran']=$this->kepaniteraan_model->caridata();
        if($data['data_kelahiran']==null) {
           print 'Maaf data yang anda cari tidak ada atau keywordnya salah';
           print br(2);
-          print anchor('Aktakelahiran','kembali');
+          print anchor('Kepaniteraan','kembali');
           }
           else {
-             $this->load->view('admin/aktakelahiran',$data); 
+             $this->load->view('admin/kepaniteraan',$data); 
 
           }
     }
@@ -124,19 +124,19 @@ class Aktakelahiran extends CI_Controller{
     function indexdaftar(){
       $data=array(
             'title'=>'Data Kelahiran',
-            'data_kelahiran' =>$this->aktakelahiran_model->getAllDataKelahiran(),
+            'data_kelahiran' =>$this->kepaniteraan_model->getAllDataKepaniteraan(),
       
         );
-        $this->load->view('web/daftar_kelahiran',$data);
+        $this->load->view('web/daftar_kepaniteraan',$data);
     }
 
     function indexdaftar1(){
       $data=array(
             'title'=>'Data Kelahiran',
-            'data_kelahiran' =>$this->aktakelahiran_model->getAllDataKelahiran(),
+            'data_kelahiran' =>$this->kepaniteraan_model->getAllDataKepaniteraan(),
       
         );
-        $this->load->view('admin/daftar_kelahiran',$data);
+        $this->load->view('admin/daftar_kepaniteraan',$data);
     }
 
     function daftarkelahiran(){
@@ -147,7 +147,7 @@ class Aktakelahiran extends CI_Controller{
       $this->form_validation->set_rules('kab', 'Kabupaten', 'required');
 
       if ($this->form_validation->run() == FALSE) {
-        $this->load->view('web/daftar_kelahiran');
+        $this->load->view('web/daftar_kepaniteraan');
       } else {
         $data=array(
             'nik'=>$this->input->post('nik'),
@@ -163,7 +163,7 @@ class Aktakelahiran extends CI_Controller{
         );
 
         $nik=$this->input->post("nik");
-        $this->aktakelahiran_model->insertData('akta_kelahiran',$data);
+        $this->kepaniteraan_model->insertData('akta_kelahiran',$data);
         $sql="insert berkas(nik) values (?)";
         $this->db->query($sql,array($nik));
         redirect("upload_kelahiran");
@@ -178,7 +178,7 @@ class Aktakelahiran extends CI_Controller{
       $this->form_validation->set_rules('kab', 'Kabupaten', 'required');
 
       if ($this->form_validation->run() == FALSE) {
-        $this->load->view('web/daftar_kelahiran');
+        $this->load->view('web/daftar_kepaniteraan');
       } else {
         $data=array(
             'nik'=>$this->input->post('nik'),
@@ -194,7 +194,7 @@ class Aktakelahiran extends CI_Controller{
         );
 
         $nik=$this->input->post("nik");
-        $this->aktakelahiran_model->insertData('akta_kelahiran',$data);
+        $this->kepaniteraan_model->insertData('akta_kelahiran',$data);
         $sql="insert berkas(nik) values (?)";
         $this->db->query($sql,array($nik));
         redirect("upload_kelahiran/index1");
@@ -202,11 +202,11 @@ class Aktakelahiran extends CI_Controller{
     }
 
     function cariweb() {
-       $data['monitoring_kelahiran']=$this->aktakelahiran_model->caridata();
+       $data['monitoring_kelahiran']=$this->kepaniteraan_model->caridata();
        if($data['monitoring_kelahiran']==null) {
           print 'Maaf data yang anda cari tidak ada atau keywordnya salah';
           print br(2);
-          print anchor('Aktakelahiran/indexmonitoring','kembali');
+          print anchor('Kepaniteraan/indexmonitoring','kembali');
           }
           else {
              $this->load->view('web/carimonitoring_kelahiran',$data); 
@@ -225,11 +225,11 @@ class Aktakelahiran extends CI_Controller{
     {
       $this->load->helper('url');
       $this->load->library('session');
-      $this->load->view('/web/kelahiran');
+      $this->load->view('/web/kepaniteraan');
     }
 
     function indexmonitoring() {
-        $data['monitoring_kelahiran'] = $this->aktakelahiran_model->getAllDataKelahiran();
+        $data['monitoring_kelahiran'] = $this->kepaniteraan_model->getAllDataKepaniteraan();
         $this->load->view('web/monitoring_kelahiran',$data);
   
     }

@@ -27,7 +27,7 @@ class Upload_Kelahiran extends CI_Controller{
         $this->load->view('admin/upload_kelahiran',$data);
     }
 
-    function simpanedit($id){
+    function uploadweb($id){
 
         $config['upload_path'] = 'uploads/';
         $config['allowed_types'] = 'gif|jpg|png|jpeg';
@@ -86,7 +86,7 @@ class Upload_Kelahiran extends CI_Controller{
         redirect("Aktakelahiran/indexweb");
     }
 
-    function simpanedit1($id){
+    function uploadweb1($id){
 
         $config['upload_path'] = 'uploads/';
         $config['allowed_types'] = 'gif|jpg|png|jpeg';
