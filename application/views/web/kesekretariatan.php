@@ -167,8 +167,6 @@
                         </li>
                     </ul>
                 </div> <!-- end of col -->
-                <a style="float: right;" class="btn-solid-reg mb-5" href="index.php">Kembali</a>
-
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of basic-2 -->

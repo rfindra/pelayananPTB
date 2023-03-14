@@ -36,16 +36,14 @@
 
 <body data-spy="scroll" data-target=".fixed-top">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+<nav class="navbar navbar-expand-lg fixed-top navbar-light">
         <div class="container">
 
             <!-- Text Logo - Use this if you don't have a graphic logo -->
             <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Name</a> -->
 
-            <!-- Image Logo -->
+            <!-- Image Logo --> 
             <a class="navbar-brand logo-image" href="<?php echo base_url()?>index.php"><img src="assets/web/images/logo.png" alt="alternative"></a>
-
 
             <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
                 <span class="navbar-toggler-icon"></span>
@@ -207,8 +205,6 @@
 
                     </ul>
                 </div> <!-- end of col -->
-                <a style="float: right;" class="btn-solid-reg mb-5" href="/Kepaniteraan/index.php">Kembali</a>
-
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of basic-2 -->
