@@ -62,11 +62,11 @@
                     -->
                     <li class="nav-item">
                         <a class="nav-link page-scroll"
-                            href="<?php echo base_url()?>index.php/Aktakelahiran/indexweb">Kepaniteraan</a>
+                            href="<?php echo base_url()?>index.php/Kepaniteraan/indexweb">Kepaniteraan</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link page-scroll"
-                            href="<?php echo base_url()?>index.php/Aktakematian/indexweb">Kesekretariatan</a>
+                            href="<?php echo base_url()?>index.php/Kesekretariatan/indexweb">Kesekretariatan</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="https://meet.jit.si/digitalmelayani"
@@ -108,70 +108,80 @@
                     <!-- Card -->
                     <div class="card">
                         <div class="card-image">
-                            <a href="#" onclick="toggleForm('form2')">
+                            <a href="#" onload="toggleForm('form1')">
                                 <i class="fa-solid fa-magnifying-glass icon"></i>
                             </a>
                         </div>
                         <div class="card-body">
-                            <strong>Upload </strong> <br> Dokumen Persyaratan Legalisasi
+                            <strong>Upload</strong> <br> Dokumen Persyaratan Legalisasi
                         </div>
                     </div>
+                    <!-- End of Card -->
 
                     <!-- Form 1 -->
-                    <div id="form2" style="display:none;">
-                        <?php
-                                            if(isset($data_berkas)){
-                                                foreach($data_berkas as $row){
-                                                  $id = $row->id_berkas;
-                                            ?>
-                        <?php }
-                                             }
-                                                ?>
-                        <?php echo form_open_multipart('UploadLegalisasi/simpanedit/'.$id)?>
-                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-body">
+                    <div id="form1" style="display:block;">
+    <?php if(isset($data_berkas)){
+        foreach($data_berkas as $row){
+            $id = $row->id_berkas;
+        }
+    } ?>
+    <?php echo form_open_multipart('UploadLegalisasi/uploadImages/'.$id, array('id' => 'myForm', 'onsubmit' => 'return redirectAfterSubmit()'))?>
+    <div class="form-group">
+        <label for="gambar[]">Foto KTP:</label>
+        <input type="file" name="gambar[]" id="gambar[]">
+    </div>
+    <div class="form-group">
+        <label for="gambar[]">Foto KTA:</label>
+        <input type="file" name="gambar[]" id="gambar[]">
+    </div>
+    <div class="form-group">
+        <label for="gambar[]">Foto BAS Asli:</label>
+        <input type="file" name="gambar[]" id="gambar[]">
+    </div>
+    <div class="form-group">
+        <label for="gambar[]">Foto Surat Kuasa:</label>
+        <input type="file" name="gambar[]" id="gambar[]">
+    </div>
+    <div class="form-group">
+        <input type="submit" name="submit" value="Upload">
+    </div>
+    <?php echo form_close(); ?>
+</div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- /.modal -->
 
-                                        <div class="form-group">
-                                            <label>Foto KTP</label>
-                                            <input type="file" class="form-control" name="gambar[]" size="50">
-                                        </div><br>
-                                        <div class="form-group">
-                                            <label>Foto KTA</label>
-                                            <input type="file" class="form-control" name="gambar[]" size="50">
-                                        </div><br>
-                                        <div class="form-group">
-                                            <label>Foto BAS Asli</label>
-                                            <input type="file" class="form-control" name="gambar[]" size="50">
-                                        </div><br>
-                                        <div class="form-group">
-                                            <label>Foto Surat Kuasa</label>
-                                            <input type="file" class="form-control" name="gambar[]" size="50">
-                                        </div><br>
-                                        <div class="modal-footer">
-                                            <button type="submit" class="btn btn-primary">Save</button>
-                                        </div>
-                                    </div>
-                                    <!-- /.modal-content -->
-                                </div>
-                                <!-- /.modal-dialog -->
-                            </div>
-                            <!-- /.modal -->
+        </div> <!-- end of col -->
+    </div> <!-- end of row -->
+    </div> <!-- end of container -->
+    </div> <!-- end of cards-1 -->
+    <!-- end of projects -->
 
-                        </div> <!-- end of col -->
-                    </div> <!-- end of row -->
-                </div> <!-- end of container -->
-            </div> <!-- end of cards-1 -->
-            <!-- end of projects -->
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <script>
+        function toggleForm(formId) {
+            var form = document.getElementById(formId);
+            if (form.style.display === "none") {
+                form.style.display = "block";
+            } else {
+                form.style.display = "none";
+            }
+        }
 
-            <!-- Scripts -->
-            <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-            <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-            <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-            <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
-            <script src="js/scripts.js"></script> <!-- Custom scripts -->
+        function redirectAfterSubmit() {
+            // redirect to the desired URL
+            window.location.href = '<?php echo base_url()?>index.php/Legalisasibas/indexweb';
+            // return false to prevent the default form submission behavior
+            return false;
+        }
+    </script>
 </body>
 
 </html>

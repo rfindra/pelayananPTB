@@ -19,7 +19,7 @@
     <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
     <!-- Webpage Title -->
-    <title>Kepaniteraan Pengadilan Tinggi Bandung</title>
+    <title>Kesekretariatan Pengadilan Tinggi Bandung</title>
 
     <!-- Styles -->
     <link
@@ -31,7 +31,6 @@
 
     <!-- Favicon  -->
     <link rel="icon" href="assets/web/images/favicon.png">
-
 </head>
 
 <body data-spy="scroll" data-target=".fixed-top">
@@ -44,7 +43,7 @@
             <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Name</a> -->
 
             <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="<?php echo base_url()?>index.php"><img src="assets/web/images/logo.svg" alt="alternative"></a>
+            <a class="navbar-brand logo-image" href="<?php echo base_url()?>index.php"><img src="assets/web/images/logo.png" alt="alternative"></a>
 
             <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
                 <span class="navbar-toggler-icon"></span>
@@ -58,10 +57,10 @@
                         </li>  
                     -->
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="<?php echo base_url()?>index.php/Aktakelahiran/indexweb">Kepaniteraan</a>
+                        <a class="nav-link page-scroll" href="<?php echo base_url()?>index.php/Kepaniteraan/indexweb">Kepaniteraan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="<?php echo base_url()?>index.php/Aktakematian/indexweb">Kesekretariatan</a>
+                        <a class="nav-link page-scroll" href="<?php echo base_url()?>index.php/Kesekretariatan/indexweb">Kesekretariatan</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="https://meet.jit.si/digitalmelayani"
@@ -94,71 +93,51 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="h2-heading">PELAYANAN KEPANITERAAN <br> PENGADILAN TINGGI BANDUNG</h2>
-                    <!--    <p class="p-heading">Odio ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Tortor
+                    <h2 class="h2-heading">PELAYANAN KESEKRETARIATAN <br> PENGADILAN TINGGI BANDUNG</h2>
+                    <!--  <p class="p-heading">Odio ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Tortor
                         dignissim convallis aenean et. Eget magna fermentum iaculis eu non</p>
-                -->
+                   -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
-<br>
+            <br>
             <div class="row">
                 <div class="col-lg-6">
                     <ul class="list-unstyled first">
                         <li class="media">
-                            <!--<i class="fas fa-clock"></i>-->
+                            <!--<i class="fas fa-rocket"></i>-->
                             <div class="media-body">
-                                <h5>  <strong>Penangguhan Penahanan</strong> </a></h5>
+                                <h5> <strong>Informasi Kepegawaian</strong> </a></h5>
                                 <p>the quick brown fox jumped over the lazy dog </p>
                                 <a class="btn-solid-reg mb-5" href="index.html">Gunakan Layanan</a>
 
                             </div>
                         </li>
                         <li class="media">
-                            <!--<i class="fas fa-bullhorn"></i>-->
+                           <!-- <i class="fas fa-bullhorn"></i>-->
                             <div class="media-body">
-                                <h5>  <strong>Pengalihan Penahanan</strong> </a></h5>
+                                <h5> <strong>Audiensi Kepada Pimpinan</strong> </a></h5>
                                 <p>the quick brown fox jumped over the lazy dog </p>
-                                <a class="btn-solid-reg mb-5" href="index.html">Gunakan Layanan</a>
-
-                            </div>
-                        </li>
-                        <li class="media">
-                            <!--<i class="fas fa-font"></i>-->
-                            <div class="media-body">
-                                <h5>  <strong>Pembantaran Penahanan</strong> </a></h5>
-                                <p>the quick brown fox jumped over the lazy dog </p>
-                                <a class="btn-solid-reg mb-5" href="index.html">Gunakan Layanan</a>
-
+                                <a class="btn-solid-reg mb-5" href="<?php echo base_url()?>index.php/Audiensi/indexweb">Gunakan Layanan</a>
                             </div>
                         </li>
                         <li class="media">
                             <!--<i class="fas fa-font"></i>-->
                             <div class="media-body">
-                                <h5>  <strong>Izin Besuk Tahanan</strong> </a></h5>
+                                <h5> <strong>Izin Riset / Penelitian</strong> </a></h5>
                                 <p>the quick brown fox jumped over the lazy dog </p>
                                 <a class="btn-solid-reg mb-5" href="index.html">Gunakan Layanan</a>
 
                             </div>
                         </li>
-                        <li class="media">
-                            <!--<i class="fas fa-font"></i>-->
-                            <div class="media-body">
-                                <h5>  <strong>Penahanan</strong> </a></h5>
-                                <p>the quick brown fox jumped over the lazy dog </p>
-                                <a class="btn-solid-reg mb-5" href="index.html">Gunakan Layanan</a>
-
-                            </div>
-                        </li>
-
                     </ul>
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
                     <ul class="list-unstyled second">
                         <li class="media">
-                            <!--<i class="fas fa-keyboard"></i>-->
+                           <!-- <i class="fas fa-keyboard"></i>-->
                             <div class="media-body">
-                                <h5>  <strong>Penyerahan Memori, Kontra Memori Banding
-                                        </strong> </a></h5>
+                                <h5> <strong>Praktik Kerja Industi (Prakerin)
+                                    </strong> </a></h5>
                                 <p>the quick brown fox jumped over the lazy dog </p>
                                 <a class="btn-solid-reg mb-5" href="index.html">Gunakan Layanan</a>
 
@@ -167,43 +146,23 @@
                         <li class="media">
                             <!--<i class="fas fa-photo-video"></i>-->
                             <div class="media-body">
-                                <h5>  <strong>Penyerahan Tambahan Alat Bukti </strong> </a>
+                                <h5> <strong>Informasi Lainnya </strong> </a>
                                 </h5>
-                                <p>the quick brown fox jumped over the lazy dog </p>
-                                <a class="btn-solid-reg mb-5" href="index.html">Gunakan Layanan</a>
+                                <p>Hubungi Petugas Pelayanan Terpadu Satu Pintu (PTSP)</p>
+                                <a class="btn-solid-reg mb-5" href="https://meet.jit.si/digitalmelayani" target="_blank">Gunakan Layanan</a>
 
                             </div>
                         </li>
                         <li class="media">
                             <!--<i class="fas fa-users"></i>-->
                             <div class="media-body">
-                                <h5>  <strong>Informasi Status Perkara Banding </strong> </a>
+                                <h5> <strong>on Progress . . . . </strong> </a>
                                 </h5>
                                 <p>the quick brown fox jumped over the lazy dog </p>
                                 <a class="btn-solid-reg mb-5" href="index.html">Gunakan Layanan</a>
 
                             </div>
                         </li>
-                        <li class="media">
-                            <!--<i class="fas fa-"></i>-->
-                            <div class="media-body">
-                                <h5>  <strong>Legalisasi Berita Acara Sumpah Advokat </strong>
-                                    </a></h5>
-                                <p>the quick brown fox jumped over the lazy dog </p>
-                                <a class="btn-solid-reg mb-5" href="<?php echo base_url()?>index.php/Legalisasibas/indexweb">Gunakan Layanan</a>
-
-                            </div>
-                        </li>
-                        <li class="media">
-                            <!--<i class="fas fa-hand-holding"></i>-->
-                            <div class="media-body">
-                                <h5>  <strong>Pengaduan Melalui E-Peduli </strong> </a></h5>
-                                <p>the quick brown fox jumped over the lazy dog </p>
-                                <a class="btn-solid-reg mb-5" href="http://e-peduli.pt-bandung.go.id/#09" target="_blank">Gunakan Layanan</a>
-
-                            </div>
-                        </li>
-
                     </ul>
                 </div> <!-- end of col -->
                 <a style="float: right;" class="btn-solid-reg mb-5" href="index.php">Kembali</a>

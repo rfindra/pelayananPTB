@@ -42,8 +42,8 @@
             <!-- Text Logo - Use this if you don't have a graphic logo -->
             <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Name</a> -->
 
-            <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="<?php echo base_url()?>index.php"><img src="assets/web/images/logo.svg" alt="alternative"></a>
+            <!-- Image Logo --> 
+            <a class="navbar-brand logo-image" href="<?php echo base_url()?>index.php"><img src="assets/web/images/logo.png" alt="alternative"></a>
 
             <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
                 <span class="navbar-toggler-icon"></span>
@@ -57,10 +57,10 @@
                         </li>  
                     -->
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="<?php echo base_url()?>index.php/Aktakelahiran/indexweb">Kepaniteraan</a>
+                        <a class="nav-link page-scroll" href="<?php echo base_url()?>index.php/Kepaniteraan/indexweb">Kepaniteraan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="<?php echo base_url()?>index.php/Aktakematian/indexweb">Kesekretariatan</a>
+                        <a class="nav-link page-scroll" href="<?php echo base_url()?>index.php/Kesekretariatan/indexweb">Kesekretariatan</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="https://meet.jit.si/digitalmelayani"
@@ -103,7 +103,7 @@
                     <!-- Card -->
                     <div class="card">
                         <div class="card-image">
-                            <a href="<?php echo base_url()?>index.php/Aktakelahiran/indexweb">
+                            <a href="<?php echo base_url()?>index.php/Kepaniteraan/indexweb">
                                 <img class="img-fluid" src="assets/web/images/qrKepaniteraan.png" alt="alternative">
                             </a>
                         </div>
@@ -116,7 +116,7 @@
                     <!-- Card -->
                     <div class="card">
                         <div class="card-image">
-                            <a href="<?php echo base_url()?>index.php/Aktakematian/indexweb">
+                            <a href="<?php echo base_url()?>index.php/Kesekretariatan/indexweb">
                                 <img class="img-fluid" src="assets/web/images/qrKesekretariatan.png" alt="alternative">
                             </a>
                         </div>

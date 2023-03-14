@@ -75,7 +75,7 @@ li a:hover:not(.active) {
                                              }
                                                 ?>
 
-          <?php echo form_open_multipart('Upload_Kelahiran/simpanedit1/'.$id)?>
+          <?php echo form_open_multipart('Upload_Kelahiran/uploadadmin/'.$id)?>
                             <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">

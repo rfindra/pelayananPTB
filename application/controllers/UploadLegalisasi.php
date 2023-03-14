@@ -1,136 +1,85 @@
 <?php
-class UploadLegalisasi extends CI_Controller{
-    function __construct(){
+
+class UploadLegalisasi extends CI_Controller {
+    public function __construct() {
         parent::__construct();
-        
         $this->load->model('berkas_model');
-       // $this->load->library('upload');
-        $this->load->helper(array('form', 'url'));
-        
+        $this->load->helper(['form', 'url']);
+    }
+
+    private function loadView($view, $data) {
+        $data['title'] = 'Data Berkas';
+        $data['data_berkas'] = $this->berkas_model->getAlldataberkas();
+        $this->load->view($view, $data);
+    }
+  
+    public function index() {
         $this->load->library('upload');
+        $this->loadView('web/uploadlegalisasi', []);
     }
-
-    function index(){
-            $data=array(
-            'title'=>'data berkas',
-            'data_berkas' =>$this->berkas_model->getAlldataberkas(),
-            
-        );
-        $this->load->view('web/uploadLegalisasi',$data);
+  
+    public function index1() {
+        $this->load->library('upload');
+        $this->loadView('admin/uploadlegalisasi', []);
     }
-    function index1(){
-            $data=array(
-            'title'=>'data berkas',
-            'data_berkas' =>$this->berkas_model->getAlldataberkas(),
-            
-        );
-        $this->load->view('admin/uploadLegalisasi',$data);
-    }
-
-    function simpanedit($id){
-
-        $config['upload_path'] = 'uploads/';
-        $config['allowed_types'] = 'gif|jpg|png|jpeg';
-        $config['max_size']   = '10000';
-        $config['max_width']  = '20000';
-        $config['max_height']  = '20000';
-        $config['remove_spaces']  = FALSE;
-      
-        $upload_error=array();
-        $this->upload->initialize($config);
-        for($i=0; $i<count($_FILES['gambar']['name']); $i++)
-        {
-            $_FILES['userfile']['name']= $_FILES['gambar']['name'][$i];
-            $_FILES['userfile']['type']= $_FILES['gambar']['type'][$i];
-            $_FILES['userfile']['tmp_name']= $_FILES['gambar']['tmp_name'][$i];
-            $_FILES['userfile']['error']= $_FILES['gambar']['error'][$i];
-            $_FILES['userfile']['size']= $_FILES['gambar']['size'][$i];
-            
-            if (!$this->upload->do_upload())
-            {
-                // fail
-               $gbrktp="";
-               $gbrkta="";
-               $gbrbas="";
-               $gbrkuasa="";
-               echo $this->upload->display_errors();
-              
-            }
-            else {
-              echo $fileName = $_FILES['gambar']['name'][$i];
-               $images[$i] = $fileName;
+  
+    function uploadImages($id, $view = 'web') {
+        if (!isset($_FILES['gambar'])) {
+            return;
+        }
+    
+        $config = [
+            'upload_path' => './uploads/',
+            'allowed_types' => 'gif|jpg|png|jpeg',
+            'max_size' => '10000',
+            'max_width' => '20000',
+            'max_height' => '20000',
+            'remove_spaces' => false,
+        ];
+    
+        $this->load->library('upload', $config);
+    
+        $images = [];
+        foreach ($_FILES['gambar']['name'] as $index => $fileName) {
+            $_FILES['userfile']['name'] = $_FILES['gambar']['name'][$index];
+            $_FILES['userfile']['type'] = $_FILES['gambar']['type'][$index];
+            $_FILES['userfile']['tmp_name'] = $_FILES['gambar']['tmp_name'][$index];
+            $_FILES['userfile']['error'] = $_FILES['gambar']['error'][$index];
+            $_FILES['userfile']['size'] = $_FILES['gambar']['size'][$index];
+    
+            if (!$this->upload->do_upload()) {
+                echo $this->upload->display_errors();
+            } else {
+                $images[] = $fileName;
             }
         }
-       
-        $gbrktp=$images[0];
-        $gbrkta=$images[1];
-        $gbrbas=$images[2];
-        $gbrkuasa=$images[3];
-          
-        $data=array(
-            //'id_berkas'=>$this->session->userdata('ID'),
-            //'nik'=>$this->input->post('nik'),
-            'ktp'=>$gbrktp,
-            'kta'=>$gbrkta,
-            'bas'=>$gbrbas,
-            'kuasa'=>$gbrkuasa,
-        );
-        
-        $this->berkas_model->updateDatab('berkas',$data,$id);
-        redirect("Legalisasibas/indexweb");
-    }
-
-    function simpanedit1($id){
-
-        $config['upload_path'] = 'uploads/';
-        $config['allowed_types'] = 'gif|jpg|png|jpeg';
-        $config['max_size']   = '10000';
-        $config['max_width']  = '20000';
-        $config['max_height']  = '20000';
-        $config['remove_spaces']  = FALSE;
-      
-        $upload_error=array();
-        $this->upload->initialize($config);
-        for($i=0; $i<count($_FILES['gambar']['name']); $i++)
-        {
-            $_FILES['userfile']['name']= $_FILES['gambar']['name'][$i];
-            $_FILES['userfile']['type']= $_FILES['gambar']['type'][$i];
-            $_FILES['userfile']['tmp_name']= $_FILES['gambar']['tmp_name'][$i];
-            $_FILES['userfile']['error']= $_FILES['gambar']['error'][$i];
-            $_FILES['userfile']['size']= $_FILES['gambar']['size'][$i];
-            
-            if (!$this->upload->do_upload())
-            {
-                // fail
-               $gbrktp="";
-               $gbrkta="";
-               $gbrbas="";
-               $gbrkuasa="";
-               echo $this->upload->display_errors();
-              
-            }
-            else {
-              echo $fileName = $_FILES['gambar']['name'][$i];
-               $images[$i] = $fileName;
-            }
+    
+        $data = [
+            'ktp' => '',
+            'kta' => '',
+            'bas' => '',
+            'kuasa' => '',
+        ];
+    
+        if (isset($images[0])) {
+            $data['ktp'] = file_get_contents($_FILES['gambar']['tmp_name'][0]);
         }
-       
-        $gbrktp=$images[0];
-        $gbrkta=$images[1];
-        $gbrbas=$images[2];
-        $gbrkuasa=$images[3];
-          
-        $data=array(
-            //'id_berkas'=>$this->session->userdata('ID'),
-            //'nik'=>$this->input->post('nik'),
-            'ktp'=>$gbrktp,
-            'kta'=>$gbrkta,
-            'bas'=>$gbrbas,
-            'kuasa'=>$gbrkuasa,
-        );
-        
-        $this->berkas_model->updateDatab('berkas',$data,$id);
-        redirect("Legalisasibas");
+    
+        if (isset($images[1])) {
+            $data['kta'] = file_get_contents($_FILES['gambar']['tmp_name'][1]);
+        }
+    
+        if (isset($images[2])) {
+            $data['bas'] = file_get_contents($_FILES['gambar']['tmp_name'][2]);
+        }
+    
+        if (isset($images[3])) {
+            $data['kuasa'] = file_get_contents($_FILES['gambar']['tmp_name'][3]);
+        }
+    
+        $viewPath = $view === 'admin' ? 'admin/' : 'web/';
+        $this->berkas_model->updateData('berkas', $data, $id);
+        redirect("Legalisasibas/index{$viewPath}");
     }
-}
+    }
 ?>
