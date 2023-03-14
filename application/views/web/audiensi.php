@@ -19,7 +19,7 @@
     <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
     <!-- Webpage Title -->
-    <title>Legalisasi Berita Acara Sumpah Advokat</title>
+    <title>Audiensi Pengadilan Tinggi Bandung</title>
 
     <!-- Styles -->
     <link
@@ -98,7 +98,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="h2-heading">LEGALISASI BERITA ACARA SUMPAH ADVOKAT <br> PENGADILAN TINGGI BANDUNG </h2>
+                    <h2 class="h2-heading">AUDIENSI PIMPINAN <br> PENGADILAN TINGGI BANDUNG </h2>
                     <!--<p class="p-heading">Pengadilan Tinggi Bandung</p>--><br>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -108,54 +108,79 @@
                     <!-- Card -->
                     <div class="card">
                         <div class="card-image">
-                            <a href="#" onload="toggleForm('form1')">
-                                <i class="fa-solid fa-magnifying-glass icon"></i>
+                            <a href="#" onclick="toggleForm1()">
+                                <i class="fas fa-file-signature icon"></i>
                             </a>
                         </div>
                         <div class="card-body">
-                            <strong>Upload</strong> <br> Dokumen Persyaratan Legalisasi
+                            <strong>Audiensi </strong>
                         </div>
                     </div>
-                    <!-- End of Card -->
+                    <!-- end of card -->
 
                     <!-- Form 1 -->
                     <div id="form1" style="display:block;">
-    <?php if(isset($data_berkas)){
-        foreach($data_berkas as $row){
-            $id = $row->id_berkas;
-        }
-    } ?>
-    <?php echo form_open_multipart('UploadLegalisasi/uploadImages/'.$id, array('id' => 'myForm', 'onsubmit' => 'return redirectAfterSubmit()'))?>
-    <div class="form-group">
-        <label for="gambar[]">Foto KTP:</label>
-        <input type="file" name="gambar[]" id="gambar[]">
-    </div>
-    <div class="form-group">
-        <label for="gambar[]">Foto KTA:</label>
-        <input type="file" name="gambar[]" id="gambar[]">
-    </div>
-    <div class="form-group">
-        <label for="gambar[]">Foto BAS Asli:</label>
-        <input type="file" name="gambar[]" id="gambar[]">
-    </div>
-    <div class="form-group">
-        <label for="gambar[]">Foto Surat Kuasa:</label>
-        <input type="file" name="gambar[]" id="gambar[]">
-    </div>
-    <div class="form-group">
-        <input type="submit" name="submit" value="Upload">
-    </div>
-    <?php echo form_close(); ?>
-</div>
-                    <!-- /.modal-content -->
-                </div>
-                <!-- /.modal-dialog -->
-            </div>
-            <!-- /.modal -->
-
-        </div> <!-- end of col -->
-    </div> <!-- end of row -->
-    </div> <!-- end of container -->
+                        <!-- Add the form container with display:none -->
+                        <div class="card-body">
+                            <!--<h3 class="h3-heading">Permohonan Audiensi dengan Pimpinan Pengadilan Tinggi Bandung</h3>-->
+                            <div><?= validation_errors() ?></div>
+                            <?php echo form_open_multipart('Audiensi/daftar_audiensi'); ?>
+                            <table>
+                                <legend>Data Pemohon</legend><br>
+                                <tr>
+                                    <td><label>NIK :</label></td>
+                                    <td><input type="text" name="nik" placeholder="Nomor Induk Kependudukan" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label>Nama Lengkap :</label></td>
+                                    <td><input type="text" name="nmlkp" placeholder="Nama Lengkap" required></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Nama Lembaga / Organisasi :</label></td>
+                                    <td><input type="text" name="nmlembaga" placeholder="Nama Lembaga / Organisasi"
+                                            required></td>
+                                </tr>
+                                <tr>
+                                    <td><label>E-Mail :</label></td>
+                                    <td><input type="email" name="email" placeholder="E-Mail" required></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Nomor Handphone / Whatsapp :</label></td>
+                                    <td><input type="text" name="nohp" placeholder="Nomor Handphone / Whatsapp"
+                                            required></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Foto KTP :</label></td>
+                                    <td><input type="file" name="foto_ktp" accept="image/*" required></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"><?php echo form_error('foto_ktp'); ?></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Upload Surat Permohonan Audiensi :</label></td>
+                                    <td><input type="file" name="surat_permohonan" accept="application/pdf" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"><?php echo form_error('surat_permohonan'); ?></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"><input type="hidden" id="status" name="status"
+                                            value="Belum Selesai"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" align="center"><button type="submit" value="Simpan">Simpan</button>
+                                    </td>
+                                </tr>
+                            </table>
+                            <?php echo form_close(); ?>
+                        </div>
+                    </div>
+                    <!-- End of Form 1 -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
     </div> <!-- end of cards-1 -->
     <!-- end of projects -->
 
@@ -165,23 +190,45 @@
     <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
     <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
-    <script>
-        function toggleForm(formId) {
-            var form = document.getElementById(formId);
-            if (form.style.display === "none") {
-                form.style.display = "block";
-            } else {
-                form.style.display = "none";
-            }
+    <!--<script>
+        const form1 = document.getElementById('form1');
+        const form2 = document.getElementById('form2');
+
+        const toggleForm1 = () => {
+            form1.style.display = form1.style.display === 'none' ? 'block' : 'none';
+            form2.style.display = 'none';
         }
 
-        function redirectAfterSubmit() {
-            // redirect to the desired URL
-            window.location.href = '<?php echo base_url()?>index.php/Legalisasibas/indexweb';
-            // return false to prevent the default form submission behavior
-            return false;
+        const toggleForm2 = () => {
+            form2.style.display = form2.style.display === 'none' ? 'block' : 'none';
+            form1.style.display = 'none';
         }
-    </script>
+
+        const hideForms = () => {
+            form1.style.display = 'none';
+            form2.style.display = 'none';
+        }
+
+        document.getElementById('form1-link').addEventListener('click', (event) => {
+            event.preventDefault();
+            toggleForm1();
+        });
+
+        document.getElementById('form2-link').addEventListener('click', (event) => {
+            event.preventDefault();
+            toggleForm2();
+        });
+
+        document.getElementById('close-forms').addEventListener('click', (event) => {
+            event.preventDefault();
+            hideForms();
+        });
+    </script>-->
+
+
+
+
+
 </body>
 
 </html>
