@@ -1,270 +1,590 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default"
+  data-assets-path="<?php echo base_url();?>/assets/admin/" data-template="vertical-menu-template-free">
+
 <head>
-<title>Pelayanan Kependudukan</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Augment Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
- <!-- Bootstrap Core CSS -->
-<link href="<?php echo base_url();?>/assets/admin/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
-<!-- Custom CSS -->
-<link href="<?php echo base_url();?>/assets/admin/css/style.css" rel='stylesheet' type='text/css' />
-<!-- Graph CSS -->
-<link href="<?php echo base_url();?>/assets/admin/css/font-awesome.css" rel="stylesheet"> 
-<!-- jQuery -->
-<link href='//fonts.googleapis.com/css?family=Roboto:700,500,300,100italic,100,400' rel='stylesheet' type='text/css'>
-<!-- lined-icons -->
-<link rel="stylesheet" href="<?php echo base_url();?>/assets/admin/css/icon-font.min.css" type='text/css' />
-<!-- //lined-icons -->
-<script src="<?php echo base_url();?>/assets/admin/js/jquery-1.10.2.min.js"></script>
-<script src="<?php echo base_url();?>/assets/admin/js/amcharts.js"></script>	
-<script src="<?php echo base_url();?>/assets/admin/js/serial.js"></script>	
-<script src="<?php echo base_url();?>/assets/admin/js/light.js"></script>	
-<script src="<?php echo base_url();?>/assets/admin/js/radar.js"></script>	
-<link href="<?php echo base_url();?>/assets/admin/css/barChart.css" rel='stylesheet' type='text/css' />
-<link href="<?php echo base_url();?>/assets/admin/css/fabochart.css" rel='stylesheet' type='text/css' />
-<!--clock init-->
-<script src="<?php echo base_url();?>/assets/admin/js/css3clock.js"></script>
-<!--Easy Pie Chart-->
-<!--skycons-icons-->
-<script src="<?php echo base_url();?>/assets/admin/js/skycons.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-<script src="<?php echo base_url();?>/assets/admin/js/jquery.easydropdown.js"></script>
+  <title>Dashboard - Pelayanan Digital Pengadilan Tinggi Bandung</title>
 
-<!--//skycons-icons-->
-</head> 
+  <meta name="description" content="" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="<?php echo base_url();?>/assets/admin/img/favicon/favicon.ico" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+  <!-- style -->
+  <link href="<?php echo base_url();?>/assets/web/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="<?php echo base_url();?>/assets/web/css/fontawesome-all.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="<?php echo base_url();?>/assets/web/css/styles.css" rel="stylesheet" type="text/css" media="all" />
+
+
+  <!-- Icons. Uncomment required icon fonts -->
+  <link rel="stylesheet" href="<?php echo base_url();?>/assets/admin/vendor/fonts/boxicons.css" />
+
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="<?php echo base_url();?>/assets/admin/vendor/css/core.css"
+    class="template-customizer-core-css" />
+  <link rel="stylesheet" href="<?php echo base_url();?>/assets/admin/vendor/css/theme-default.css"
+    class="template-customizer-theme-css" />
+  <link rel="stylesheet" href="<?php echo base_url();?>/assets/admin/css/demo.css" />
+
+  <!-- Vendors CSS -->
+  <link rel="stylesheet"
+    href="<?php echo base_url();?>/assets/admin/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+
+  <link rel="stylesheet" href="<?php echo base_url();?>/assets/admin/vendor/libs/apex-charts/apex-charts.css" />
+
+  <!-- Page CSS -->
+
+  <!-- Helpers -->
+  <script src="<?php echo base_url();?>/assets/admin/vendor/js/helpers.js"></script>
+
+  <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+  <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+  <script src="<?php echo base_url();?>/assets/admin/js/config.js"></script>
+</head>
+
 <body>
-   <div class="page-container">
-   <!--/content-inner-->
-	<div class="left-content">
-	   <div class="inner-content">
-		<!-- header-starts -->
-			<div class="header-section">
-						<!--menu-right-->
-						<div class="top_menu">
-							<!--/profile_details-->
-								<div class="profile_details_left">
-									<ul class="nofitications-dropdown">
-									    <li class="dropdown note">
-											<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i></i> <span class="badge"></span></a>			
-										</li>
-														   		
-							<div class="clearfix"></div>	
-								</ul>
-							</div>
-							<div class="clearfix"></div>	
-							<!--//profile_details-->
-						</div>
-						<!--//menu-right-->
-					<div class="clearfix"></div>
-				</div>
-					<!-- //header-ends -->
-						<div class="outter-wp">
-									<div class="sub-heard-part">
-									   <ol class="breadcrumb m-b-0">
-											<li><a href="<?php echo base_url()?>index.php/user">Home</a></li>
-											<li class="active">Data Admin</li>
-										</ol>
-									</div>
+  <!-- Layout wrapper -->
+  <div class="layout-wrapper layout-content-navbar">
+    <div class="layout-container">
+      <!-- Menu -->
 
-<?php
- $message = $this->session->flashdata('notif');
-    if($message){
-        echo '<div class="alert alert-warning">' .$message. '</div>';
-    }?>
-                              
-<section class="content">
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="box">
-            <div class="box-header">
-              <h3 class="box-title">Data Admin</h3>
-            </div>
-            <!-- /.box-header -->
-            <div class="box-body">
-              <table id="example1" align="center" class="table table-bordered table-striped">
-                <thead>
-                                        <tr>
-                                            <td><div align="center">No</div></td>
-                                            <td><div align="center">Id Admin</div></td>
-                                            <td><div align="center">Nama Admin</div></td>
-                                            <td><div align="center">Username</div></td>
-                                            <td><div align="center">Password</div></td>
-                                            <td><div align="center">Email</div></td>
-                                            <td><div align="center">Foto</div></td>
-                                            <td><div align="center"><button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal" data-toggle="tooltip" data-placement="top" title="Tambah Berita">Tambah</div></button></td>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                    <?php
-                                    $no=1;
-                                          if(isset($data_user)){
-                                                foreach($data_user as $row){
-                                            ?>
-                                        <tr>
-                                            <td><div align="center"><?php echo $no++; ?></div></td>
-                                            <td><div align="center"><?php echo $row->id_user; ?></div></td>
-                                            <td><div align="center"><?php echo $row->nama_user; ?></div></td>
-                                            <td><div align="center"><?php echo $row->username; ?></div></td>
-                                            <td><div align="center"><?php echo $row->password; ?></div></td>
-                                            <td><div align="center"><?php echo $row->email; ?></div></td>
-                                            <td><div align="center"><img src="<?php echo base_url('uploads/'.$row->foto_user) ?>" width="200px" height="150px"><br>
-                            <a class="preview" href="<?php echo base_url ('uploads/'.$row->foto_user); ?>" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a></div></td>
-                                            <td><div align="center">
-                            <a href="<?php echo site_url('Data_User/edituser/'.$row->id_user)?>" type="button" class="btn btn-warning btn-circle" data-toggle="tooltip" data-placement="top" title="Edit User"</a><i class="fa fa-edit"></i> </a>
-                            <a class="btn btn-danger btn-circle" data-toggle="tooltip" data-placement="top" title="Delete User" href="<?php echo site_url('Data_User/hapus/'.$row->id_user)?>" onclick="return confirm('Anda Yakin ?');"><i class="fa fa-times"></i>
-                            </a></div></td>
-                                        </tr>
-                                    <?php }
-                                             }
-                                                ?>
-                                    </tbody>
-              </table>
-            </div>
-            <!-- /.box-body -->
-          </div>
-          <!-- /.box -->
+      <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+        <div class="app-brand demo">
+          <a href="index.html" class="app-brand-link">
+            <span class="app-brand-logo demo">
+              <svg width="25" viewBox="0 0 25 42" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                  <path
+                    d="M13.7918663,0.358365126 L3.39788168,7.44174259 C0.566865006,9.69408886 -0.379795268,12.4788597 0.557900856,15.7960551 C0.68998853,16.2305145 1.09562888,17.7872135 3.12357076,19.2293357 C3.8146334,19.7207684 5.32369333,20.3834223 7.65075054,21.2172976 L7.59773219,21.2525164 L2.63468769,24.5493413 C0.445452254,26.3002124 0.0884951797,28.5083815 1.56381646,31.1738486 C2.83770406,32.8170431 5.20850219,33.2640127 7.09180128,32.5391577 C8.347334,32.0559211 11.4559176,30.0011079 16.4175519,26.3747182 C18.0338572,24.4997857 18.6973423,22.4544883 18.4080071,20.2388261 C17.963753,17.5346866 16.1776345,15.5799961 13.0496516,14.3747546 L10.9194936,13.4715819 L18.6192054,7.984237 L13.7918663,0.358365126 Z"
+                    id="path-1"></path>
+                  <path
+                    d="M5.47320593,6.00457225 C4.05321814,8.216144 4.36334763,10.0722806 6.40359441,11.5729822 C8.61520715,12.571656 10.0999176,13.2171421 10.8577257,13.5094407 L15.5088241,14.433041 L18.6192054,7.984237 C15.5364148,3.11535317 13.9273018,0.573395879 13.7918663,0.358365126 C13.5790555,0.511491653 10.8061687,2.3935607 5.47320593,6.00457225 Z"
+                    id="path-3"></path>
+                  <path
+                    d="M7.50063644,21.2294429 L12.3234468,23.3159332 C14.1688022,24.7579751 14.397098,26.4880487 13.008334,28.506154 C11.6195701,30.5242593 10.3099883,31.790241 9.07958868,32.3040991 C5.78142938,33.4346997 4.13234973,34 4.13234973,34 C4.13234973,34 2.75489982,33.0538207 2.37032616e-14,31.1614621 C-0.55822714,27.8186216 -0.55822714,26.0572515 -4.05231404e-15,25.8773518 C0.83734071,25.6075023 2.77988457,22.8248993 3.3049379,22.52991 C3.65497346,22.3332504 5.05353963,21.8997614 7.50063644,21.2294429 Z"
+                    id="path-4"></path>
+                  <path
+                    d="M20.6,7.13333333 L25.6,13.8 C26.2627417,14.6836556 26.0836556,15.9372583 25.2,16.6 C24.8538077,16.8596443 24.4327404,17 24,17 L14,17 C12.8954305,17 12,16.1045695 12,15 C12,14.5672596 12.1403557,14.1461923 12.4,13.8 L17.4,7.13333333 C18.0627417,6.24967773 19.3163444,6.07059163 20.2,6.73333333 C20.3516113,6.84704183 20.4862915,6.981722 20.6,7.13333333 Z"
+                    id="path-5"></path>
+                </defs>
+                <g id="g-app-brand" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Brand-Logo" transform="translate(-27.000000, -15.000000)">
+                    <g id="Icon" transform="translate(27.000000, 15.000000)">
+                      <g id="Mask" transform="translate(0.000000, 8.000000)">
+                        <mask id="mask-2" fill="white">
+                          <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use fill="#696cff" xlink:href="#path-1"></use>
+                        <g id="Path-3" mask="url(#mask-2)">
+                          <use fill="#696cff" xlink:href="#path-3"></use>
+                          <use fill-opacity="0.2" fill="#FFFFFF" xlink:href="#path-3"></use>
+                        </g>
+                        <g id="Path-4" mask="url(#mask-2)">
+                          <use fill="#696cff" xlink:href="#path-4"></use>
+                          <use fill-opacity="0.2" fill="#FFFFFF" xlink:href="#path-4"></use>
+                        </g>
+                      </g>
+                      <g id="Triangle"
+                        transform="translate(19.000000, 11.000000) rotate(-300.000000) translate(-19.000000, -11.000000) ">
+                        <use fill="#696cff" xlink:href="#path-5"></use>
+                        <use fill-opacity="0.2" fill="#FFFFFF" xlink:href="#path-5"></use>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </span>
+            <span class="app-brand-text demo menu-text fw-bolder ms-2">Sneat</span>
+          </a>
+
+          <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+            <i class="bx bx-chevron-left bx-sm align-middle"></i>
+          </a>
         </div>
-        <!-- /.col -->
+
+        <div class="menu-inner-shadow"></div>
+
+        <ul class="menu-inner py-1">
+          <!-- Dashboard -->
+          <li class="menu-item active">
+            <a href="<?php echo base_url()?>index.php/user" class="menu-link">
+              <i class="menu-icon tf-icons bx bx-home-circle"></i>
+              <div data-i18n="Analytics">Dashboard</div>
+            </a>
+          </li>
+
+          <!-- Layouts
+          <li class="menu-item">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+              <i class="menu-icon tf-icons bx bx-layout"></i>
+              <div data-i18n="Layouts">Layouts</div>
+            </a>
+
+            <ul class="menu-sub">
+              <li class="menu-item">
+                <a href="layouts-without-menu.html" class="menu-link">
+                  <div data-i18n="Without menu">Without menu</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="layouts-without-navbar.html" class="menu-link">
+                  <div data-i18n="Without navbar">Without navbar</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="layouts-container.html" class="menu-link">
+                  <div data-i18n="Container">Container</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="layouts-fluid.html" class="menu-link">
+                  <div data-i18n="Fluid">Fluid</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="layouts-blank.html" class="menu-link">
+                  <div data-i18n="Blank">Blank</div>
+                </a>
+              </li>
+            </ul>
+          </li> -->
+
+          <li class="menu-header small text-uppercase">
+            <span class="menu-header-text">Pages</span>
+          </li>
+          <li class="menu-item">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+              <i class="menu-icon tf-icons bx bx-dock-top"></i>
+              <div data-i18n="Account Settings">Account Settings</div>
+            </a>
+            <ul class="menu-sub">
+              <li class="menu-item">
+                <a href="<?php echo base_url()?>index.php/data_user" class="menu-link">
+                  <div data-i18n="Account">Account</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="pages-account-settings-notifications.html" class="menu-link">
+                  <div data-i18n="Notifications">Notifications</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="pages-account-settings-connections.html" class="menu-link">
+                  <div data-i18n="Connections">Connections</div>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+              <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
+              <div data-i18n="Authentications">Authentications</div>
+            </a>
+            <ul class="menu-sub">
+              <li class="menu-item">
+                <a href="auth-login-basic.html" class="menu-link" target="_blank">
+                  <div data-i18n="Basic">Login</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="auth-register-basic.html" class="menu-link" target="_blank">
+                  <div data-i18n="Basic">Register</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="auth-forgot-password-basic.html" class="menu-link" target="_blank">
+                  <div data-i18n="Basic">Forgot Password</div>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+              <i class="menu-icon tf-icons bx bx-cube-alt"></i>
+              <div data-i18n="Misc">Misc</div>
+            </a>
+            <ul class="menu-sub">
+              <li class="menu-item">
+                <a href="pages-misc-error.html" class="menu-link">
+                  <div data-i18n="Error">Error</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="pages-misc-under-maintenance.html" class="menu-link">
+                  <div data-i18n="Under Maintenance">Under Maintenance</div>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- Components -->
+          <li class="menu-header small text-uppercase"><span class="menu-header-text">Components</span></li>
+          <!-- Cards -->
+          <li class="menu-item">
+            <a href="cards-basic.html" class="menu-link">
+              <i class="menu-icon tf-icons bx bx-collection"></i>
+              <div data-i18n="Basic">Cards</div>
+            </a>
+          </li>
+          <!-- User interface -->
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link menu-toggle">
+              <i class="menu-icon tf-icons bx bx-box"></i>
+              <div data-i18n="User interface">User interface</div>
+            </a>
+            <ul class="menu-sub">
+              <li class="menu-item">
+                <a href="ui-accordion.html" class="menu-link">
+                  <div data-i18n="Accordion">Accordion</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="ui-alerts.html" class="menu-link">
+                  <div data-i18n="Alerts">Alerts</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="ui-badges.html" class="menu-link">
+                  <div data-i18n="Badges">Badges</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="ui-buttons.html" class="menu-link">
+                  <div data-i18n="Buttons">Buttons</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="ui-carousel.html" class="menu-link">
+                  <div data-i18n="Carousel">Carousel</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="ui-collapse.html" class="menu-link">
+                  <div data-i18n="Collapse">Collapse</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="ui-dropdowns.html" class="menu-link">
+                  <div data-i18n="Dropdowns">Dropdowns</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="ui-footer.html" class="menu-link">
+                  <div data-i18n="Footer">Footer</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="ui-list-groups.html" class="menu-link">
+                  <div data-i18n="List Groups">List groups</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="ui-modals.html" class="menu-link">
+                  <div data-i18n="Modals">Modals</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="ui-navbar.html" class="menu-link">
+                  <div data-i18n="Navbar">Navbar</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="ui-offcanvas.html" class="menu-link">
+                  <div data-i18n="Offcanvas">Offcanvas</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="ui-pagination-breadcrumbs.html" class="menu-link">
+                  <div data-i18n="Pagination &amp; Breadcrumbs">Pagination &amp; Breadcrumbs</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="ui-progress.html" class="menu-link">
+                  <div data-i18n="Progress">Progress</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="ui-spinners.html" class="menu-link">
+                  <div data-i18n="Spinners">Spinners</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="ui-tabs-pills.html" class="menu-link">
+                  <div data-i18n="Tabs &amp; Pills">Tabs &amp; Pills</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="ui-toasts.html" class="menu-link">
+                  <div data-i18n="Toasts">Toasts</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="ui-tooltips-popovers.html" class="menu-link">
+                  <div data-i18n="Tooltips & Popovers">Tooltips &amp; popovers</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="ui-typography.html" class="menu-link">
+                  <div data-i18n="Typography">Typography</div>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Extended components -->
+          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link menu-toggle">
+              <i class="menu-icon tf-icons bx bx-copy"></i>
+              <div data-i18n="Extended UI">Extended UI</div>
+            </a>
+            <ul class="menu-sub">
+              <li class="menu-item">
+                <a href="extended-ui-perfect-scrollbar.html" class="menu-link">
+                  <div data-i18n="Perfect Scrollbar">Perfect scrollbar</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="extended-ui-text-divider.html" class="menu-link">
+                  <div data-i18n="Text Divider">Text Divider</div>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="menu-item">
+            <a href="icons-boxicons.html" class="menu-link">
+              <i class="menu-icon tf-icons bx bx-crown"></i>
+              <div data-i18n="Boxicons">Boxicons</div>
+            </a>
+          </li>
+
+          <!-- Forms & Tables -->
+          <li class="menu-header small text-uppercase"><span class="menu-header-text">Forms &amp; Tables</span></li>
+          <!-- Forms -->
+          <li class="menu-item">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+              <i class="menu-icon tf-icons bx bx-detail"></i>
+              <div data-i18n="Form Elements">Form Elements</div>
+            </a>
+            <ul class="menu-sub">
+              <li class="menu-item">
+                <a href="forms-basic-inputs.html" class="menu-link">
+                  <div data-i18n="Basic Inputs">Basic Inputs</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="forms-input-groups.html" class="menu-link">
+                  <div data-i18n="Input groups">Input groups</div>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+              <i class="menu-icon tf-icons bx bx-detail"></i>
+              <div data-i18n="Form Layouts">Form Layouts</div>
+            </a>
+            <ul class="menu-sub">
+              <li class="menu-item">
+                <a href="form-layouts-vertical.html" class="menu-link">
+                  <div data-i18n="Vertical Form">Vertical Form</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="form-layouts-horizontal.html" class="menu-link">
+                  <div data-i18n="Horizontal Form">Horizontal Form</div>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- Tables -->
+          <li class="menu-item">
+            <a href="tables-basic.html" class="menu-link">
+              <i class="menu-icon tf-icons bx bx-table"></i>
+              <div data-i18n="Tables">Tables</div>
+            </a>
+          </li>
+          <!-- Misc -->
+          <li class="menu-header small text-uppercase"><span class="menu-header-text">Misc</span></li>
+          <li class="menu-item">
+            <a href="https://github.com/themeselection/sneat-html-admin-template-free/issues" target="_blank"
+              class="menu-link">
+              <i class="menu-icon tf-icons bx bx-support"></i>
+              <div data-i18n="Support">Support</div>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/" target="_blank"
+              class="menu-link">
+              <i class="menu-icon tf-icons bx bx-file"></i>
+              <div data-i18n="Documentation">Documentation</div>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- / Menu -->
+
+      <!-- Layout container -->
+      <div class="layout-page">
+        <!-- Navbar -->
+
+        <nav
+          class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+          id="layout-navbar">
+          <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+            <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+              <i class="bx bx-menu bx-sm"></i>
+            </a>
+          </div>
+
+          <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+            <!-- Search -->
+            <div class="navbar-nav align-items-center">
+              <div class="nav-item d-flex align-items-center">
+                <i class="bx bx-search fs-4 lh-0"></i>
+                <input type="text" class="form-control border-0 shadow-none" placeholder="Search..."
+                  aria-label="Search..." />
+              </div>
+            </div>
+            <!-- /Search -->
+
+            <ul class="navbar-nav flex-row align-items-center ms-auto">
+              <!-- Place this tag where you want the button to render. -->
+              <li class="nav-item lh-1 me-3">
+                <a class="github-button" href="https://github.com/themeselection/sneat-html-admin-template-free"
+                  data-icon="octicon-star" data-size="large" data-show-count="true"
+                  aria-label="Star themeselection/sneat-html-admin-template-free on GitHub">Star</a>
+              </li>
+
+              <!-- User -->
+              <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                  <div class="avatar avatar-online">
+                    <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                  </div>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <div class="d-flex">
+                        <div class="flex-shrink-0 me-3">
+                          <div class="avatar avatar-online">
+                            <img src="<?php echo base_url();?>/assets/admin/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                          </div>
+                        </div>
+                        <div class="flex-grow-1">
+                          <span class="fw-semibold d-block">John Doe</span>
+                          <small class="text-muted">Admin</small>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <div class="dropdown-divider"></div>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="bx bx-user me-2"></i>
+                      <span class="align-middle">My Profile</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="bx bx-cog me-2"></i>
+                      <span class="align-middle">Settings</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <span class="d-flex align-items-center align-middle">
+                        <i class="flex-shrink-0 bx bx-credit-card me-2"></i>
+                        <span class="flex-grow-1 align-middle">Billing</span>
+                        <span class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <div class="dropdown-divider"></div>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="auth-login-basic.html">
+                      <i class="bx bx-power-off me-2"></i>
+                      <span class="align-middle">Log Out</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!--/ User -->
+            </ul>
+          </div>
+        </nav>
+
+        <!-- / Navbar -->
+
+        <!-- Content wrapper -->
+        <div class="content-wrapper">
+          <!-- Content -->
+
+          <!-- / Content -->
+
+          <!-- Footer -->
+          <footer class="content-footer footer bg-footer-theme">
+            <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
+              <div class="mb-2 mb-md-0">
+                ©
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                <a href="https://pt-bandung.go.id" target="_blank" class="footer-link fw-bolder">Pengadilan Tinggi
+                  Bandung</a>
+              </div>
+            </div>
+          </footer>
+          <!-- / Footer -->
+
+          <div class="content-backdrop fade"></div>
+        </div>
+        <!-- Content wrapper -->
       </div>
-      <!-- /.row -->
-    </section>
+      <!-- / Layout page -->
+    </div>
 
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                            <h4 class="modal-title" id="myModalLabel">Tambah Admin</h4>
-                                        </div>
-                                        <?php echo form_open_multipart('Data_User/tambah')?>
-                                        <div class="modal-body">
-                                        <div class="form-group">
-                                            <label>Nama Admin</label>
-                                            <div>
-                                            <input name="nmadmin" class="form-control" type="text" placeholder="Nama User" required></input>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Username</label>
-                                            <div>
-                                            <input name="username" class="form-control" type="text" placeholder="Username" required></input>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Password</label>
-                                            <div>
-                                            <input name="passwd" class="form-control" type="text" placeholder="Password" required></input>
-                                            </div>
-                                        </div>
-										<div class="form-group">
-                                            <label>Email</label>
-                                            <div>
-                                            <input name="email" class="form-control" type="email" placeholder="Email" required></input>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Foto</label>
-                                            <div>
-                                            <input type="file" class="form-control" name="gambar" type="text" id="foto"></input>
-                                            </div>
-                                        </div>
+    <!-- Overlay -->
+    <div class="layout-overlay layout-menu-toggle"></div>
+  </div>
+  <!-- / Layout wrapper -->
 
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            <button type="submit" class="btn btn-primary">Save</button>
-                                        </div>
-                                    </div>
-                                    <!-- /.modal-content -->
-                                </div>
-                                <!-- /.modal-dialog -->
-                            </div>
+  <!-- Core JS -->
+  <!-- build:js assets/vendor/js/core.js -->
+  <script src="<?php echo base_url();?>/assets/admin/vendor/libs/jquery/jquery.js"></script>
+  <script src="<?php echo base_url();?>/assets/admin/vendor/libs/popper/popper.js"></script>
+  <script src="<?php echo base_url();?>/assets/admin/vendor/js/bootstrap.js"></script>
+  <script src="<?php echo base_url();?>/assets/admin/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
 
+  <script src="<?php echo base_url();?>/assets/admin/vendor/js/menu.js"></script>
+  <!-- endbuild -->
 
+  <!-- Vendors JS -->
+  <script src="<?php echo base_url();?>/assets/admin/vendor/libs/apex-charts/apexcharts.js"></script>
 
-									</div>
-									 <!--footer section start-->
-										<footer>
-										   <p>© 2016 Informatic Engineering. All Rights Reserved. Created By Faisal Syarifuddin & Ayu Permata Sari</p>
-										</footer>
-									<!--footer section end-->
-								</div>
-							</div>
-				<!--//content-inner-->
-			<!--/sidebar-menu-->
-				<div class="sidebar-menu">
-					<header class="logo">
-					<a href="#" class="sidebar-icon"> <span class="fa fa-bars"></span> </a><span id="logo"> <h1>SIDRAP</h1></span> 
-					<!--<img id="logo" src="" alt="Logo"/>--> 
-				  </a> 
-				</header>
-			<div style="border-top:1px solid rgba(69, 74, 84, 0.7)"></div>
-			<!--/down-->
-							<div class="down">	
-									 <a href="<?php echo base_url('uploads/'.$this->session->userdata('FOTO'))?>"><img src="<?php echo base_url('uploads/'.$this->session->userdata('FOTO'))?>" width="150" height="150" alt="User profile picture"></a>
-                                      <a><span class=" name-caret"><h3 class="profile-username text-center"><?php echo $this->session->userdata('NAMA')?> </h3></span></a>
-                                      <p class="text-muted text-center"><?php echo $this->session->userdata('EMAIL')?></p>
-                                    <ul>
-                                    <li><a class="tooltips" href="<?php echo base_url()?>index.php/Data_User/profile"><span>Profile</span><i class="lnr lnr-user"></i></a></li>
-                                        <li><a class="tooltips" href="<?php echo base_url()?>index.php/user/logout"><span>Log out</span><i class="lnr lnr-power-switch"></i></a></li>
-                                        </ul>
-							</div>
+  <!-- Main JS -->
+  <script src="<?php echo base_url();?>/assets/admin/js/main.js"></script>
 
-							   <!--//down-->
-                           <div class="menu">
-									<ul id="menu" >
-                                        <li><a href="<?php echo base_url()?>index.php/user"><i class="lnr lnr-apartment"></i> <span>Home</span></a></li>
-                                        <li><a href="<?php echo base_url()?>index.php/data_user"><i class="fa fa-file-text-o"></i> <span>Data Admin</span></a></li>
-                                        <li><a href="<?php echo base_url()?>index.php/Pindahdomisili"><i class="fa fa-pencil-square-o"></i> <span>Kelola Data Pindah Domisili</span></a></li>
-                                        <li id="menu-academico" ><a href=""><i class="fa fa-pencil-square-o"></i> <span>Kelola Akta</span> <span class="fa fa-angle-right" style="float: right"></span></a>
-                                          <ul id="menu-academico-sub" >
-                                            <li id="menu-academico-boletim" ><a href="<?php echo base_url()?>index.php/Aktakelahiran">Akta Kelahiran</a></li>
-                                            <li id="menu-academico-boletim" ><a href="<?php echo base_url()?>index.php/Aktakematian">Akta Kematain</a></li>
-                                          </ul>
-                                        </li>
-                                        <li id="menu-academico" ><a href=""><i class="fa fa-pencil-square-o"></i> <span>Kelola Berkas</span> <span class="fa fa-angle-right" style="float: right"></span></a>
-                                          <ul id="menu-academico-sub" >
-                                            <li id="menu-academico-boletim" ><a href="<?php echo base_url()?>index.php/Berkas">Berkas Kelahiran</a></li>
-                                            <li id="menu-academico-boletim" ><a href="<?php echo base_url()?>index.php/Berkas1">Berkas Kematian</a></li>
-                                          </ul>
-                                        </li>
-                                  </ul>
-								</div>
-							  </div>
-							  <div class="clearfix"></div>		
-							</div>
-							<script>
-							var toggle = true;
-										
-							$(".sidebar-icon").click(function() {                
-							  if (toggle)
-							  {
-								$(".page-container").addClass("sidebar-collapsed").removeClass("sidebar-collapsed-back");
-								$("#menu span").css({"position":"absolute"});
-							  }
-							  else
-							  {
-								$(".page-container").removeClass("sidebar-collapsed").addClass("sidebar-collapsed-back");
-								setTimeout(function() {
-								  $("#menu span").css({"position":"relative"});
-								}, 400);
-							  }
-											
-											toggle = !toggle;
-										});
-							</script>
-<!--js -->
-<link rel="stylesheet" href="<?php echo base_url();?>/assets/admin/css/vroom.css">
-<script type="text/javascript" src="<?php echo base_url();?>/assets/admin/js/vroom.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>/assets/admin/js/TweenLite.min.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>/assets/admin/js/CSSPlugin.min.js"></script>
-<script src="<?php echo base_url();?>/assets/admin/js/jquery.nicescroll.js"></script>
-<script src="<?php echo base_url();?>/assets/admin/js/scripts.js"></script>
+  <!-- Page JS -->
+  <script src="<?php echo base_url();?>/assets/admin/js/dashboards-analytics.js"></script>
 
-<!-- Bootstrap Core JavaScript -->
-   <script src="<?php echo base_url();?>/assets/admin/js/bootstrap.min.js"></script>
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
+
 </html>

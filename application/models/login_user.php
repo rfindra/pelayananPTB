@@ -1,6 +1,6 @@
 <?php
 
-class login_user extends CI_Model {
+class Login_user extends CI_Model {
 
 private $primary_key='id_user';
 private $table_name='user';
