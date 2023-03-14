@@ -46,6 +46,7 @@
             <!-- Image Logo -->
             <a class="navbar-brand logo-image" href="<?php echo base_url()?>index.php"><img src="assets/web/images/logo.png" alt="alternative"></a>
 
+
             <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
                 <span class="navbar-toggler-icon"></span>
             </button>

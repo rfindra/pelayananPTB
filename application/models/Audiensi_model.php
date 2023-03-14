@@ -10,8 +10,9 @@ class Audiensi_model extends CI_Model {
 
     function simpan_data_audiensi($data)
     {
+
         $this->db->insert('audiensi', $data);
-    }
+
 
 }
 ?>
