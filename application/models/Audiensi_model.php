@@ -12,7 +12,7 @@ class Audiensi_model extends CI_Model {
     {
 
         $this->db->insert('audiensi', $data);
-
+    }
 
 }
 ?>
