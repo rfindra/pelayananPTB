@@ -126,19 +126,18 @@
                     </div>
                     <!-- end of card -->
 
-                    <!-- Card 
+                    <!-- Card -->
                     <div class="card">
                         <div class="card-image">
-                            <a href="http://e-peduli.pt-bandung.go.id/#09" target="_blank">
-                                <img class="img-fluid" src="images/qrpeduli.png" alt="alternative">
+                            <a href="https://meet.jit.si/digitalmelayani" target="_blank">
+                                <img class="img-fluid" src="assets/web/images/qrVideo.png" alt="alternative">
                             </a>
                         </div>
                         <div class="card-body">
-                            <strong>e-Peduli</strong> - Pelayanan Perlindungan Hukum dan Pengaduan Pengadilan Tinggi
-                            Bandung
+                            <strong>Bantuan</strong> - Hubungi Petugas PTSP Pengadilan Tinggi Bandung
                         </div>
                     </div>
-                    end of card -->
+                    <!-- end of card -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
