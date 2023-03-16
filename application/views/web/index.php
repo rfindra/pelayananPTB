@@ -12,7 +12,7 @@
     <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
     <meta property="og:site_name" content="" /> <!-- website name -->
     <meta property="og:site" content="" /> <!-- website link -->
-    <meta property="og:title" content="" /> <!-- title shown in the actual shared post -->
+    <meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
     <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
     <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
     <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
@@ -22,15 +22,13 @@
     <title>Pelayanan Digital Pengadilan Tinggi Bandung</title>
 
     <!-- Styles -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link href="<?php echo base_url();?>/assets/web/css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
     <link href="<?php echo base_url();?>/assets/web/css/fontawesome-all.css" rel="stylesheet" type="text/css" media="all"/>
     <link href="<?php echo base_url();?>/assets/web/css/styles.css" rel="stylesheet" type="text/css" media="all"/>
 
     <!-- Favicon  -->
-    <link rel="icon" href="assets/web/images/favicon.png">
+    <link rel="icon" href="/assets/web/images/favicon.png">
 </head>
 
 <body data-spy="scroll" data-target=".fixed-top">
@@ -51,11 +49,11 @@
 
             <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav">
-                    <!--
+                    
                         <li class="nav-item">
                             <a class="nav-link page-scroll" href="#about">About <span class="sr-only">(current)</span></a>
                         </li>  
-                    -->
+                    
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="<?php echo base_url()?>index.php/Kepaniteraan/indexweb">Kepaniteraan</a>
                     </li>
@@ -63,12 +61,11 @@
                         <a class="nav-link page-scroll" href="<?php echo base_url()?>index.php/Kesekretariatan/indexweb">Kesekretariatan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="https://meet.jit.si/digitalmelayani"
-                            target="_blank">Bantuan</a>
+                        <a class="nav-link page-scroll" href="https://meet.jit.si/digitalmelayani" target="_blank">Bantuan</a>
                     </li>
 
                 </ul>
-                <span class="nav-item ml-auto">
+                <span class="nav-item social-icons ml-auto">
                     <!--    <a href="#your-link">
                             <span class="fab fa-facebook-f"></span>
                         </a>
