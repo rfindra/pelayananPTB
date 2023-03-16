@@ -8,7 +8,7 @@ class User extends CI_Controller {
         parent::__construct();
         $this->load->library(['table', 'form_validation', 'session']);
         $this->load->helper(['form', 'url', 'date']);
-        $this->load->model('login_user', '', TRUE);
+        $this->load->model('Login_user', '', TRUE);
     }
 
     public function login()
