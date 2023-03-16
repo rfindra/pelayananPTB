@@ -1,6 +1,6 @@
 <?php
 
-class BSerkas_model extends CI_Model{
+class Berkas_model extends CI_Model{
     function __construct(){
         parent::__construct();
     }

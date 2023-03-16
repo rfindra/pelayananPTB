@@ -73,16 +73,6 @@
           </li>
         </ul>
         <span class="nav-item ml-auto">
-          <!--    <a href="#your-link">
-                            <span class="fab fa-facebook-f"></span>
-                        </a>
-                        <a href="#your-link">
-                            <span class="fab fa-twitter"></span>
-                        </a>
-                    
-                    <a href="<?php echo base_url()?>index.php/login">Masuk
-                       <span class="fab fa-instagram"></span>
-                    </a> -->
           <a class="nav-link page-scroll" href="<?php echo base_url()?>index.php/login">Masuk</a>
 
 
@@ -141,44 +131,6 @@
     <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
     <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
-    <!--<script>
-        const form1 = document.getElementById('form1');
-        const form2 = document.getElementById('form2');
-
-        const toggleForm1 = () => {
-            form1.style.display = form1.style.display === 'none' ? 'block' : 'none';
-            form2.style.display = 'none';
-        }
-
-        const toggleForm2 = () => {
-            form2.style.display = form2.style.display === 'none' ? 'block' : 'none';
-            form1.style.display = 'none';
-        }
-
-        const hideForms = () => {
-            form1.style.display = 'none';
-            form2.style.display = 'none';
-        }
-
-        document.getElementById('form1-link').addEventListener('click', (event) => {
-            event.preventDefault();
-            toggleForm1();
-        });
-
-        document.getElementById('form2-link').addEventListener('click', (event) => {
-            event.preventDefault();
-            toggleForm2();
-        });
-
-        document.getElementById('close-forms').addEventListener('click', (event) => {
-            event.preventDefault();
-            hideForms();
-        });
-    </script>-->
-
-
-
-
 
 </body>
 
