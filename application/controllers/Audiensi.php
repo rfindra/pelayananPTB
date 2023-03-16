@@ -57,7 +57,7 @@ class Audiensi extends CI_Controller {
 
             // Display a success message and redirect to a thank-you page
             $this->session->set_flashdata('success_msg', 'Data berhasil disimpan.');
-            redirect('Audiensi/thankyou');
+            redirect('Audiensi/indexweb');
         }
     }
 
