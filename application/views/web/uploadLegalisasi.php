@@ -120,33 +120,33 @@
 
                     <!-- Form 1 -->
                     <div id="form1" style="display:block;">
-    <?php if(isset($data_berkas)){
-        foreach($data_berkas as $row){
-            $id = $row->id_berkas;
-        }
-    } ?>
-    <?php echo form_open_multipart('UploadLegalisasi/uploadImages/'.$id, array('id' => 'myForm', 'onsubmit' => 'return redirectAfterSubmit()'))?>
-    <div class="form-group">
-        <label for="gambar[]">Foto KTP:</label>
-        <input type="file" name="gambar[]" id="gambar[]">
-    </div>
-    <div class="form-group">
-        <label for="gambar[]">Foto KTA:</label>
-        <input type="file" name="gambar[]" id="gambar[]">
-    </div>
-    <div class="form-group">
-        <label for="gambar[]">Foto BAS Asli:</label>
-        <input type="file" name="gambar[]" id="gambar[]">
-    </div>
-    <div class="form-group">
-        <label for="gambar[]">Foto Surat Kuasa:</label>
-        <input type="file" name="gambar[]" id="gambar[]">
-    </div>
-    <div class="form-group">
-        <input type="submit" name="submit" value="Upload">
-    </div>
-    <?php echo form_close(); ?>
-</div>
+                        <?php if(isset($data_berkas)){
+    foreach($data_berkas as $row){
+      $id = $row->id_berkas;
+    }
+  } ?>
+                        <?php echo form_open_multipart('UploadLegalisasi/uploadImages/'.$id, array('id' => 'myForm', 'onsubmit' => 'return redirectAfterSubmit()'))?>
+                        <div class="form-group">
+                            <label for="gambar_ktp">Foto KTP:</label>
+                            <input type="file" name="gambar_ktp" id="gambar_ktp">
+                        </div>
+                        <div class="form-group">
+                            <label for="gambar_kta">Foto KTA:</label>
+                            <input type="file" name="gambar_kta" id="gambar_kta">
+                        </div>
+                        <div class="form-group">
+                            <label for="gambar_bas">Foto BAS Asli:</label>
+                            <input type="file" name="gambar_bas" id="gambar_bas">
+                        </div>
+                        <div class="form-group">
+                            <label for="gambar_surat_kuasa">Foto Surat Kuasa:</label>
+                            <input type="file" name="gambar_surat_kuasa" id="gambar_surat_kuasa">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" name="submit" value="Upload">
+                        </div>
+                        <?php echo form_close(); ?>
+                    </div>
                     <!-- /.modal-content -->
                 </div>
                 <!-- /.modal-dialog -->
