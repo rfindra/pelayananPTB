@@ -5,7 +5,7 @@ class Kepaniteraan extends CI_Controller {
 
     public function __construct() {
         parent::__construct();
-        $this->load->model('kepaniteraan_model');
+        $this->load->model('Kepaniteraan_model');
         $this->load->library('form_validation');
     }
 
