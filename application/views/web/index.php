@@ -19,7 +19,7 @@
 	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
 	<!-- Webpage Title -->
-	<title>Pelayanan Digital Pengadilan Tinggi Bandung</title>
+	<title>Pelayanan Digital Pengadilan Tinggi Bandung TEST</title>
 
 	<!-- Styles -->
 	<link
