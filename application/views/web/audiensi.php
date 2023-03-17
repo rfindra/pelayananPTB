@@ -47,7 +47,7 @@
 
             <!-- Image Logo -->
             <a class="navbar-brand logo-image" href="<?php echo base_url()?>index.php"><img
-                    src="assets/web/images/logo.svg" alt="alternative"></a>
+                    src="<?php echo base_url();?>/assets/web/images/logo.png" alt="alternative"></a>
 
             <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
                 <span class="navbar-toggler-icon"></span>
@@ -55,11 +55,6 @@
 
             <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav">
-                    <!--
-                        <li class="nav-item">
-                            <a class="nav-link page-scroll" href="#about">About <span class="sr-only">(current)</span></a>
-                        </li>  
-                    -->
                     <li class="nav-item">
                         <a class="nav-link page-scroll"
                             href="<?php echo base_url()?>index.php/Kepaniteraan/indexweb">Kepaniteraan</a>
@@ -74,16 +69,6 @@
                     </li>
                 </ul>
                 <span class="nav-item ml-auto">
-                    <!--    <a href="#your-link">
-                            <span class="fab fa-facebook-f"></span>
-                        </a>
-                        <a href="#your-link">
-                            <span class="fab fa-twitter"></span>
-                        </a>
-                    
-                    <a href="<?php echo base_url()?>index.php/login">Masuk
-                       <span class="fab fa-instagram"></span>
-                    </a> -->
                     <a class="nav-link page-scroll" href="<?php echo base_url()?>index.php/login">Masuk</a>
 
 
@@ -99,7 +84,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h2 class="h2-heading">AUDIENSI PIMPINAN <br> PENGADILAN TINGGI BANDUNG </h2>
-                    <!--<p class="p-heading">Pengadilan Tinggi Bandung</p>--><br>
+                    <!--<p class="p-heading">Pengadilan Tinggi Bandung</p>-->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
@@ -126,55 +111,27 @@
                             <div><?= validation_errors() ?></div>
                             <?php echo form_open_multipart('Audiensi/daftar_audiensi'); ?>
                             <table>
-                                <legend>Data Pemohon</legend><br>
-                                <tr>
-                                    <td><label>NIK :</label></td>
-                                    <td><input type="text" name="nik" placeholder="Nomor Induk Kependudukan" required>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><label>Nama Lengkap :</label></td>
-                                    <td><input type="text" name="nmlkp" placeholder="Nama Lengkap" required></td>
-                                </tr>
-                                <tr>
-                                    <td><label>Nama Lembaga / Organisasi :</label></td>
-                                    <td><input type="text" name="nmlembaga" placeholder="Nama Lembaga / Organisasi"
-                                            required></td>
-                                </tr>
-                                <tr>
-                                    <td><label>E-Mail :</label></td>
-                                    <td><input type="email" name="email" placeholder="E-Mail" required></td>
-                                </tr>
-                                <tr>
-                                    <td><label>Nomor Handphone / Whatsapp :</label></td>
-                                    <td><input type="text" name="nohp" placeholder="Nomor Handphone / Whatsapp"
-                                            required></td>
-                                </tr>
-                                <tr>
-                                    <td><label>Foto KTP :</label></td>
-                                    <td><input type="file" name="foto_ktp" accept="image/*" required></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2"><?php echo form_error('foto_ktp'); ?></td>
-                                </tr>
-                                <tr>
-                                    <td><label>Upload Surat Permohonan Audiensi :</label></td>
-                                    <td><input type="file" name="surat_permohonan" accept="application/pdf" required>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2"><?php echo form_error('surat_permohonan'); ?></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2"><input type="hidden" id="status" name="status"
-                                            value="Belum Selesai"></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2" align="center"><button type="submit" value="Simpan">Simpan</button>
-                                    </td>
-                                </tr>
+                                <legend></span>Data Pemohon</legend><br>
+                                <label>NIK :</label>
+                                <input type="number" name="nik" placeholder="Nomor Induk Kependudukan" required><br>
+                                <label>Nama Lengkap :</label>
+                                <input type="text" name="nmlkp" placeholder="Nama Lengkap" required><br>
+                                <label>Nama Organisasi :</label>
+                                <input type="text" name="nmorg" placeholder="Nama Organisasi" required><br>
+                                <label>E-Mail :</label>
+                                <input type="email" name="email" placeholder="e-mail" required><br>
+                                <label>Nomor Handphone / Whatsapp :</label>
+                                <input type="number" name="nohp" placeholder="Nomor Handphone" required><br>
+                                <label>Foto KTP :</label>
+                                <input type="file" name="foto_ktp" accept="image/*" required><br>
+                                <label>Surat Permohonan Audiensi :</label>
+                                <input type="file" name="surat_permohonan" accept="application/pdf" required><br>
+                                <input type="hidden" id="sts" name="sts" value="Belum Selesai" required><br>
+                                <div align="center"><button type="submit" value="Simpan">Simpan</button></div> <br>
                             </table>
+
                             <?php echo form_close(); ?>
+
                         </div>
                     </div>
                     <!-- End of Form 1 -->

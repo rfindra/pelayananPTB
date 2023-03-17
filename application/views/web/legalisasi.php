@@ -58,11 +58,6 @@
 
             <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav">
-                    <!--
-                        <li class="nav-item">
-                            <a class="nav-link page-scroll" href="#about">About <span class="sr-only">(current)</span></a>
-                        </li>  
-                    -->
                     <li class="nav-item">
                         <a class="nav-link page-scroll"
                             href="<?php echo base_url()?>index.php/Kepaniteraan/indexweb">Kepaniteraan</a>
@@ -163,22 +158,20 @@
 
                     <!-- Form 2 -->
                     <div id="form2" style="display:none;">
-                        <?php
+    <?php
     $no=1;
     if(isset($data_legalisasi)){
         foreach($data_legalisasi as $row){
-            ?>
-                        <?php }
-        }
-  ?>
-                        <!--<form action="<?php print site_url();?>/Legalisasibas/cariweb" method="POST">-->
-
-                        <form action="<?php echo base_url()?>index.php/Legalisasibas/cariweb" method="POST">
-
-
-                            Cari NIK Anda:
-                            <input type="search" name="cari">
-                        </form><br>
+    ?>
+    <?php }
+    }
+    ?>
+    <form action="<?php echo base_url()?>index.php/Legalisasibas/cariweb" method="POST">
+        Cari NIK Anda:
+        <input type="search" name="cari">
+        <button type="submit">Cari</button>
+    </form>
+    <br>
                         <!--<table id="find-monitor" align="center" class="table table-bordered table-striped borderless">
                             <thead class="bg-primary">
                                 <tr>
