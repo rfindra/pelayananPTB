@@ -53,16 +53,22 @@
 					<li class="nav-item">
                             <a class="nav-link page-scroll" href="#about">About <span class="sr-only">(current)</span></a>
 					</li>
+                    
 					<li class="nav-item">
                         <a class="nav-link page-scroll" href="<?php echo base_url()?>index.php/Kepaniteraan/indexweb">Kepaniteraan</a>
 					</li>
 					<li class="nav-item">
                         <a class="nav-link page-scroll" href="<?php echo base_url()?>index.php/Kesekretariatan/indexweb">Kesekretariatan</a>
 					</li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="https://meet.jit.si/digitalmelayani" target="_blank">Bantuan</a>
+                    </li>
+
 				</ul>
 				<span class="nav-item social-icons ml-auto">
 					<!-- <a href="<?php echo base_url();?>index.php/web/login_views">Masuk</a> -->
 					<a class="nav-link page-scroll" href="<?php echo base_url()?>index.php/login">Masuk</a>
+
 
 				</span>
 			</div> <!-- end of navbar-collapse -->
@@ -75,23 +81,22 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<h2 class="h2-heading">PELAYANAN DIGITAL <br> Pengadilan Tinggi Bandung</h2>
-					<!-- <p class="p-heading">Accumsan in nisl nisi scelerisque eu ultrices. Id diam maecenas ultricies mi eget mauris pharetra. Velit laoreet id donec ultrices tincidunt non nisi</p> -->
+                    <h2 class="h2-heading">PELAYANAN DIGITAL <br> PENGADILAN TINGGI BANDUNG </h2>
+                    <!--<p class="p-heading">Pengadilan Tinggi Bandung</p>--><br>
 				</div> <!-- end of col -->
 			</div> <!-- end of row -->
 			<div class="row">
-				<div class="col-lg-12"> <br>
+                <div class="col-lg-12">
 
 					<!-- Card -->
 					<div class="card">
 						<div class="card-image">
-							<a href="project.html">
-								<img class="img-fluid" src="<?php echo base_url();?>/assets/web/images/qrKepaniteraan.png"
-									alt="alternative">
+                            <a href="<?php echo base_url()?>index.php/Kepaniteraan/indexweb">
+                                <img class="img-fluid" src="assets/web/images/qrKepaniteraan.png" alt="alternative">
 							</a>
 						</div>
 						<div class="card-body">
-							<strong>Kepaniteraan</strong> - Pelayanan Kepaniteraan Pengadilan Tinggi Bandung
+                            <strong>Kepaniteraan </strong> - Pelayanan Kepaniteraan Pengadilan Tinggi Bandung
 						</div>
 					</div>
 					<!-- end of card -->
@@ -99,13 +104,12 @@
 					<!-- Card -->
 					<div class="card">
 						<div class="card-image">
-							<a href="project.html">
-								<img class="img-fluid" src="<?php echo base_url();?>/assets/web/images/qrKesekretariatan.png"
-									alt="alternative">
+                            <a href="<?php echo base_url()?>index.php/Kesekretariatan/indexweb">
+                                <img class="img-fluid" src="assets/web/images/qrKesekretariatan.png" alt="alternative">
 							</a>
 						</div>
 						<div class="card-body">
-							<strong>Kesekretariatan</strong> - Pelayanan Kesekretariatan.png
+                            <strong>Kesekretariatan </strong> - Pelayanan Kesekretariatan Pengadilan Tinggi Bandung
 						</div>
 					</div>
 					<!-- end of card -->
@@ -114,12 +118,11 @@
 					<div class="card">
 						<div class="card-image">
 							<a href="https://meet.jit.si/digitalmelayani" target="_blank">
-								<img class="img-fluid" src="<?php echo base_url();?>/assets/web/images/qrVideo.png"
-									alt="alternative">
+                                <img class="img-fluid" src="assets/web/images/qrVideo.png" alt="alternative">
 							</a>
 						</div>
 						<div class="card-body">
-							<strong>Hubungi Kami</strong> - Petugas PTSP Digital Melayani Pengadilan Tinggi Bandung
+                            <strong>Bantuan</strong> - Hubungi Petugas PTSP Pengadilan Tinggi Bandung
 						</div>
 					</div>
 					<!-- end of card -->
