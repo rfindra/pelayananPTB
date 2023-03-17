@@ -46,8 +46,8 @@
       <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Name</a> -->
 
       <!-- Image Logo -->
-      <a class="navbar-brand logo-image" href="<?php echo base_url()?>index.php"><img src="<?php echo base_url();?>/assets/web/images/logo.png"
-          alt="alternative"></a>
+      <a class="navbar-brand logo-image" href="<?php echo base_url()?>index.php"><img
+          src="<?php echo base_url();?>/assets/web/images/logo.png" alt="alternative"></a>
 
       <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
         <span class="navbar-toggler-icon"></span>
@@ -117,6 +117,12 @@
       </div> <!-- end of container -->
     </div> <!-- end of cards-1 -->
     <!-- end of projects -->
+
+    <footer>
+        <p>&copy; 2023 Pengadilan Tinggi Bandung</p>
+    </footer>
+
+
 
     <!-- Scripts -->
     <script src="<?php echo base_url();?>/assets/web/js/jquery.min.js"></script>

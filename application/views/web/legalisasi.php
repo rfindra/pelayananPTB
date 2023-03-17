@@ -241,6 +241,10 @@
     </div> <!-- end of cards-1 -->
     <!-- end of projects -->
 
+    <footer>
+        <p>&copy; 2023 Pengadilan Tinggi Bandung</p>
+    </footer>
+
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->

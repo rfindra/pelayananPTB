@@ -832,19 +832,16 @@ input[type='checkbox'] {
 /*********************/
 /*     Copyright     */
 /*********************/
-.copyright {
-	padding-top: 1.75rem;
-	padding-bottom: 0.625rem;
-	border-top: 1px solid #d2d3cc;
-	text-align: center;
-}
-
-.copyright p,
-.copyright a {
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #ffffff;
 	color: #a7a89f;
-	text-decoration: none;
-}
-
+	text-align: center;
+	padding: 5px;
+  }
 
 /******************************/
 /*     Back To Top Button     */

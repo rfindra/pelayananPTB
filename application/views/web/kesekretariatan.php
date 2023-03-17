@@ -163,6 +163,9 @@
         </div> <!-- end of container -->
     </div> <!-- end of basic-2 -->
     <!-- end of services -->
+    <footer>
+        <p>&copy; 2023 Pengadilan Tinggi Bandung</p>
+    </footer>
     <!-- Scripts -->
     <script src="<?php echo base_url();?>/assets/web/js/jquery.min.js"></script>
     <!-- jQuery for Bootstrap's JavaScript plugins -->
