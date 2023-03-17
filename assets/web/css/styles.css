@@ -35,7 +35,8 @@ html {
 	height: 100%;
 }
 
-body, p {
+body,
+p {
 	color: #676861; 
 	font: 400 1rem/1.625rem "Open Sans", sans-serif;
 }
@@ -167,7 +168,8 @@ a:hover {
 .btn-solid-reg:hover {
 	border: 1px solid #d79491;
 	background-color: transparent;
-	color: #d79491; /* needs to stay here because of the forced color property of a tag */
+	color: #d79491; 
+	/* needs to stay here because of the forced color property of a tag */
 	text-decoration: none;
 }
 
@@ -187,17 +189,19 @@ a:hover {
 .btn-solid-lg:hover {
 	border: 1px solid #d79491;
 	background-color: transparent;
-	color: #d79491; /* needs to stay here because of the forced color property of a tag */
+	color: #d79491; 
+	/* needs to stay here because of the forced color property of a tag */
 	text-decoration: none;
 }
 
 .btn-outline-reg {
 	display: inline-block;
+	width: 300px;
 	padding: 1.375rem 2.25rem 1.375rem 2.25rem;
 	border: 1px solid #393a34;
 	background-color: transparent;
 	color: #393a34;
-	font-weight: 600;
+	font-weight: 1600;
 	font-size: 0.875rem;
 	line-height: 0;
 	text-decoration: none;
@@ -268,10 +272,10 @@ a:hover {
 	transition: all 0.2s ease;
 }
 
-.form-control-input:focus + .label-control,
-.form-control-input.notEmpty + .label-control,
-.form-control-textarea:focus + .label-control,
-.form-control-textarea.notEmpty + .label-control {
+.form-control-input:focus+.label-control,
+.form-control-input.notEmpty+.label-control,
+.form-control-textarea:focus+.label-control,
+.form-control-textarea.notEmpty+.label-control {
 	top: 0.125rem;
 	color: #393a34;
 	opacity: 1;
@@ -281,7 +285,8 @@ a:hover {
 
 .form-control-input,
 .form-control-select {
-	display: block; /* needed for proper display of the label in Firefox, IE, Edge */
+	display: block; 
+	/* needed for proper display of the label in Firefox, IE, Edge */
 	width: 100%;
 	padding-top: 1.125rem;
 	padding-bottom: 0.125rem;
@@ -292,7 +297,8 @@ a:hover {
 	font-size: 0.875rem;
 	line-height: 1.875rem;
 	transition: all 0.2s;
-	-webkit-appearance: none; /* removes inner shadow on form inputs on ios safari */
+	-webkit-appearance: none; 
+	/* removes inner shadow on form inputs on ios safari */
 }
 
 .form-control-select {
@@ -316,9 +322,11 @@ select {
 }
 
 .form-control-textarea {
-	display: block; /* used to eliminate a bottom gap difference between Chrome and IE/FF */
+	display: block; 
+	/* used to eliminate a bottom gap difference between Chrome and IE/FF */
 	width: 100%;
-	height: 13rem; /* used instead of html rows to normalize height between Chrome and IE/FF */
+	height: 13rem; 
+	/* used instead of html rows to normalize height between Chrome and IE/FF */
 	padding-top: 1.5rem;
 	padding-left: 1.25rem;
 	border: 1px solid #dadada;
@@ -333,7 +341,8 @@ select {
 .form-control-select:focus,
 .form-control-textarea:focus {
 	border: 1px solid #a1a1a1;
-	outline: none; /* Removes blue border on focus */
+	outline: none; 
+	/* Removes blue border on focus */
 }
 
 .form-control-input:hover,
@@ -442,6 +451,7 @@ input[type='checkbox'] {
 	from {
 		opacity: 0;
 	}
+
 	to {
 		opacity: 1;
 	}
@@ -451,6 +461,7 @@ input[type='checkbox'] {
 	from {
 		opacity: 0;
 	}
+
 	to {
 		opacity: 1;
 	}
@@ -465,6 +476,7 @@ input[type='checkbox'] {
 	from {
 		opacity: 1;
 	}
+
 	to {
 		opacity: 0;
 	}
@@ -474,6 +486,7 @@ input[type='checkbox'] {
 	from {
 		opacity: 1;
 	}
+
 	to {
 		opacity: 0;
 	}
@@ -483,6 +496,7 @@ input[type='checkbox'] {
 	-webkit-animation: fadeOut 0.8s;
 	animation: fadeOut 0.8s;
 }
+
 /* end of fade animation for image lightbox and morphtext - magnific popup */
 
 
@@ -511,7 +525,8 @@ input[type='checkbox'] {
 
 .offcanvas-collapse {
 	position: fixed;
-	top: 3.25rem; /* adjusts the height between the top of the page and the offcanvas menu */
+	top: 3.25rem; 
+	/* adjusts the height between the top of the page and the offcanvas menu */
 	bottom: 0;
 	left: 100%;
 	width: 100%;
@@ -736,6 +751,8 @@ input[type='checkbox'] {
 
 /* Hover Animation */
 .cards-1 .card-image {
+	/*border: 10px solid #d79491;
+	border-radius: 5px;*/
 	overflow: hidden;
 	margin-right: auto;
 	margin-left: auto;
@@ -751,11 +768,128 @@ input[type='checkbox'] {
 	-webkit-transform: scale(1.15);
 	transform: scale(1.15);
 } 
+
 /* end of hover animation */
 
 .cards-1 .card-body {
 	padding: 1rem 0 0 0;
 }
+
+
+/* CSS for Form1*/
+
+#form1 {
+	display: none;
+  }
+  
+  .card-body {
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 20px;
+	border-radius: 5px;
+  }
+  
+  .h3-heading {
+	text-align: center;
+	margin-bottom: 20px;
+  }
+  
+  form table {
+	width: 100%;
+  }
+  
+  label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+  }
+  
+  input {
+	width: 100%;
+	max-width: 400px;
+	padding: 10px;
+	border-color:#393a34;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.8);
+	margin-bottom: 20px;
+  }
+  
+  input::placeholder {
+	opacity: 0.5;
+  }
+  
+  button[type="submit"] {
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background-color 0.2s ease-in-out;
+  }
+  
+  button[type="submit"]:hover {
+	background-color: #2E8B57;
+  }
+/*end of css for form1*/
+
+/* CSS For Table Cari Monitoring*/
+/* Style the table */
+#find-monitor {
+	border-collapse: collapse;
+	width: 100%;
+	margin: auto;
+  }
+  
+  /* Set the table header styles */
+  #find-monitor th {
+	background-color: #f2f2f2;
+	font-weight: bold;
+	text-align: center;
+	padding: 10px;
+	border: 1px solid #ddd;
+  }
+  
+  /* Set the table cell styles */
+  #find-monitor td {
+	text-align: center;
+	padding: 8px;
+	border: 1px solid #ddd;
+  }
+  
+  /* Set the alternating row colors */
+  #find-monitor tr:nth-child(even) {
+	background-color: #f2f2f2;
+  }
+  
+  /* Set the hover effect */
+  #find-monitor tbody tr:hover {
+	background-color: #ddd;
+  }
+  
+  /* Set the link styles */
+  #find-monitor a {
+	color: #333;
+	text-decoration: none;
+  }
+  
+  /* Set the button styles */
+  #find-monitor a.button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 8px 12px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	margin: 4px 2px;
+	cursor: pointer;
+  }
+  
+/* end of CSS for Table Cari Monitoring*/
+
 
 
 /*********************/
@@ -934,6 +1068,7 @@ a:hover.back-to-top {
 	.header .area-2 {
 		height: 500px;
 	}
+
 	/* end of header */
 
 
@@ -943,6 +1078,7 @@ a:hover.back-to-top {
 		margin-right: 1rem;
 		margin-left: 1rem;
 	}
+
 	/* end of partners */
 
 
@@ -950,6 +1086,7 @@ a:hover.back-to-top {
 	.ex-basic-1 .text-box {
 		padding: 2rem 2rem 1.125rem 2rem;
 	}
+
 	/* end of extra pages */
 }
 /* end of min-width 768px */
@@ -970,6 +1107,7 @@ a:hover.back-to-top {
 		margin-right: auto;
 		margin-left: auto;
 	}
+
 	/* end of general styles */
 
 
@@ -1006,6 +1144,7 @@ a:hover.back-to-top {
 		padding-right: 0.625rem;
 		padding-left: 0.625rem;
 	}
+
 	/* end of navigation */
 	
 
@@ -1034,6 +1173,7 @@ a:hover.back-to-top {
 		height: 100%;
 		vertical-align: top;
 	}
+
 	/* end of header */
 
 
@@ -1043,6 +1183,7 @@ a:hover.back-to-top {
 		margin-right: auto;
 		margin-left: auto;
 	}
+
 	/* end of about */
 
 
@@ -1052,6 +1193,7 @@ a:hover.back-to-top {
 		margin-right: auto;
 		margin-left: auto;
 	}
+
 	/* end of invitation */
 
 
@@ -1066,6 +1208,7 @@ a:hover.back-to-top {
 		margin-right: 0.625rem;
 		margin-left: 0.625rem;
 	}
+
 	/* end of projects */
 
 
@@ -1073,6 +1216,7 @@ a:hover.back-to-top {
 	.form-1 .text-container {
 		margin-bottom: 0;
 	}
+
 	/* end of contact */
 
 
@@ -1087,8 +1231,10 @@ a:hover.back-to-top {
 		margin-right: 1rem;
 		margin-left: 1rem;
 	}
+
 	/* end of extra pages */
 }
+
 /* end of min-width 992px */
 
 
@@ -1100,6 +1246,7 @@ a:hover.back-to-top {
 		font-size: 4.75rem;
 		line-height: 5.125rem;
 	}
+
 	/* end of general styles */
 
 
@@ -1124,6 +1271,7 @@ a:hover.back-to-top {
 	.header .p-large {
 		margin-bottom: 2rem;
 	}
+
 	/* end of header */
 
 
@@ -1142,6 +1290,7 @@ a:hover.back-to-top {
 		margin-right: 3.375rem;
 		margin-left: 3.375rem;
 	}
+
 	/* end of about */
 
 
@@ -1153,6 +1302,7 @@ a:hover.back-to-top {
 	.basic-2 .list-unstyled.second {
 		margin-left: 1.75rem;
 	}
+
 	/* end of services */
 
 
@@ -1165,6 +1315,7 @@ a:hover.back-to-top {
 		margin-right: 1.375rem;
 		margin-left: 1.375rem;
 	}
+
 	/* end of projects */
 
 
@@ -1181,6 +1332,7 @@ a:hover.back-to-top {
 	.basic-4 img:last-of-type {
 		margin-right: 0;
 	}
+
 	/* end of partners */
 
 
@@ -1189,6 +1341,7 @@ a:hover.back-to-top {
 		margin-top: 1.25rem;
 		margin-right: 4.5rem;
 	}
+
 	/* end of contact */
 
 
@@ -1201,6 +1354,8 @@ a:hover.back-to-top {
 		margin-right: 2.875rem;
 		margin-left: 2.875rem;
 	}
+
 	/* end of extra pages */
 }
+
 /* end of min-width 1200px */
