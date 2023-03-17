@@ -25,15 +25,15 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap"
     rel="stylesheet">
-  <link href="<?php echo base_url();?>/assets/web/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-  <link href="<?php echo base_url();?>/assets/web/css/5all.css" rel="stylesheet" type="text/css" media="all" />
-  <link href="<?php echo base_url();?>/assets/web/css/styles.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="<?php echo base_url();?>/assets/web/css/bootstrap.css" rel="stylesheet">
+  <link href="<?php echo base_url();?>/assets/web/css/fontawesome-all.css" rel="stylesheet">
+  <link href="<?php echo base_url();?>/assets/web/css/styles.css" rel="stylesheet">
 
   <!-- FontAwesom Script -->
   <script src="https://kit.fontawesome.com/f42ecbee67.js" crossorigin="anonymous"></script>
 
   <!-- Favicon  -->
-  <link rel="icon" href="assets/web/images/favicon.png">
+  <link rel="icon" href="<?php echo base_url();?>/assets/web/images/favicon.png">
 </head>
 
 <body data-spy="scroll" data-target=".fixed-top">
@@ -46,7 +46,7 @@
       <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Name</a> -->
 
       <!-- Image Logo -->
-      <a class="navbar-brand logo-image" href="<?php echo base_url()?>index.php"><img src="assets/web/images/logo.svg"
+      <a class="navbar-brand logo-image" href="<?php echo base_url()?>index.php"><img src="<?php echo base_url();?>/assets/web/images/logo.png"
           alt="alternative"></a>
 
       <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
@@ -55,11 +55,6 @@
 
       <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav">
-          <!--
-                        <li class="nav-item">
-                            <a class="nav-link page-scroll" href="#about">About <span class="sr-only">(current)</span></a>
-                        </li>  
-                    -->
           <li class="nav-item">
             <a class="nav-link page-scroll"
               href="<?php echo base_url()?>index.php/Kepaniteraan/indexweb">Kepaniteraan</a>
@@ -72,7 +67,8 @@
             <a class="nav-link page-scroll" href="https://meet.jit.si/digitalmelayani" target="_blank">Bantuan</a>
           </li>
         </ul>
-        <span class="nav-item ml-auto">
+        <span class="nav-item social-icons ml-auto">
+          <!-- <a href="<?php echo base_url();?>index.php/web/login_views">Masuk</a> -->
           <a class="nav-link page-scroll" href="<?php echo base_url()?>index.php/login">Masuk</a>
 
 
@@ -87,8 +83,6 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <!--<h2 class="h2-heading">LEGALISASI BERITA ACARA SUMPAH ADVOKAT <br> PENGADILAN TINGGI BANDUNG </h2>-->
-          <!--<p class="p-heading">Pengadilan Tinggi Bandung</p>--><br>
         </div> <!-- end of col -->
       </div> <!-- end of row -->
       <div class="row">
@@ -105,33 +99,34 @@
               <strong>ADMIN</strong> - Masuk
             </div>
           </div>
-
-          <!-- Form 2 -->
-          <div id="form2" style="display:block;">
-
+          <!-- Form login -->
+          <div id="form-login" class="card-body">
             <form action="<?php echo base_url();?>index.php/user/login" method="POST">
-              <table>
-                <label>Username :</label>
-                <input type="text" placeholder="Username" required="" id="username" name="username" />
-                <label>Password :</label>
-                <input type="password" placeholder="Passowrd" required="" id="password" name="password" />
-                <div align="center"><button type="submit" value="Login">Masuk</button></div>
-              </table>
+              <div class="form-group-login">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" class="form-control" required>
+              </div>
+              <div class="form-group-login">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" class="form-control" required>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Masuk</button>
             </form>
-            <!-- end of card -->
-          </div> <!-- end of col -->
+          </div>
         </div> <!-- end of row -->
       </div> <!-- end of container -->
     </div> <!-- end of cards-1 -->
     <!-- end of projects -->
 
     <!-- Scripts -->
-    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-    <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
-    <script src="js/scripts.js"></script> <!-- Custom scripts -->
-
+    <script src="<?php echo base_url();?>/assets/web/js/jquery.min.js"></script>
+    <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="<?php echo base_url();?>/assets/web/js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="<?php echo base_url();?>/assets/web/js/jquery.easing.min.js"></script>
+    <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="<?php echo base_url();?>/assets/web/js/morphext.min.js"></script>
+    <!-- Morphtext rotating text in the header -->
+    <script src="<?php echo base_url();?>/assets/web/js/scripts.js"></script> <!-- Custom scripts -->
 </body>
 
 </html>

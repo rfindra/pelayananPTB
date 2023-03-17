@@ -25,12 +25,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap"
         rel="stylesheet">
-    <link href="<?php echo base_url();?>/assets/web/css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
-    <link href="<?php echo base_url();?>/assets/web/css/fontawesome-all.css" rel="stylesheet" type="text/css" media="all"/>
-    <link href="<?php echo base_url();?>/assets/web/css/styles.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="<?php echo base_url();?>/assets/web/css/bootstrap.css" rel="stylesheet">
+    <link href="<?php echo base_url();?>/assets/web/css/fontawesome-all.css" rel="stylesheet">
+    <link href="<?php echo base_url();?>/assets/web/css/styles.css" rel="stylesheet">
+
+    <!-- FontAwesom Script -->
+    <script src="https://kit.fontawesome.com/f42ecbee67.js" crossorigin="anonymous"></script>
 
     <!-- Favicon  -->
-    <link rel="icon" href="assets/web/images/favicon.png">
+    <link rel="icon" href="<?php echo base_url();?>/assets/web/images/favicon.png">
 </head>
 
 <body data-spy="scroll" data-target=".fixed-top">
@@ -43,9 +46,8 @@
             <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Name</a> -->
 
             <!-- Image Logo -->
-
-            <a class="navbar-brand logo-image" href="<?php echo base_url()?>index.php"><img src="assets/web/images/logo.png" alt="alternative"></a>
-
+            <a class="navbar-brand logo-image" href="<?php echo base_url()?>index.php"><img
+                    src="<?php echo base_url();?>/assets/web/images/logo.png" alt="alternative"></a>
 
             <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
                 <span class="navbar-toggler-icon"></span>
@@ -53,16 +55,13 @@
 
             <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav">
-                    <!--
-                        <li class="nav-item">
-                            <a class="nav-link page-scroll" href="#about">About <span class="sr-only">(current)</span></a>
-                        </li>  
-                    -->
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="<?php echo base_url()?>index.php/Kepaniteraan/indexweb">Kepaniteraan</a>
+                        <a class="nav-link page-scroll"
+                            href="<?php echo base_url()?>index.php/Kepaniteraan/indexweb">Kepaniteraan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="<?php echo base_url()?>index.php/Kesekretariatan/indexweb">Kesekretariatan</a>
+                        <a class="nav-link page-scroll"
+                            href="<?php echo base_url()?>index.php/Kesekretariatan/indexweb">Kesekretariatan</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="https://meet.jit.si/digitalmelayani"
@@ -70,18 +69,9 @@
                     </li>
 
                 </ul>
-                <span class="nav-item ml-auto">
-                    <!--    <a href="#your-link">
-                            <span class="fab fa-facebook-f"></span>
-                        </a>
-                        <a href="#your-link">
-                            <span class="fab fa-twitter"></span>
-                        </a>
-                    
-                    <a href="<?php echo base_url()?>index.php/login">Masuk
-                       <span class="fab fa-instagram"></span>
-                    </a> -->
-                        <a class="nav-link page-scroll" href="<?php echo base_url()?>index.php/login">Masuk</a>
+                <span class="nav-item social-icons ml-auto">
+                    <!-- <a href="<?php echo base_url();?>index.php/web/login_views">Masuk</a> -->
+                    <a class="nav-link page-scroll" href="<?php echo base_url()?>index.php/login">Masuk</a>
 
 
                 </span>
@@ -115,11 +105,12 @@
                             </div>
                         </li>
                         <li class="media">
-                           <!-- <i class="fas fa-bullhorn"></i>-->
+                            <!-- <i class="fas fa-bullhorn"></i>-->
                             <div class="media-body">
                                 <h5> <strong>Audiensi Kepada Pimpinan</strong> </a></h5>
                                 <p>the quick brown fox jumped over the lazy dog </p>
-                                <a class="btn-solid-reg mb-5" href="<?php echo base_url()?>index.php/Audiensi/indexweb">Gunakan Layanan</a>
+                                <a class="btn-solid-reg mb-5"
+                                    href="<?php echo base_url()?>index.php/Audiensi/indexweb">Gunakan Layanan</a>
                             </div>
                         </li>
                         <li class="media">
@@ -136,7 +127,7 @@
                 <div class="col-lg-6">
                     <ul class="list-unstyled second">
                         <li class="media">
-                           <!-- <i class="fas fa-keyboard"></i>-->
+                            <!-- <i class="fas fa-keyboard"></i>-->
                             <div class="media-body">
                                 <h5> <strong>Praktik Kerja Industi (Prakerin)
                                     </strong> </a></h5>
@@ -151,7 +142,8 @@
                                 <h5> <strong>Informasi Lainnya </strong> </a>
                                 </h5>
                                 <p>Hubungi Petugas Pelayanan Terpadu Satu Pintu (PTSP)</p>
-                                <a class="btn-solid-reg mb-5" href="https://meet.jit.si/digitalmelayani" target="_blank">Gunakan Layanan</a>
+                                <a class="btn-solid-reg mb-5" href="https://meet.jit.si/digitalmelayani"
+                                    target="_blank">Gunakan Layanan</a>
 
                             </div>
                         </li>
@@ -172,11 +164,14 @@
     </div> <!-- end of basic-2 -->
     <!-- end of services -->
     <!-- Scripts -->
-    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-    <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
-    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="<?php echo base_url();?>/assets/web/js/jquery.min.js"></script>
+    <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="<?php echo base_url();?>/assets/web/js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="<?php echo base_url();?>/assets/web/js/jquery.easing.min.js"></script>
+    <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="<?php echo base_url();?>/assets/web/js/morphext.min.js"></script>
+    <!-- Morphtext rotating text in the header -->
+    <script src="<?php echo base_url();?>/assets/web/js/scripts.js"></script> <!-- Custom scripts -->
 </body>
 
 </html>

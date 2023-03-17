@@ -25,25 +25,29 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap"
         rel="stylesheet">
-    <link href="<?php echo base_url();?>/assets/web/css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
-    <link href="<?php echo base_url();?>/assets/web/css/fontawesome-all.css" rel="stylesheet" type="text/css" media="all"/>
-    <link href="<?php echo base_url();?>/assets/web/css/styles.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="<?php echo base_url();?>/assets/web/css/bootstrap.css" rel="stylesheet">
+    <link href="<?php echo base_url();?>/assets/web/css/fontawesome-all.css" rel="stylesheet">
+    <link href="<?php echo base_url();?>/assets/web/css/styles.css" rel="stylesheet">
+
+    <!-- FontAwesom Script -->
+    <script src="https://kit.fontawesome.com/f42ecbee67.js" crossorigin="anonymous"></script>
 
     <!-- Favicon  -->
-    <link rel="icon" href="assets/web/images/favicon.png">
-
+    <link rel="icon" href="<?php echo base_url();?>/assets/web/images/favicon.png">
 </head>
 
 <body data-spy="scroll" data-target=".fixed-top">
 
-<nav class="navbar navbar-expand-lg fixed-top navbar-light">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
         <div class="container">
 
             <!-- Text Logo - Use this if you don't have a graphic logo -->
             <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Name</a> -->
 
-            <!-- Image Logo --> 
-            <a class="navbar-brand logo-image" href="<?php echo base_url()?>index.php"><img src="assets/web/images/logo.png" alt="alternative"></a>
+            <!-- Image Logo -->
+            <a class="navbar-brand logo-image" href="<?php echo base_url()?>index.php"><img
+                    src="<?php echo base_url();?>/assets/web/images/logo.png" alt="alternative"></a>
 
             <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
                 <span class="navbar-toggler-icon"></span>
@@ -51,16 +55,13 @@
 
             <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav">
-                    <!--
-                        <li class="nav-item">
-                            <a class="nav-link page-scroll" href="#about">About <span class="sr-only">(current)</span></a>
-                        </li>  
-                    -->
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="<?php echo base_url()?>index.php/Kepaniteraan/indexweb">Kepaniteraan</a>
+                        <a class="nav-link page-scroll"
+                            href="<?php echo base_url()?>index.php/Kepaniteraan/indexweb">Kepaniteraan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="<?php echo base_url()?>index.php/Kesekretariatan/indexweb">Kesekretariatan</a>
+                        <a class="nav-link page-scroll"
+                            href="<?php echo base_url()?>index.php/Kesekretariatan/indexweb">Kesekretariatan</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="https://meet.jit.si/digitalmelayani"
@@ -68,18 +69,9 @@
                     </li>
 
                 </ul>
-                <span class="nav-item ml-auto">
-                    <!--    <a href="#your-link">
-                            <span class="fab fa-facebook-f"></span>
-                        </a>
-                        <a href="#your-link">
-                            <span class="fab fa-twitter"></span>
-                        </a>
-                    
-                    <a href="<?php echo base_url()?>index.php/login">Masuk
-                       <span class="fab fa-instagram"></span>
-                    </a> -->
-                        <a class="nav-link page-scroll" href="<?php echo base_url()?>index.php/login">Masuk</a>
+                <span class="nav-item social-icons ml-auto">
+                    <!-- <a href="<?php echo base_url();?>index.php/web/login_views">Masuk</a> -->
+                    <a class="nav-link page-scroll" href="<?php echo base_url()?>index.php/login">Masuk</a>
 
 
                 </span>
@@ -99,54 +91,66 @@
                 -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
-<br>
+            <br>
             <div class="row">
                 <div class="col-lg-6">
                     <ul class="list-unstyled first">
                         <li class="media">
-                            <!--<i class="fas fa-clock"></i>-->
+                            <!--<i class="fas fa-"></i>-->
                             <div class="media-body">
-                                <h5>  <strong>Penangguhan Penahanan</strong> </a></h5>
+                                <h5> <strong>Legalisasi Berita Acara Sumpah Advokat </strong>
+                                    </a></h5>
+                                <p>the quick brown fox jumped over the lazy dog </p>
+                                <a class="btn-solid-reg mb-5"
+                                    href="<?php echo base_url()?>index.php/Legalisasibas/indexweb">Gunakan Layanan</a>
+
+                            </div>
+                        </li>
+
+                        <li class="media">
+                            <!--<i class="fas fa-clock"></i>-->
+                            <!--<div class="media-body">
+                                <h5> <strong>Penangguhan Penahanan</strong> </a></h5>
                                 <p>the quick brown fox jumped over the lazy dog </p>
                                 <a class="btn-solid-reg mb-5" href="index.html">Gunakan Layanan</a>
 
-                            </div>
+                            </div>-->
                         </li>
                         <li class="media">
                             <!--<i class="fas fa-bullhorn"></i>-->
-                            <div class="media-body">
-                                <h5>  <strong>Pengalihan Penahanan</strong> </a></h5>
+                            <!--<div class="media-body">
+                                <h5> <strong>Pengalihan Penahanan</strong> </a></h5>
                                 <p>the quick brown fox jumped over the lazy dog </p>
                                 <a class="btn-solid-reg mb-5" href="index.html">Gunakan Layanan</a>
 
-                            </div>
+                            </div>-->
                         </li>
                         <li class="media">
                             <!--<i class="fas fa-font"></i>-->
-                            <div class="media-body">
-                                <h5>  <strong>Pembantaran Penahanan</strong> </a></h5>
+                            <!--<div class="media-body">
+                                <h5> <strong>Pembantaran Penahanan</strong> </a></h5>
                                 <p>the quick brown fox jumped over the lazy dog </p>
                                 <a class="btn-solid-reg mb-5" href="index.html">Gunakan Layanan</a>
 
-                            </div>
+                            </div>-->
                         </li>
                         <li class="media">
                             <!--<i class="fas fa-font"></i>-->
-                            <div class="media-body">
-                                <h5>  <strong>Izin Besuk Tahanan</strong> </a></h5>
+                            <!--<div class="media-body">
+                                <h5> <strong>Izin Besuk Tahanan</strong> </a></h5>
                                 <p>the quick brown fox jumped over the lazy dog </p>
                                 <a class="btn-solid-reg mb-5" href="index.html">Gunakan Layanan</a>
 
-                            </div>
+                            </div>-->
                         </li>
                         <li class="media">
                             <!--<i class="fas fa-font"></i>-->
-                            <div class="media-body">
-                                <h5>  <strong>Penahanan</strong> </a></h5>
+                            <!--<div class="media-body">
+                                <h5> <strong>Penahanan</strong> </a></h5>
                                 <p>the quick brown fox jumped over the lazy dog </p>
                                 <a class="btn-solid-reg mb-5" href="index.html">Gunakan Layanan</a>
 
-                            </div>
+                            </div>-->
                         </li>
 
                     </ul>
@@ -154,53 +158,65 @@
                 <div class="col-lg-6">
                     <ul class="list-unstyled second">
                         <li class="media">
-                            <!--<i class="fas fa-keyboard"></i>-->
+                            <!--<i class="fas fa-hand-holding"></i>-->
                             <div class="media-body">
-                                <h5>  <strong>Penyerahan Memori, Kontra Memori Banding
-                                        </strong> </a></h5>
+                                <h5> <strong>Pengaduan Melalui E-Peduli </strong> </a></h5>
+                                <p>the quick brown fox jumped over the lazy dog </p>
+                                <a class="btn-solid-reg mb-5" href="http://e-peduli.pt-bandung.go.id/#09"
+                                    target="_blank">Gunakan Layanan</a>
+
+                            </div>
+                        </li>
+                        <li class="media">
+                            <!--<i class="fas fa-keyboard"></i>-->
+                            <!--<div class="media-body">
+                                <h5> <strong>Penyerahan Memori, Kontra Memori Banding
+                                    </strong> </a></h5>
                                 <p>the quick brown fox jumped over the lazy dog </p>
                                 <a class="btn-solid-reg mb-5" href="index.html">Gunakan Layanan</a>
 
-                            </div>
+                            </div>-->
                         </li>
                         <li class="media">
                             <!--<i class="fas fa-photo-video"></i>-->
-                            <div class="media-body">
-                                <h5>  <strong>Penyerahan Tambahan Alat Bukti </strong> </a>
+                            <!--<div class="media-body">
+                                <h5> <strong>Penyerahan Tambahan Alat Bukti </strong> </a>
                                 </h5>
                                 <p>the quick brown fox jumped over the lazy dog </p>
                                 <a class="btn-solid-reg mb-5" href="index.html">Gunakan Layanan</a>
 
-                            </div>
+                            </div>-->
                         </li>
                         <li class="media">
                             <!--<i class="fas fa-users"></i>-->
-                            <div class="media-body">
-                                <h5>  <strong>Informasi Status Perkara Banding </strong> </a>
+                            <!--<div class="media-body">
+                                <h5> <strong>Informasi Status Perkara Banding </strong> </a>
                                 </h5>
                                 <p>the quick brown fox jumped over the lazy dog </p>
                                 <a class="btn-solid-reg mb-5" href="index.html">Gunakan Layanan</a>
 
-                            </div>
+                            </div>-->
                         </li>
                         <li class="media">
                             <!--<i class="fas fa-"></i>-->
-                            <div class="media-body">
-                                <h5>  <strong>Legalisasi Berita Acara Sumpah Advokat </strong>
+                            <!--<div class="media-body">
+                                <h5> <strong>Legalisasi Berita Acara Sumpah Advokat </strong>
                                     </a></h5>
                                 <p>the quick brown fox jumped over the lazy dog </p>
-                                <a class="btn-solid-reg mb-5" href="<?php echo base_url()?>index.php/Legalisasibas/indexweb">Gunakan Layanan</a>
+                                <a class="btn-solid-reg mb-5"
+                                    href="<?php echo base_url()?>index.php/Legalisasibas/indexweb">Gunakan Layanan</a>
 
-                            </div>
+                            </div>-->
                         </li>
                         <li class="media">
                             <!--<i class="fas fa-hand-holding"></i>-->
-                            <div class="media-body">
-                                <h5>  <strong>Pengaduan Melalui E-Peduli </strong> </a></h5>
+                            <!--<div class="media-body">
+                                <h5> <strong>Pengaduan Melalui E-Peduli </strong> </a></h5>
                                 <p>the quick brown fox jumped over the lazy dog </p>
-                                <a class="btn-solid-reg mb-5" href="http://e-peduli.pt-bandung.go.id/#09" target="_blank">Gunakan Layanan</a>
+                                <a class="btn-solid-reg mb-5" href="http://e-peduli.pt-bandung.go.id/#09"
+                                    target="_blank">Gunakan Layanan</a>
 
-                            </div>
+                            </div>-->
                         </li>
 
                     </ul>
@@ -210,11 +226,14 @@
     </div> <!-- end of basic-2 -->
     <!-- end of services -->
     <!-- Scripts -->
-    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-    <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
-    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="<?php echo base_url();?>/assets/web/js/jquery.min.js"></script>
+    <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="<?php echo base_url();?>/assets/web/js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="<?php echo base_url();?>/assets/web/js/jquery.easing.min.js"></script>
+    <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="<?php echo base_url();?>/assets/web/js/morphext.min.js"></script>
+    <!-- Morphtext rotating text in the header -->
+    <script src="<?php echo base_url();?>/assets/web/js/scripts.js"></script> <!-- Custom scripts -->
 </body>
 
 </html>

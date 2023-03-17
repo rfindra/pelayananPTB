@@ -18,6 +18,9 @@
     <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
     <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
+    <!-- FontAwesom Script -->
+    <script src="https://kit.fontawesome.com/f42ecbee67.js" crossorigin="anonymous"></script>
+
     <!-- Webpage Title -->
     <title>Legalisasi Berita Acara Sumpah Advokat</title>
 
@@ -46,7 +49,8 @@
             <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Name</a> -->
 
             <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="<?php echo base_url()?>index.php"><img src="assets/web/images/logo.png" alt="alternative"></a>
+			<a class="navbar-brand logo-image" href="<?php echo base_url()?>index.php"><img
+					src="<?php echo base_url();?>/assets/web/images/logo.png" alt="alternative"></a>
 
             <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
                 <span class="navbar-toggler-icon"></span>
@@ -157,17 +161,17 @@
                         </div>
                     </div>
 
-<!-- Form 2 -->
-<div id="form2" style="display:none;">
-    <?php
+                    <!-- Form 2 -->
+                    <div id="form2" style="display:none;">
+                        <?php
     $no=1;
     if(isset($data_legalisasi)){
         foreach($data_legalisasi as $row){
             ?>
-    <?php }
+                        <?php }
         }
   ?>
-                       <!--<form action="<?php print site_url();?>/Legalisasibas/cariweb" method="POST">-->
+                        <!--<form action="<?php print site_url();?>/Legalisasibas/cariweb" method="POST">-->
 
                         <form action="<?php echo base_url()?>index.php/Legalisasibas/cariweb" method="POST">
 
