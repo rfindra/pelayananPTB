@@ -15,12 +15,12 @@ class UploadLegalisasi extends CI_Controller {
   
     public function index() {
         $this->load->library('upload');
-        $this->loadView('web/uploadlegalisasi', []);
+        $this->loadView('web/uploadLegalisasi', []);
     }
   
     public function index1() {
         $this->load->library('upload');
-        $this->loadView('admin/uploadlegalisasi', []);
+        $this->loadView('admin/uploadLegalisasi', []);
     }
   
     function uploadImages($id, $view = 'web') {
