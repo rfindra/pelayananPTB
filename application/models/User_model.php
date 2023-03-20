@@ -1,6 +1,6 @@
 <?php
 
-class Berkas_model extends CI_Model{
+class User_model extends CI_Model{
     function __construct(){
         parent::__construct();
     }
@@ -19,7 +19,7 @@ class Berkas_model extends CI_Model{
     }
     function updateDatab($table,$data,$id)
     {
-        $this->db->where('id_berkas',$id)->update($table,$data);
+        $this->db->where('id_user',$id)->update($table,$data);
     }
     function deleteData($table,$id)
     {
@@ -33,19 +33,11 @@ class Berkas_model extends CI_Model{
     {
         return $this->db->query($q);
     }
-    public function getAllDataBerkas()
+    public function getAllDataUser()
     {
-        $this->db->order_by('id_berkas', 'ASC');
-        $query = $this->db->get('berkas');
-        return $query->result();
+        return $this->db->get('user')->result();
     }
-    function getDataBerkasEdit($id){
-        return $this->db->query("SELECT * from berkas where id_berkas = '$id' ")->result();
-    }
-    function caridata(){
-    $c = $this->input->POST ('cari');
-    $this->db->like('nik', $c);
-    $query = $this->db->get ('berkas');
-    return $query->result(); 
+    function getDataUserEdit($id){
+        return $this->db->query("SELECT * from user where id_user = '$id' ")->result();
     }
 }
