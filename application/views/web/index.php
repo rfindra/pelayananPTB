@@ -33,7 +33,7 @@
 	<script src="https://kit.fontawesome.com/f42ecbee67.js" crossorigin="anonymous"></script>
 
 	<!-- Favicon  -->
-	<link rel="icon" href="<?php echo base_url();?>/assets/web/images/favicon.png">
+	<link rel="icon" href="<?php echo base_url();?>/assets/web/images/system/favicon.png">
 </head>
 
 <body data-spy="scroll" data-target=".fixed-top">
@@ -96,7 +96,7 @@
 					<div class="card">
 						<div class="card-image">
 							<a href="<?php echo base_url()?>index.php/Kepaniteraan/indexweb">
-								<img class="img-fluid" src="assets/web/images/qrKepaniteraan.png" alt="alternative">
+								<img class="img-fluid" src="assets/web/images/system/qrKepaniteraan.png" alt="alternative">
 							</a>
 						</div>
 						<div class="card-body">
@@ -109,7 +109,7 @@
 					<div class="card">
 						<div class="card-image">
 							<a href="<?php echo base_url()?>index.php/Kesekretariatan/indexweb">
-								<img class="img-fluid" src="assets/web/images/qrKesekretariatan.png" alt="alternative">
+								<img class="img-fluid" src="assets/web/images/system/qrKesekretariatan.png" alt="alternative">
 							</a>
 						</div>
 						<div class="card-body">
