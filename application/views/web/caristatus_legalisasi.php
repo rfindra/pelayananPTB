@@ -33,7 +33,7 @@
     <script src="https://kit.fontawesome.com/f42ecbee67.js" crossorigin="anonymous"></script>
 
     <!-- Favicon  -->
-    <link rel="icon" href="assets/web/images/favicon.png">
+	<link rel="icon" href="<?php echo base_url();?>/assets/web/images/system/favicon.ico">
 </head>
 
 <body data-spy="scroll" data-target=".fixed-top">
