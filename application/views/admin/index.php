@@ -20,11 +20,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
 
-  <!-- style -->
+  <!-- style
   <link href="<?php echo base_url();?>/assets/admin/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
   <link href="<?php echo base_url();?>/assets/admin/css/fontawesome-all.css" rel="stylesheet" type="text/css" media="all" />
-  <link href="<?php echo base_url();?>/assets/admin/css/styles.css" rel="stylesheet" type="text/css" media="all" />
-
+  <link href="<?php echo base_url();?>/assets/admin/css/styles.css" rel="stylesheet" type="text/css" media="all" /> 
+  -->
 
   <!-- Icons. Uncomment required icon fonts -->
   <link rel="stylesheet" href="<?php echo base_url();?>/assets/admin/fonts/boxicons.css" />
