@@ -21,9 +21,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
 
   <!-- style -->
-  <link href="<?php echo base_url();?>/assets/admin/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-  <link href="<?php echo base_url();?>/assets/admin/css/fontawesome-all.css" rel="stylesheet" type="text/css" media="all" />
-  <link href="<?php echo base_url();?>/assets/admin/css/styles.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="<?php echo base_url();?>/assets/admin/vendor/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="<?php echo base_url();?>/assets/admin/vendor/css/fontawesome-all.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="<?php echo base_url();?>/assets/admin/vendor/css/styles.css" rel="stylesheet" type="text/css" media="all" />
 
 
   <!-- Icons. Uncomment required icon fonts -->
