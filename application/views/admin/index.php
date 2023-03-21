@@ -21,31 +21,31 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
 
   <!-- style -->
-  <link href="<?php echo base_url();?>/assets/admin/vendor/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-  <link href="<?php echo base_url();?>/assets/admin/vendor/css/fontawesome-all.css" rel="stylesheet" type="text/css" media="all" />
-  <link href="<?php echo base_url();?>/assets/admin/vendor/css/styles.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="<?php echo base_url();?>/assets/admin/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="<?php echo base_url();?>/assets/admin/css/fontawesome-all.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="<?php echo base_url();?>/assets/admin/css/styles.css" rel="stylesheet" type="text/css" media="all" />
 
 
   <!-- Icons. Uncomment required icon fonts -->
-  <link rel="stylesheet" href="<?php echo base_url();?>/assets/admin/vendor/fonts/boxicons.css" />
+  <link rel="stylesheet" href="<?php echo base_url();?>/assets/admin/fonts/boxicons.css" />
 
   <!-- Core CSS -->
-  <link rel="stylesheet" href="<?php echo base_url();?>/assets/admin/vendor/css/core.css"
+  <link rel="stylesheet" href="<?php echo base_url();?>/assets/admin/css/core.css"
     class="template-customizer-core-css" />
-  <link rel="stylesheet" href="<?php echo base_url();?>/assets/admin/vendor/css/theme-default.css"
+  <link rel="stylesheet" href="<?php echo base_url();?>/assets/admin/css/theme-default.css"
     class="template-customizer-theme-css" />
   <link rel="stylesheet" href="<?php echo base_url();?>/assets/admin/css/demo.css" />
 
   <!-- Vendors CSS -->
   <link rel="stylesheet"
-    href="<?php echo base_url();?>/assets/admin/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    href="<?php echo base_url();?>/assets/admin/libs/perfect-scrollbar/perfect-scrollbar.css" />
 
-  <link rel="stylesheet" href="<?php echo base_url();?>/assets/admin/vendor/libs/apex-charts/apex-charts.css" />
+  <link rel="stylesheet" href="<?php echo base_url();?>/assets/admin/libs/apex-charts/apex-charts.css" />
 
   <!-- Page CSS -->
 
   <!-- Helpers -->
-  <script src="<?php echo base_url();?>/assets/admin/vendor/js/helpers.js"></script>
+  <script src="<?php echo base_url();?>/assets/admin/js/helpers.js"></script>
 
   <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
   <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
@@ -593,17 +593,17 @@
   <!-- / Layout wrapper -->
 
   <!-- Core JS -->
-  <!-- build:js assets/vendor/js/core.js -->
-  <script src="<?php echo base_url();?>/assets/admin/vendor/libs/jquery/jquery.js"></script>
-  <script src="<?php echo base_url();?>/assets/admin/vendor/libs/popper/popper.js"></script>
-  <script src="<?php echo base_url();?>/assets/admin/vendor/js/bootstrap.js"></script>
-  <script src="<?php echo base_url();?>/assets/admin/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+  <!-- build:js assets/js/core.js -->
+  <script src="<?php echo base_url();?>/assets/admin/libs/jquery/jquery.js"></script>
+  <script src="<?php echo base_url();?>/assets/admin/libs/popper/popper.js"></script>
+  <script src="<?php echo base_url();?>/assets/admin/js/bootstrap.js"></script>
+  <script src="<?php echo base_url();?>/assets/admin/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
 
-  <script src="<?php echo base_url();?>/assets/admin/vendor/js/menu.js"></script>
+  <script src="<?php echo base_url();?>/assets/admin/js/menu.js"></script>
   <!-- endbuild -->
 
   <!-- Vendors JS -->
-  <script src="<?php echo base_url();?>/assets/admin/vendor/libs/apex-charts/apexcharts.js"></script>
+  <script src="<?php echo base_url();?>/assets/admin/libs/apex-charts/apexcharts.js"></script>
 
   <!-- Main JS -->
   <script src="<?php echo base_url();?>/assets/admin/js/main.js"></script>
