@@ -121,6 +121,32 @@
 					<!-- Card -->
 					<div class="card">
 						<div class="card-image">
+							<a href="https://eberpadu.mahkamahagung.go.id/" target=_blank>
+								<img class="img-fluid" src="assets/web/images/system/qrBerpadu.png" alt="alternative">
+							</a>
+						</div>
+						<div class="card-body">
+							<strong>e-Berpadu </strong> - Elektronik Berkas Pidana Terpadu
+						</div>
+					</div>
+					<!-- end of card -->
+
+					<!-- Card -->
+					<div class="card">
+						<div class="card-image">
+							<a href="http://esurvey.badilum.mahkamahagung.go.id/index.php/kontrol_ikm_ptsp" target=_blank> 
+								<img class="img-fluid" src="assets/web/images/system/qrEmot.png" alt="alternative">
+							</a>
+						</div>
+						<div class="card-body">
+							<strong>e-Survey Dirjen Badilum </strong> - Survey Kepuasan Masyarakat pada Pelayanan Pengadilan Tinggi Bandung
+						</div>
+					</div>
+					<!-- end of card -->
+
+					<!-- Card -->
+					<div class="card">
+						<div class="card-image">
 							<a href="https://meet.jit.si/digitalmelayani" target="_blank">
 								<img class="img-fluid" src="assets/web/images/qrVideo.png" alt="alternative">
 							</a>
