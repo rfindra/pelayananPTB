@@ -79,8 +79,6 @@ class Audiensi extends CI_Controller {
             return TRUE;
         }
     }
-    
-    
 
     private function upload_file($field_name)
     {

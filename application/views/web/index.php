@@ -148,7 +148,7 @@
 					<div class="card">
 						<div class="card-image">
 							<a href="https://meet.jit.si/digitalmelayani" target="_blank">
-								<img class="img-fluid" src="assets/web/images/qrVideo.png" alt="alternative">
+								<img class="img-fluid" src="assets/web/images/system/qrVideo.png" alt="alternative">
 							</a>
 						</div>
 						<div class="card-body">
