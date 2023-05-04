@@ -217,7 +217,7 @@
                             <strong>Persyaratan</strong> <br>
                             <br>
                             <ul id="req">
-                                <li>Scan Kartu Tanda Penduduk</li>
+                                <li text-align=justify >Scan Kartu Tanda Penduduk</li>
                                 <li>Scan Kartu Tanda Anggota</li>
                                 <li>Scan Berita Acara Sumpah Advokat</li>
                                 <li>Scan Surat Kuasa (Jika Pengambilan akan di Kuasakan) </li>
