@@ -225,6 +225,8 @@
         </div> <!-- end of container -->
 	</div> <!-- end of cards-1 -->
 	<!-- end of projects -->
+    <a style="float: right;" class="btn-solid-reg mb-5" href="<?php echo base_url()?>index.php/Legalisasibas/indexweb">Kembali</a>
+
 
     <footer>
         <p>&copy; 2023 Pengadilan Tinggi Bandung</p>
