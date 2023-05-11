@@ -33,7 +33,7 @@
     <script src="https://kit.fontawesome.com/f42ecbee67.js" crossorigin="anonymous"></script>
 
     <!-- Favicon  -->
-    <link rel="icon" href="<?php echo base_url();?>/assets/web/images/favicon.png">
+	<link rel="icon" href="<?php echo base_url();?>/assets/web/images/system/favicon.ico">
 </head>
 
 <body data-spy="scroll" data-target=".fixed-top">
@@ -46,7 +46,7 @@
             <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Name</a> -->
 
             <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="<?php echo base_url()?>index.php"><img
+			<a class="navbar-brand logo-image" href="index.php"><img
                     src="<?php echo base_url();?>/assets/web/images/logo.png" alt="alternative"></a>
 
             <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
@@ -223,12 +223,13 @@
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
-    </div> <!-- end of basic-2 -->
-    <!-- end of services -->
+	</div> <!-- end of cards-1 -->
+	<!-- end of projects -->
 
     <footer>
         <p>&copy; 2023 Pengadilan Tinggi Bandung</p>
     </footer>
+
 
     <!-- Scripts -->
     <script src="<?php echo base_url();?>/assets/web/js/jquery.min.js"></script>
