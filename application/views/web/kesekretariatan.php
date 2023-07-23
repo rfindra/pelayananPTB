@@ -55,19 +55,27 @@
 
             <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav">
+                <li class="nav-item">
+						<a class="nav-link page-scroll"
+							href="<?php echo base_url()?>index.php/Kepaniteraan/indexweb">Kepaniteraan</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link page-scroll"
+							href="<?php echo base_url()?>index.php/Kesekretariatan/indexweb">Kesekretariatan</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link page-scroll"
+							href="<?php echo base_url()?>index.php/Bukutamu/indexweb">Bukutamu</a>
+					</li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll"
-                            href="<?php echo base_url()?>index.php/Kepaniteraan/indexweb">Kepaniteraan</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll"
-                            href="<?php echo base_url()?>index.php/Kesekretariatan/indexweb">Kesekretariatan</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="https://meet.jit.si/digitalmelayani"
-                            target="_blank">Bantuan</a>
-                    </li>
+						<a class="nav-link page-scroll"
+							href="<?php echo base_url()?>index.php/Survei/indexweb">Survei</a>
+					</li>
 
+					<li class="nav-item">
+						<a class="nav-link page-scroll" href="https://meet.jit.si/digitalmelayani"
+							target="_blank">Bantuan</a>
+					</li>
                 </ul>
                 <span class="nav-item social-icons ml-auto">
                     <!-- <a href="<?php echo base_url();?>index.php/web/login_views">Masuk</a> -->
@@ -108,7 +116,7 @@
                             <!-- <i class="fas fa-bullhorn"></i>-->
                             <div class="media-body">
                                 <h5> <strong>Audiensi Kepada Pimpinan</strong> </a></h5>
-                                <!--<p>the quick brown fox jumped over the lazy dog </p>-->
+                                <p>the quick brown fox jumped over the lazy dog </p>
                                 <a class="btn-solid-reg mb-5"
                                     href="<?php echo base_url()?>index.php/Audiensi/indexweb">Gunakan Layanan</a>
                             </div>

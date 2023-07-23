@@ -46,7 +46,7 @@
             <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Name</a> -->
 
             <!-- Image Logo -->
-			<a class="navbar-brand logo-image" href="index.php"><img
+            <a class="navbar-brand logo-image" href="<?php echo base_url(); ?>index.php"><img
                     src="<?php echo base_url();?>/assets/web/images/logo.png" alt="alternative"></a>
 
             <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
@@ -55,19 +55,27 @@
 
             <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav">
+                <li class="nav-item">
+						<a class="nav-link page-scroll"
+							href="<?php echo base_url()?>index.php/Kepaniteraan/indexweb">Kepaniteraan</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link page-scroll"
+							href="<?php echo base_url()?>index.php/Kesekretariatan/indexweb">Kesekretariatan</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link page-scroll"
+							href="<?php echo base_url()?>index.php/Bukutamu/indexweb">Bukutamu</a>
+					</li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll"
-                            href="<?php echo base_url()?>index.php/Kepaniteraan/indexweb">Kepaniteraan</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll"
-                            href="<?php echo base_url()?>index.php/Kesekretariatan/indexweb">Kesekretariatan</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="https://meet.jit.si/digitalmelayani"
-                            target="_blank">Bantuan</a>
-                    </li>
+						<a class="nav-link page-scroll"
+							href="<?php echo base_url()?>index.php/Survei/indexweb">Survei</a>
+					</li>
 
+					<li class="nav-item">
+						<a class="nav-link page-scroll" href="https://meet.jit.si/digitalmelayani"
+							target="_blank">Bantuan</a>
+					</li>
                 </ul>
                 <span class="nav-item social-icons ml-auto">
                     <!-- <a href="<?php echo base_url();?>index.php/web/login_views">Masuk</a> -->
@@ -100,7 +108,7 @@
                             <div class="media-body">
                                 <h5> <strong>Legalisasi Berita Acara Sumpah Advokat </strong>
                                     </a></h5>
-                                <!---<p>the quick brown fox jumped over the lazy dog </p>-->
+                                <p>the quick brown fox jumped over the lazy dog </p>
                                 <a class="btn-solid-reg mb-5"
                                     href="<?php echo base_url()?>index.php/Legalisasibas/indexweb">Gunakan Layanan</a>
 
@@ -161,7 +169,7 @@
                             <!--<i class="fas fa-hand-holding"></i>-->
                             <div class="media-body">
                                 <h5> <strong>Pengaduan Melalui E-Peduli </strong> </a></h5>
-                                <!--<p>the quick brown fox jumped over the lazy dog </p>-->
+                                <p>the quick brown fox jumped over the lazy dog </p>
                                 <a class="btn-solid-reg mb-5" href="http://e-peduli.pt-bandung.go.id/#09"
                                     target="_blank">Gunakan Layanan</a>
 

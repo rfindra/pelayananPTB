@@ -1,5 +1,5 @@
 <?php
-class Legalisasibas_model extends CI_Model
+class Survei_model extends CI_Model
 {
     public function __construct()
     {
@@ -48,8 +48,8 @@ class Legalisasibas_model extends CI_Model
     public function getAllDataLegalisasi()
     {
         $this->db->select('*');
-        $this->db->from('legalisasi_bas');
-        $this->db->join('berkas', 'legalisasi_bas.nik = berkas.nik');
+        $this->db->from('survei');
+        $this->db->join('berkas', 'survei.nik = berkas.nik');
         $query = $this->db->get();
         return $query->result();
     }
@@ -57,15 +57,15 @@ class Legalisasibas_model extends CI_Model
     public function getDataLegalisasiEdit($id)
     {
         $this->db->where('nik', $id);
-        return $this->db->get('legalisasi_bas')->result();
+        return $this->db->get('survei')->result();
     }
 
     //public function caridata()
     //{
     //    $c = $this->input->post('cari');
     //    $this->db->select('*');
-    //    $this->db->from('legalisasi_bas');
-    //    $this->db->join('berkas', 'legalisasi_bas.nik = berkas.nik');
+    //    $this->db->from('survei');
+    //    $this->db->join('berkas', 'survei.nik = berkas.nik');
     //    $this->db->like('berkas.nik', $c);
     //    $query = $this->db->get();
     //    return $query->result();
@@ -74,11 +74,11 @@ class Legalisasibas_model extends CI_Model
     //public function caridata()   //Search All in DB
     //{
         //$c = $this->input->post('cari');
-        //$this->db->select('legalisasi_bas.id_daftar, legalisasi_bas.nik, legalisasi_bas.nm_lengkap, legalisasi_bas.nohp, legalisasi_bas.email, legalisasi_bas.nama_organisasi, legalisasi_bas.tgl_daftar, legalisasi_bas.tgl_ambil, legalisasi_bas.status');
-        //$this->db->from('legalisasi_bas');
-        //$this->db->join('berkas', 'legalisasi_bas.nik = berkas.nik');
+        //$this->db->select('survei.id_daftar, survei.nik, survei.nm_lengkap, survei.nohp, survei.email, survei.nama_organisasi, survei.tgl_daftar, survei.tgl_ambil, survei.status');
+        //$this->db->from('survei');
+        //$this->db->join('berkas', 'survei.nik = berkas.nik');
         //$this->db->like('berkas.nik', $c);
-        //$this->db->group_by('legalisasi_bas.id_daftar');
+        //$this->db->group_by('survei.id_daftar');
         //$query = $this->db->get();
         //return $query->result();
     //}
@@ -87,9 +87,9 @@ class Legalisasibas_model extends CI_Model
     public function caridata() //Search only by NIK
     {
         $c = $this->input->post('cari');
-        $this->db->select('legalisasi_bas.id_daftar, legalisasi_bas.nik, legalisasi_bas.nm_lengkap, legalisasi_bas.nohp, legalisasi_bas.email, legalisasi_bas.nama_organisasi, legalisasi_bas.tgl_daftar, legalisasi_bas.tgl_ambil, legalisasi_bas.status');
-        $this->db->from('legalisasi_bas');
-        $this->db->join('berkas', 'legalisasi_bas.nik = berkas.nik');
+        $this->db->select('survei.id_daftar, survei.nik, survei.nm_lengkap, survei.nohp, survei.email, survei.nama_organisasi, survei.tgl_daftar, survei.tgl_ambil, survei.status');
+        $this->db->from('survei');
+        $this->db->join('berkas', 'survei.nik = berkas.nik');
         $this->db->where('berkas.nik', $c);
         $query = $this->db->get();
         return $query->result();

@@ -85,6 +85,5 @@ class UploadLegalisasi extends CI_Controller {
         $viewPath = $view === 'admin' ? 'admin/' : 'web/';
         redirect("Legalisasibas/index{$viewPath}");
     }
-
-    
+        
 }

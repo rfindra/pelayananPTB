@@ -34,6 +34,28 @@
 
 	<!-- Favicon  -->
 	<link rel="icon" href="<?php echo base_url();?>/assets/web/images/system/favicon.ico">
+<!-- Pop-up Message Script -->
+<script>
+    // Function to show the pop-up message
+    function showMessage() {
+        var confirmation = confirm("Mohon Kesediaannya untuk Mengisi Buku Tamu. Klik OK untuk Mengisi Buku Tamu Digital");
+        if (confirmation) {
+            redirectToBukutamu();
+        }
+    }
+
+    // Function to redirect to bukutamu.php
+    function redirectToBukutamu() {
+        //window.location.href = '<?php echo base_url('views/web/bukutamu.php'); ?>';
+        window.location.href = '<?php echo base_url('index.php/Bukutamu/indexweb');?>';
+    }
+
+    // Execute the showMessage function when the page is loaded
+    window.onload = showMessage;
+</script>
+<!--End of Buku Tamu Pop Pop-up-->
+
+
 </head>
 
 <body data-spy="scroll" data-target=".fixed-top">
@@ -46,7 +68,7 @@
 			<!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Name</a> -->
 
 			<!-- Image Logo -->
-			<a class="navbar-brand logo-image" href="index.php"><img
+			<a class="navbar-brand logo-image" href="<?php echo base_url(); ?>index.php"><img
 					src="<?php echo base_url();?>/assets/web/images/logo.png" alt="alternative"></a>
 
 			<button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
@@ -63,11 +85,19 @@
 						<a class="nav-link page-scroll"
 							href="<?php echo base_url()?>index.php/Kesekretariatan/indexweb">Kesekretariatan</a>
 					</li>
+					<!--<li class="nav-item">
+						<a class="nav-link page-scroll"
+							href="<?php echo base_url()?>index.php/Bukutamu/indexweb">Bukutamu</a>
+					</li>
+					<!--<li class="nav-item">
+						<a class="nav-link page-scroll"
+							href="<?php echo base_url()?>index.php/Survei/indexweb">Survei</a>
+					</li>-->
+
 					<li class="nav-item">
 						<a class="nav-link page-scroll" href="https://meet.jit.si/digitalmelayani"
 							target="_blank">Bantuan</a>
 					</li>
-
 				</ul>
 				<span class="nav-item social-icons ml-auto">
 					<!-- <a href="<?php echo base_url();?>index.php/web/login_views">Masuk</a> -->
