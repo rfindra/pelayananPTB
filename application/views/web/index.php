@@ -194,6 +194,8 @@
 
     <footer>
         <p>&copy; 2023 Pengadilan Tinggi Bandung</p>
+		<p>Test</p>
+
     </footer>
 
 
