@@ -74,22 +74,12 @@
                             <p class="label" style="position:absolute; top:65px;">
                                 SIPA
                             </p>
-                        </div>		
+                        </div>	
                 </div>
         </div> 
         <div class="social-icons-2">
                 <div class="d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0">
-                        
-						
                         <div class="btn btn-dark m-4" style="position: relative;">
-                            <a href="makinsip.pt-bandung.go.id/evakippt" data-toggle="tooltip" data-placement="top" title="MAKINSIP">
-                                <i class="icon-fa fa-solid fa-chart-line" style="color: #ffffff;"></i>
-                            </a>
-                            <p class="label" style="position:absolute; top:65px;">
-                                MAKINSIP
-                            </p>
-                        </div>
-						<div class="btn btn-dark m-4" style="position: relative;">
                     <a href="https://eberpadu.mahkamahagung.go.id/" target="_blank" data-toggle="tooltip" data-placement="top" title="e-BERPADU">
                         <i class="icon-fa fa-solid fa-file-signature" style="color: #ffffff;"></i>
                     </a>
@@ -97,7 +87,30 @@
                                 e-BERPADU
                     </p>
                 </div>
-						  
+			<div class="btn btn-dark m-4" style="position: relative;">
+                            <a href="http://esurvey.badilum.mahkamahagung.go.id/index.php/pengadilan/097500" target="_blank" data-toggle="tooltip" data-placement="top" title="SKM & SPAK">
+                               <i class="icon-fa fa-solid fa-list-check" style="color: #ffffff;"></i>
+                            </a>
+                            <p class="label" style="position:absolute; top:65px;">
+                                SURVEY
+                            </p> 
+                        </div>
+			<div class="btn btn-dark m-4" style="position: relative;">
+                            <a href="https://siwas.mahkamahagung.go.id/" target="_blank" data-toggle="PENGADUAN" data-placement="top" title="PENGADUAN">
+                               <i class="icon-fa fa-solid fa-bullhorn" style="color: #ffffff;"></i>
+                            </a>
+                            <p class="label" style="position:absolute; top:65px;">
+                                PENGADUAN
+                            </p>
+                        </div>
+				<div class="btn btn-dark m-4" style="position: relative;">
+                    <a href="https://meet.jit.si/digitalmelayani" target="_blank" data-toggle="tooltip" data-placement="top" title="CALL CENTER">
+                               <i class="icon-fa fa-solid fa-phone" style="color: #ffffff;"></i>
+                    </a>
+                    <p class="label" style="position:absolute; top:65px;">
+                                CALL CENTER
+                    </p>
+                </div>						  
                 </div>
         </div>
         <div class="social-icons-3">
@@ -126,30 +139,6 @@
                                 ATAP
                             </p>
                         </div>
-			<div class="btn btn-dark m-4" style="position: relative;">
-                            <a href="http://esurvey.badilum.mahkamahagung.go.id/index.php/pengadilan/097500" target="_blank" data-toggle="tooltip" data-placement="top" title="SKM & SPAK">
-                               <i class="icon-fa fa-solid fa-list-check" style="color: #ffffff;"></i>
-                            </a>
-                            <p class="label" style="position:absolute; top:65px;">
-                                SURVEY
-                            </p> 
-                        </div>
-			<div class="btn btn-dark m-4" style="position: relative;">
-                            <a href="https://siwas.mahkamahagung.go.id/" target="_blank" data-toggle="PENGADUAN" data-placement="top" title="PENGADUAN">
-                               <i class="icon-fa fa-solid fa-bullhorn" style="color: #ffffff;"></i>
-                            </a>
-                            <p class="label" style="position:absolute; top:65px;">
-                                PENGADUAN
-                            </p>
-                        </div>
-				<div class="btn btn-dark m-4" style="position: relative;">
-                    <a href="https://meet.jit.si/digitalmelayani" target="_blank" data-toggle="tooltip" data-placement="top" title="CALL CENTER">
-                               <i class="icon-fa fa-solid fa-phone" style="color: #ffffff;"></i>
-                    </a>
-                    <p class="label" style="position:absolute; top:65px;">
-                                CALL CENTER
-                    </p>
-                </div>
             </div>
         </div>
         
