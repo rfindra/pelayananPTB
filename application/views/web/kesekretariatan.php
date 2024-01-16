@@ -66,11 +66,11 @@
 					<li class="nav-item">
 						<a class="nav-link page-scroll"
 							href="<?php echo base_url()?>index.php/Bukutamu/indexweb">Bukutamu</a>
-					</li>
-                    <li class="nav-item">
+					<!--</li>
+                    				<li class="nav-item">
 						<a class="nav-link page-scroll"
 							href="<?php echo base_url()?>index.php/Survei/indexweb">Survei</a>
-					</li>
+					</li>-->
 
 					<li class="nav-item">
 						<a class="nav-link page-scroll" href="https://meet.jit.si/digitalmelayani"
