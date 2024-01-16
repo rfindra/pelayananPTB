@@ -43,6 +43,14 @@
         <!-- For more icon options, visit https://fontawesome.com/icons?d=gallery&p=2&s=brands-->
         <div class="social-icons-1">
                 <div class="d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0">
+			<div class="btn btn-dark m-4" style="position: relative;">
+                            <a href="https://pelayanan.pt-bandung.go.id/index.php/Kepaniteraan/indexweb" target="_blank" data-toggle="tooltip" data-placement="top" title="KEPANITERAAN">
+                               <i class="icon-fa fa-solid fa-book" style="color: #ffffff;"></i>
+                            </a>
+                            <p class="label" style="position:absolute; top:65px;">
+                                KEPANITERAAN
+                            </p>
+                        </div>
                          <div class="btn btn-dark m-4" style="position: relative;">
                             <a href="https://pelayanan.pt-bandung.go.id/index.php/Kesekretariatan/indexweb" target="_blank" data-toggle="tooltip" data-placement="top" title="KESEKRETARIATAN">
                                 <i class="icon-fa fa-solid fa-person-chalkboard" style="color: #ffffff;"></i>
@@ -51,23 +59,7 @@
                                 KESEKRETARIATAN
                             </p>
                         </div>
-						<div class="btn btn-dark m-4" style="position: relative;">
-                            <a href="https://atap.pt-bandung.go.id/" target="_blank" data-toggle="tooltip" data-placement="top" title="ATAP">
-                                <i class="icon-fa fa-regular fa-file" style="color: #ffffff;"></i>
-                            </a>
-                            <p class="label" style="position:absolute; top:65px;">
-                                ATAP
-                            </p>
-                        </div>
-                        <div class="btn btn-dark m-4" style="position: relative;">
-                            <a href="https://monika.pt-bandung.go.id/" target="_blank" data-toggle="tooltip" data-placement="top" title="MONIKA">
-                                <i class="icon-fa fa-solid fa-address-card" style="color: #ffffff;"></i>
-                            </a>
-                            <p class="label" style="position:absolute; top:65px;">
-                                MONIKA
-                            </p>
-                        </div>
-						<div class="btn btn-dark m-4" style="position: relative;">
+			<div class="btn btn-dark m-4" style="position: relative;">
                     <a href="http://e-peduli.pt-bandung.go.id/#09" target="_blank" data-toggle="tooltip" data-placement="top" title="e-Peduli">
                                 <i class="icon-fa fa-solid fa-landmark" style="color: #ffffff;"></i>
                     </a>
@@ -75,29 +67,22 @@
                                 e-Peduli
                     </p>
                 </div>
-                         
-                </div>
-        </div> 
-        <div class="social-icons-2">
-                <div class="d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0">
-                        <div class="btn btn-dark m-4" style="position: relative;">
-                            <a href="https://pelayanan.pt-bandung.go.id/index.php/Kepaniteraan/indexweb" target="_blank" data-toggle="tooltip" data-placement="top" title="KEPANITERAAN">
-                               <i class="icon-fa fa-solid fa-book" style="color: #ffffff;"></i>
-                            </a>
-                            <p class="label" style="position:absolute; top:65px;">
-                                KEPANITERAAN
-                            </p>
-                        </div>
-						<div class="btn btn-dark m-4" style="position: relative;">
+			<div class="btn btn-dark m-4" style="position: relative;">
                             <a href="http://sipa.pt-bandung.go.id/login" target="_blank" data-toggle="tooltip" data-placement="top" title="Penyumpahan Advokat">
                               <i class="icon-fa fa-solid fa-gavel" style="color: #ffffff;"></i>
                             </a>
                             <p class="label" style="position:absolute; top:65px;">
                                 SIPA
                             </p>
-                        </div>
+                        </div>		
+                </div>
+        </div> 
+        <div class="social-icons-2">
+                <div class="d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0">
+                        
+						
                         <div class="btn btn-dark m-4" style="position: relative;">
-                            <a href="#!" data-toggle="tooltip" data-placement="top" title="MAKINSIP">
+                            <a href="makinsip.pt-bandung.go.id/evakippt" data-toggle="tooltip" data-placement="top" title="MAKINSIP">
                                 <i class="icon-fa fa-solid fa-chart-line" style="color: #ffffff;"></i>
                             </a>
                             <p class="label" style="position:absolute; top:65px;">
@@ -117,6 +102,30 @@
         </div>
         <div class="social-icons-3">
             <div class="d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0">
+		    <div class="btn btn-dark m-4" style="position: relative;">
+                            <a href="https://monika.pt-bandung.go.id/" target="_blank" data-toggle="tooltip" data-placement="top" title="MONIKA">
+                                <i class="icon-fa fa-solid fa-address-card" style="color: #ffffff;"></i>
+                            </a>
+                            <p class="label" style="position:absolute; top:65px;">
+                                MONIKA
+                            </p>
+                        </div>
+		    <div class="btn btn-dark m-4" style="position: relative;">
+                            <a href="makinsip.pt-bandung.go.id/evakippt" data-toggle="tooltip" data-placement="top" title="MAKINSIP">
+                                <i class="icon-fa fa-solid fa-chart-line" style="color: #ffffff;"></i>
+                            </a>
+                            <p class="label" style="position:absolute; top:65px;">
+                                MAKINSIP
+                            </p>
+                        </div>
+		    			<div class="btn btn-dark m-4" style="position: relative;">
+                            <a href="https://atap.pt-bandung.go.id/" target="_blank" data-toggle="tooltip" data-placement="top" title="ATAP">
+                                <i class="icon-fa fa-regular fa-file" style="color: #ffffff;"></i>
+                            </a>
+                            <p class="label" style="position:absolute; top:65px;">
+                                ATAP
+                            </p>
+                        </div>
 			<div class="btn btn-dark m-4" style="position: relative;">
                             <a href="http://esurvey.badilum.mahkamahagung.go.id/index.php/pengadilan/097500" target="_blank" data-toggle="tooltip" data-placement="top" title="SKM & SPAK">
                                <i class="icon-fa fa-solid fa-list-check" style="color: #ffffff;"></i>
@@ -126,7 +135,7 @@
                             </p> 
                         </div>
 			<div class="btn btn-dark m-4" style="position: relative;">
-                            <a href="https://siwas.mahkamahagung.go.id/" target="_blank" data-toggle="PENGADUAN" data-placement="top" title="Hooray!">
+                            <a href="https://siwas.mahkamahagung.go.id/" target="_blank" data-toggle="PENGADUAN" data-placement="top" title="PENGADUAN">
                                <i class="icon-fa fa-solid fa-bullhorn" style="color: #ffffff;"></i>
                             </a>
                             <p class="label" style="position:absolute; top:65px;">
