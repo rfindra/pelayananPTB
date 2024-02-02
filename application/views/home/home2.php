@@ -45,19 +45,15 @@
     <!-- Social Icons-->
     <!-- For more icon options, visit https://fontawesome.com/icons?d=gallery&p=2&s=brands-->
     <div class="social-icons-1">
-        <div class="d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0">
-            <div class="btn btn-dark m-4" style="position: relative;">
-                <a href="https://pelayanan.pt-bandung.go.id/index.php/Kepaniteraan/indexweb" target="_blank" data-toggle="tooltip" data-placement="top" title="KEPANITERAAN">
-                    <i class="icon-fa fa-solid fa-book" style="color: #ffffff;"></i>
-                </a>
-                <p class="label" style="position:absolute; top:65px;">
-                    KEPANITERAAN
-                </p>
-            </div>
-            <div class="btn btn-dark m-4" style="position: relative;">
-                <a href="https://pelayanan.pt-bandung.go.id/index.php/Kesekretariatan/indexweb" target="_blank" data-toggle="tooltip" data-placement="top" title="KESEKRETARIATAN">
-                    <i class="icon-fa fa-solid fa-person-chalkboard" style="color: #ffffff;"></i>
-                </a>
+        <div class="d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0">        
+          <div class="btn btn-dark m-4" style="position: relative;" onclick="window.open('https://pelayanan.pt-bandung.go.id/index.php/Kepaniteraan/indexweb', '_blank')">
+    			<i class="icon-fa fa-solid fa-book" style="color: #ffffff;"></i>
+    			<p class="label" style="position:absolute; top:65px;">
+      				KEPANITERAAN
+    			</p>
+		    </div>       
+            <div class="btn btn-dark m-4" style="position: relative;" onclick="window.open('https://pelayanan.pt-bandung.go.id/index.php/Kesekretariatan/indexweb', '_blank')">
+                <i class="icon-fa fa-solid fa-person-chalkboard" style="color: #ffffff;"></i>
                 <p class="label" style="position:absolute; top:65px;">
                     KESEKRETARIATAN
                 </p>
