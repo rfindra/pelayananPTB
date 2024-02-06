@@ -81,7 +81,7 @@
                 </p>
             </div>
             <div class="btn btn-dark m-4" style="position: relative;" onclick="window.open('http://esurvey.badilum.mahkamahagung.go.id/index.php/pengadilan/097500', '_blank')">
-                    <!--<i class="icon-fa fa-solid fa-list-check" style="color: #ffffff;"></i>-->
+                    <i class="icon-fa fa-solid fa-list-check" style="color: #ffffff;"></i>
                 <p class="label" style="position:absolute; top:65px;">
                     SURVEY
                 </p>
