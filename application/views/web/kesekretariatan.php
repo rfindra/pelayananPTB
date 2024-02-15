@@ -156,13 +156,13 @@
                         </li>
                         <li class="media">
                             <!--<i class="fas fa-users"></i>-->
-                            <div class="media-body">
+                        <!--    <div class="media-body">
                                 <h5> <strong>on Progress . . . . </strong> </a>
                                 </h5>
-                                <!--<p>the quick brown fox jumped over the lazy dog </p>-->
+                                <p>the quick brown fox jumped over the lazy dog </p>
                                 <a class="btn-solid-reg mb-5" href="index.html">Gunakan Layanan</a>
                             </div>
-                        </li>
+                        </li>-->
                     </ul>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
