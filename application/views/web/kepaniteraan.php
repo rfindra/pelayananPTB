@@ -136,15 +136,6 @@
                                 <a class="btn-solid-reg mb-5" href="index.html">Gunakan Layanan</a>
                             </div>
                         </li>
-			    
-                        <li class="media">
-                            <!--<i class="fas fa-font"></i>-->
-                            <div class="media-body">
-                                <h5> <strong>Penahanan</strong> </a></h5>
-                                <a class="btn-solid-reg mb-5" href="index.html">Gunakan Layanan</a>
-                            </div>
-                        </li>
-
                     </ul>
                 </div> <!-- end of col -->
                <div class="col-lg-6">
