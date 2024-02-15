@@ -105,12 +105,12 @@
                     <ul class="list-unstyled first">
                         <li class="media">
                             <!--<i class="fas fa-rocket"></i>-->
-                           <!-- <div class="media-body">
+                            <div class="media-body">
                                 <h5> <strong>Informasi Kepegawaian</strong> </a></h5>
-                                <p>the quick brown fox jumped over the lazy dog </p>
+                                <!--<p>the quick brown fox jumped over the lazy dog </p>-->
                                 <a class="btn-solid-reg mb-5" href="index.html">Gunakan Layanan</a>
 
-                            </div>-->
+                            </div>
                         </li>
                         <li class="media">
                             <!-- <i class="fas fa-bullhorn"></i>-->
@@ -123,12 +123,12 @@
                         </li>
                         <li class="media">
                             <!--<i class="fas fa-font"></i>-->
-                            <!--<div class="media-body">
+                            <div class="media-body">
                                 <h5> <strong>Izin Riset / Penelitian</strong> </a></h5>
-                                <p>the quick brown fox jumped over the lazy dog </p>
+                                <!--<p>the quick brown fox jumped over the lazy dog </p>-->
                                 <a class="btn-solid-reg mb-5" href="index.html">Gunakan Layanan</a>
 
-                            </div>-->
+                            </div>
                         </li>
                     </ul>
                 </div> <!-- end of col -->
@@ -136,13 +136,12 @@
                     <ul class="list-unstyled second">
                         <li class="media">
                             <!-- <i class="fas fa-keyboard"></i>-->
-                            <!--<div class="media-body">
+                            <div class="media-body">
                                 <h5> <strong>Praktik Kerja Industi (Prakerin)
                                     </strong> </a></h5>
-                                <p>the quick brown fox jumped over the lazy dog </p>
+                                <!--<p>the quick brown fox jumped over the lazy dog </p>-->
                                 <a class="btn-solid-reg mb-5" href="index.html">Gunakan Layanan</a>
-
-                            </div>-->
+                            </div>
                         </li>
                         <li class="media">
                             <!--<i class="fas fa-photo-video"></i>-->
@@ -157,13 +156,12 @@
                         </li>
                         <li class="media">
                             <!--<i class="fas fa-users"></i>-->
-                            <!--<div class="media-body">
+                            <div class="media-body">
                                 <h5> <strong>on Progress . . . . </strong> </a>
                                 </h5>
-                                <p>the quick brown fox jumped over the lazy dog </p>
+                                <!--<p>the quick brown fox jumped over the lazy dog </p>-->
                                 <a class="btn-solid-reg mb-5" href="index.html">Gunakan Layanan</a>
-
-                            </div>-->
+                            </div>
                         </li>
                     </ul>
                 </div> <!-- end of col -->
