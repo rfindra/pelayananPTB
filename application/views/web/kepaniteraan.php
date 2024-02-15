@@ -233,7 +233,7 @@
         </div> <!-- end of container -->
 	</div> <!-- end of cards-1 -->
 	<!-- end of projects -->
-    <a style="float: right;" class="btn-solid-reg mb-5" href="<?php echo base_url()?>index.php/Legalisasibas/indexweb">Kembali</a>
+    <a style="float: right;" class="btn-solid-reg mb-5" href="https://pelayanan.pt-bandung.go.id"> Kembali</a>
 
 
     <footer>
