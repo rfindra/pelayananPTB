@@ -120,7 +120,7 @@
                                     </a></h5>
                                 <a class="btn-solid-reg mb-5"
                                     href="<?php echo base_url()?>index.php/Legalisasibas/indexweb">Gunakan Layanan</a>
-                            </div>-->
+                            </div>
                         </li>
 			    
                         <li class="media">
