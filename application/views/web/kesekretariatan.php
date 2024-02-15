@@ -105,20 +105,21 @@
                     <ul class="list-unstyled first">
                         <li class="media">
                             <!--<i class="fas fa-rocket"></i>-->
+			<div class="media-body">
+                                <h5> <strong>Audiensi Kepada Pimpinan</strong> </a></h5>
+                                <!--<p>the quick brown fox jumped over the lazy dog </p>-->
+                                <a class="btn-solid-reg mb-5"
+                                    href="<?php echo base_url()?>index.php/Audiensi/indexweb">Gunakan Layanan</a>
+                            </div>
+
+                        </li>
+                        <li class="media">
+                            <!-- <i class="fas fa-bullhorn"></i>-->
                             <div class="media-body">
                                 <h5> <strong>Informasi Kepegawaian</strong> </a></h5>
                                 <!--<p>the quick brown fox jumped over the lazy dog </p>-->
                                 <a class="btn-solid-reg mb-5" href="index.html">Gunakan Layanan</a>
 
-                            </div>
-                        </li>
-                        <li class="media">
-                            <!-- <i class="fas fa-bullhorn"></i>-->
-                            <div class="media-body">
-                                <h5> <strong>Audiensi Kepada Pimpinan</strong> </a></h5>
-                                <!--<p>the quick brown fox jumped over the lazy dog </p>-->
-                                <a class="btn-solid-reg mb-5"
-                                    href="<?php echo base_url()?>index.php/Audiensi/indexweb">Gunakan Layanan</a>
                             </div>
                         </li>
                         <li class="media">
