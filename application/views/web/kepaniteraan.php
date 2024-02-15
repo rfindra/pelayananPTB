@@ -163,7 +163,7 @@
                             <div class="media-body">
                                 <h5> <strong>Penyerahan Memori, Kontra Memori Banding
                                     </strong> </a></h5>
-                                <p>the quick brown fox jumped over the lazy dog </p>
+                                <!--<p>the quick brown fox jumped over the lazy dog </p>-->
                                 <a class="btn-solid-reg mb-5" href="index.html">Gunakan Layanan</a>
                             </div>
                         </li>
@@ -173,7 +173,7 @@
                             <div class="media-body">
                                 <h5> <strong>Penyerahan Tambahan Alat Bukti </strong> </a>
                                 </h5>
-                                <p>the quick brown fox jumped over the lazy dog </p>
+                                <!--<p>the quick brown fox jumped over the lazy dog </p>-->
                                 <a class="btn-solid-reg mb-5" href="index.html">Gunakan Layanan</a>
                             </div>
                         </li>
@@ -183,7 +183,7 @@
                             <div class="media-body">
                                 <h5> <strong>Informasi Status Perkara Banding </strong> </a>
                                 </h5>
-                                <p>the quick brown fox jumped over the lazy dog </p>
+                                <!--<p>the quick brown fox jumped over the lazy dog </p>-->
                                 <a class="btn-solid-reg mb-5" href="index.html">Gunakan Layanan</a>
                             </div>
                         </li>
