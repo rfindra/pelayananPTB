@@ -150,11 +150,10 @@
                <div class="col-lg-6">
                     <ul class="list-unstyled second">
                         <li class="media">
-                            <!--<i class="fas fa-hand-holding"></i>-->
+                            <!--<i class="fas fa-font"></i>-->
                             <div class="media-body">
-                                <h5> <strong>Pengaduan Melalui E-Peduli </strong> </a></h5>
-                                <a class="btn-solid-reg mb-5" href="http://e-peduli.pt-bandung.go.id/#09"
-                                    target="_blank">Gunakan Layanan</a>
+                                <h5> <strong>Penahanan</strong> </a></h5>
+                                <a class="btn-solid-reg mb-5" href="index.html">Gunakan Layanan</a>
                             </div>
                         </li>
 		    
