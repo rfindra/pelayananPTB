@@ -108,56 +108,58 @@
                             <div class="media-body">
                                 <h5> <strong>Legalisasi Berita Acara Sumpah Advokat </strong>
                                     </a></h5>
-                                <!--<p>the quick brown fox jumped over the lazy dog </p>-->
                                 <a class="btn-solid-reg mb-5"
                                     href="<?php echo base_url()?>index.php/Legalisasibas/indexweb">Gunakan Layanan</a>
-
                             </div>
                         </li>
-
+			    
+                        <li class="media">
+                            <!--<i class="fas fa-clock"></i>-->
+                            <div class="media-body">
+                                <h5> <strong>Legalisasi Berita Acara Sumpah Advokat </strong>
+                                    </a></h5>
+                                <a class="btn-solid-reg mb-5"
+                                    href="<?php echo base_url()?>index.php/Legalisasibas/indexweb">Gunakan Layanan</a>
+                            </div>-->
+                        </li>
+			    
                         <li class="media">
                             <!--<i class="fas fa-clock"></i>-->
                             <!--<div class="media-body">
                                 <h5> <strong>Penangguhan Penahanan</strong> </a></h5>
-                                <p>the quick brown fox jumped over the lazy dog </p>
                                 <a class="btn-solid-reg mb-5" href="index.html">Gunakan Layanan</a>
-
                             </div>-->
                         </li>
+			    
                         <li class="media">
                             <!--<i class="fas fa-bullhorn"></i>-->
                             <!--<div class="media-body">
                                 <h5> <strong>Pengalihan Penahanan</strong> </a></h5>
-                                <p>the quick brown fox jumped over the lazy dog </p>
                                 <a class="btn-solid-reg mb-5" href="index.html">Gunakan Layanan</a>
-
                             </div>-->
                         </li>
+			    
                         <li class="media">
                             <!--<i class="fas fa-font"></i>-->
                             <!--<div class="media-body">
                                 <h5> <strong>Pembantaran Penahanan</strong> </a></h5>
-                                <p>the quick brown fox jumped over the lazy dog </p>
                                 <a class="btn-solid-reg mb-5" href="index.html">Gunakan Layanan</a>
-
                             </div>-->
                         </li>
+			    
                         <li class="media">
                             <!--<i class="fas fa-font"></i>-->
                             <!--<div class="media-body">
                                 <h5> <strong>Izin Besuk Tahanan</strong> </a></h5>
-                                <p>the quick brown fox jumped over the lazy dog </p>
                                 <a class="btn-solid-reg mb-5" href="index.html">Gunakan Layanan</a>
-
                             </div>-->
                         </li>
+			    
                         <li class="media">
                             <!--<i class="fas fa-font"></i>-->
                             <!--<div class="media-body">
                                 <h5> <strong>Penahanan</strong> </a></h5>
-                                <p>the quick brown fox jumped over the lazy dog </p>
                                 <a class="btn-solid-reg mb-5" href="index.html">Gunakan Layanan</a>
-
                             </div>-->
                         </li>
 
@@ -167,14 +169,13 @@
                     <ul class="list-unstyled second">
                         <li class="media">
                             <!--<i class="fas fa-hand-holding"></i>-->
-                            <div class="media-body">
+                            <!--<div class="media-body">
                                 <h5> <strong>Pengaduan Melalui E-Peduli </strong> </a></h5>
-                                <!-- <p>the quick brown fox jumped over the lazy dog </p> -->
                                 <a class="btn-solid-reg mb-5" href="http://e-peduli.pt-bandung.go.id/#09"
                                     target="_blank">Gunakan Layanan</a>
-
-                            </div>
+                            </div>-->
                         </li>
+		    
                         <li class="media">
                             <!--<i class="fas fa-keyboard"></i>-->
                             <!--<div class="media-body">
@@ -182,9 +183,9 @@
                                     </strong> </a></h5>
                                 <p>the quick brown fox jumped over the lazy dog </p>
                                 <a class="btn-solid-reg mb-5" href="index.html">Gunakan Layanan</a>
-
                             </div>-->
                         </li>
+		    
                         <li class="media">
                             <!--<i class="fas fa-photo-video"></i>-->
                             <!--<div class="media-body">
@@ -195,6 +196,7 @@
 
                             </div>-->
                         </li>
+		    
                         <li class="media">
                             <!--<i class="fas fa-users"></i>-->
                             <!--<div class="media-body">
@@ -202,9 +204,9 @@
                                 </h5>
                                 <p>the quick brown fox jumped over the lazy dog </p>
                                 <a class="btn-solid-reg mb-5" href="index.html">Gunakan Layanan</a>
-
                             </div>-->
                         </li>
+		    
                         <li class="media">
                             <!--<i class="fas fa-"></i>-->
                             <!--<div class="media-body">
@@ -213,9 +215,9 @@
                                 <p>the quick brown fox jumped over the lazy dog </p>
                                 <a class="btn-solid-reg mb-5"
                                     href="<?php echo base_url()?>index.php/Legalisasibas/indexweb">Gunakan Layanan</a>
-
                             </div>-->
                         </li>
+		    
                         <li class="media">
                             <!--<i class="fas fa-hand-holding"></i>-->
                             <!--<div class="media-body">
@@ -223,10 +225,8 @@
                                 <p>the quick brown fox jumped over the lazy dog </p>
                                 <a class="btn-solid-reg mb-5" href="http://e-peduli.pt-bandung.go.id/#09"
                                     target="_blank">Gunakan Layanan</a>
-
                             </div>-->
                         </li>
-
                     </ul>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
