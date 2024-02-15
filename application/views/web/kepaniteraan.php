@@ -187,18 +187,7 @@
                                 <a class="btn-solid-reg mb-5" href="index.html">Gunakan Layanan</a>
                             </div>
                         </li>
-		    
-                        <li class="media">
-                            <!--<i class="fas fa-"></i>-->
-                            <div class="media-body">
-                                <h5> <strong>Legalisasi Berita Acara Sumpah Advokat </strong>
-                                    </a></h5>
-                                <p>the quick brown fox jumped over the lazy dog </p>
-                                <a class="btn-solid-reg mb-5"
-                                    href="<?php echo base_url()?>index.php/Legalisasibas/indexweb">Gunakan Layanan</a>
-                            </div>
-                        </li>
-		    
+		        
                         <li class="media">
                             <!--<i class="fas fa-hand-holding"></i>-->
                             <div class="media-body">
