@@ -108,12 +108,12 @@
                     MONIKA
                 </p>
             </div>
-            <!--<div class="btn btn-dark m-4" style="position: relative;" onclick="window.open('makinsip.pt-bandung.go.id/evakippt', '_blank')">
+            <div class="btn btn-dark m-4" style="position: relative;" onclick="window.open('makinsip.pt-bandung.go.id/evakippt', '_blank')">
                     <i class="icon-fa fa-solid fa-chart-line" style="color: #ffffff;"></i>
                 <p class="label" style="position:absolute; top:65px;">
                     MAKINSIP
                 </p>
-            </div>-->
+            </div>
             <div class="btn btn-dark m-4" style="position: relative;" onclick="window.open('https://atap.pt-bandung.go.id/', '_blank')">
                     <i class="icon-fa fa-regular fa-file" style="color: #ffffff;"></i>
                 <p class="label" style="position:absolute; top:65px;">
