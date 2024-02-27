@@ -152,7 +152,8 @@ class Bukutamu extends CI_Controller {
       $this->Bukutamu_model->insertData('bukutamu', $data);
       $this->Bukutamu_model->insertDataPtsp('bukutamu', $data2);
 	  
-      redirect('home/home2');
+      //redirect('home/home2');
+	  redirect('https://pelayanan.pt-bandung.go.id');
     }
   }
   
